@@ -6,9 +6,9 @@ cv:
   website: https://reinthal.me/
   social_networks:
     - network: LinkedIn
-      username: yourusername
+      username: alexander-reinthal
     - network: GitHub
-      username: yourusername
+      username: reinthal
   sections:
     welcome_to_RenderCV!:
       - '[RenderCV](https://github.com/sinaatalay/rendercv) is
