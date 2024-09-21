@@ -17,7 +17,7 @@ cv:
         start_date: 2022-02
         end_date: present
         highlights:
-          - Migrated legacy data pipelines to a modern data stack using Snowflake, Dagster and Dbt. This cut cloud-costs by 50%.
+          - Managed and did work in migrating legacy data pipelines to a modern data stack using Snowflake, Dagster and Dbt. This cut cloud-costs by 50%.
           - Automated a consultant-to-job-ad matching process for managers using LLMs.
           - Helped parent company align data tooling to facilitate BI insights from subsidiaries.
           - Lead agile R&D team to integrate car software telemetry data into software integration platform. Project discontinued due telemetry not yet implemented in software.
