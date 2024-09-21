@@ -55,13 +55,13 @@ cv:
           - Built out new internal tooling that was well received by other analysts.
           - Educated other analysts in understanding how to analyze the alert flow.
     publications:
-      - title: 3D Finite Element Analysis of No-Insulation Coils
+      - title: Data Modelling for Predicting Exploits
         authors:
-          - Frodo Baggins
-          - '***John Doe***'
-          - Samwise Gamgee
-        doi: 10.1109/TASC.2023.3340648
-        date: 2004-01
+          - '***Reinthal, A***'
+          - 'Filippakis, E.,'
+          - Almgren, M.
+        doi: 10.1007/978-3-030-03638-6_21
+        date: 2018-11
     projects:
       - name: Multi-User Drawing Tool
         date: '[github.com/name/repo](https://github.com/sinaatalay/rendercv)'
