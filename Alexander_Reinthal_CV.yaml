@@ -34,7 +34,7 @@ cv:
         location: Gothenburg, Sweden
         start_date: 2018-09
         end_date: 2019-03
-        hightlights:
+        highlights:
           - Helped other young talents to write better python code.
           - Made a technical guide on how to integrate a SAML into a Jeppesen product
       - company: Ericsson
@@ -42,7 +42,7 @@ cv:
         location: Gothenburg, Sweden
         start_date: 2017-06
         end_date: 2018-10
-        hightlights:
+        highlights:
           - Lead a team to implement a log parsing tool which resulted in Ericsson hiring a team of engineers to continue its development.
 
     projects:
@@ -83,10 +83,9 @@ cv:
           - 'Tools Used: Terraform'
     technologies:
       - label: Languages
-        details: python, c#
+        details: python, R, sql, c#, java, terraform, nix, c++, assembly
       - label: Technologies
-        details: .NET, Microsoft SQL Server, XCode, Interface
-          Builder
+        details: Dagster, Snowflake, DBT, Kubernetes, Kubeflow, podman, docker, Databricks, ETL, Azure, AWS, Proxmox, git 
     education:
     - institution: Chalmers Technical University
       area: Engineering Physics
