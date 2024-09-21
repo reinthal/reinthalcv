@@ -10,16 +10,6 @@ cv:
     - network: GitHub
       username: reinthal
   sections:
-    quick_guide:
-      - bullet: Each section title is arbitrary and each section
-          contains a list of entries.
-      - bullet: 'There are 7 unique entry types: *BulletEntry*,
-          *TextEntry*, *EducationEntry*, *ExperienceEntry*, *NormalEntry*,
-          *PublicationEntry*, and *OneLineEntry*.'
-      - bullet: Select a section title, pick an entry type, and
-          start writing your section!
-      - bullet: '[Here](https://docs.rendercv.com/user_guide/),
-          you can find a comprehensive user guide for RenderCV.'
     education:
     - institution: Chalmers Technical University
       area: Engineering Physics
@@ -63,29 +53,44 @@ cv:
         doi: 10.1007/978-3-030-03638-6_21
         date: 2018-11
     projects:
-      - name: Multi-User Drawing Tool
-        date: '[github.com/name/repo](https://github.com/sinaatalay/rendercv)'
+      - name: Dagster
+        date: '[github.com/dagster-io/dagster](https://github.com/dagster-io/dagster)'
         highlights:
-          - Developed an electronic classroom where multiple users
-            can simultaneously view and draw on a "chalkboard"
-            with each person's edits synchronized
-          - 'Tools Used: C++, MFC'
-      - name: Synchronized Desktop Calendar
-        date: '[github.com/name/repo](https://github.com/sinaatalay/rendercv)'
+          - Have contributed to the above open source project.
+          - Dagster is a data orchestration tool that manages workflows by organizing, scheduling, and monitoring data pipelines.
+          - 'Tools used: Pytest, python3.10, buildkite'
+      - name: Looker Plus Plus
+        date: '[github.com/reinthal/lpp](https://github.com/reinthal/lpp)'
         highlights:
-          - Developed a desktop calendar with globally shared
-            and synchronized calendars, allowing users to schedule
-            meetings with other users
-          - 'Tools Used: C#, .NET, SQL, XML'
-      - name: Custom Operating System
-        date: 2002
+          - Internal tool for automating analysis of malicious domains
+          - 'Tools Used: python3 and python2, Sci-kit-learn, xgboost, asyncio, MongoDB, fastapi, rabbitmq, redis, docker, docker-compose'
+      - name: My Nix Configs
+        date: '[github.com/reinthal/nixos-config](https://github.com/reinthal/nixos-config)'
         highlights:
-          - Built a UNIX-style OS with a scheduler, file system,
-            text editor, and calculator
-          - 'Tools Used: C'
+          - Reproducible builds of my workstations and some self-hosted services like Tor Exit nodes
+          - 'Tools Used: Linux, nix'
+      - name: Mtga Hack
+        date: '[github.com/reinthal/mtga-hack](https://github.com/reinthal/mtga-hack)'
+        highlights:
+          - This repo consists code and documentation that activates a built-in debugging GUI in an effort to reverse
+            engineer Magic the Gathering Arena (MTGA).
+          - MTGA is a notoriously expensive online card collecting and strategy game
+          - 'Tools Used: DNSpy, C#, monkey-patching, Harmony .NET Patching Framework, code-injection'
+      - name: My Kubernetes Configs
+        date: '[github.com/reinthal/my-kubernetes-infra](https://github.com/reinthal/my-kubernetes-infra)'
+        highlights:
+          - Kubernetes Manifests to test deploying using FluxCD before deploying at customers.
+          - FluxCD configurations for a modern data stack using langfuse for LLM telemetry, 
+            Elastic Search, Openmetadata, OpenWebUI for a chatbot, Rancher and Traefik for ingress.
+          -  'Tools Used: Fluxcd, Kubectl, k9s'
+      - name: k3s hosts in proxmox
+        date: '[github.com/reinthal/k3s-proxmox-tf](https://github.com/reinthal/k3s-proxmox-tf)'
+        highlights:
+          - Terraform script to deploy k3s hosts in my homelab to test new software before using it in production.
+          - 'Tools Used: Terraform'
     technologies:
       - label: Languages
-        details: C++, C, Java, Objective-C, C#, SQL, JavaScript
+        details: python, c#
       - label: Technologies
         details: .NET, Microsoft SQL Server, XCode, Interface
           Builder
