@@ -10,13 +10,6 @@ cv:
     - network: GitHub
       username: reinthal
   sections:
-    welcome_to_RenderCV!:
-      - '[RenderCV](https://github.com/sinaatalay/rendercv) is
-        a LaTeX-based CV/resume framework. It allows you to create
-        a high-quality CV or resume as a PDF file from a YAML
-        file, with **full Markdown syntax support** and **complete
-        control over the LaTeX code**.'
-      - The boilerplate content was inspired by [Gayle McDowell](https://github.com/dnl-blkv/mcdowell-cv).
     quick_guide:
       - bullet: Each section title is arbitrary and each section
           contains a list of entries.
@@ -28,15 +21,20 @@ cv:
       - bullet: '[Here](https://docs.rendercv.com/user_guide/),
           you can find a comprehensive user guide for RenderCV.'
     education:
-      - institution: University of Pennsylvania
-        area: Computer Science
-        degree: BS
-        start_date: 2000-09
-        end_date: 2005-05
-        highlights:
-          - 'GPA: 3.9/4.0 ([a link to somewhere](https://example.com))'
-          - '**Coursework:** Computer Architecture, Comparison
-            of Learning Algorithms, Computational Theory'
+    - institution: Chalmers Technical University
+      area: Engineering Physics
+      degree: MS
+      start_date: 2016-09
+      end_date: 2018-06
+      highlights:
+        - '**Coursework:** Statistical Physics, Neural Networks & Machine Learning'
+    - institution: Gothenburg University
+      area: Computer Science
+      degree: BS
+      start_date: 2013-09
+      end_date: 2016-06
+      highlights:
+        - '**Coursework:** Algorithms, Testing, Debugging & Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security'
     experience:
       - company: Apple
         position: Software Engineer
