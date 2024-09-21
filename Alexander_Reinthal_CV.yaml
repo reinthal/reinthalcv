@@ -36,24 +36,21 @@ cv:
       highlights:
         - '**Coursework:** Algorithms, Testing, Debugging & Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security'
     experience:
-      - company: Apple
-        position: Software Engineer
-        location: Cupertino, CA
-        start_date: 2005-06
-        end_date: 2007-08
+      - company: Knowit Solutions Cocreate
+        position: Data Engineer / Tech Lead / Delivery Manager
+        location: Gothenburg, Sweden
+        start_date: 2022-02
+        end_date: present
         highlights:
-          - Reduced time to render user buddy lists by 75% by
-            implementing a prediction algorithm
-          - Integrated iChat with Spotlight Search by creating
-            a tool to extract metadata from saved chat transcripts
-            and provide metadata to a system-wide search database
-          - Redesigned chat file format and implemented backward
-            compatibility for search
-      - company: Microsoft
-        position: Software Engineer Intern
-        location: Redmond, WA
-        start_date: 2003-06
-        end_date: 2003-08
+          - Migrated legacy data pipelines to a modern data stack using Snowflake, Dagster and Dbt. This cut cloud-costs by 50%.
+          - Automated a consultant-to-job-ad matching process for managers using LLMs.
+          - Helped parent company align data tooling to facilitate BI insights from subsidiaries.
+          - Lead agile R&D team to integrate car software telemetry data into software integration platform. Project discontinued due telemetry not yet implemented in software.
+      - company: NTT Security
+        position: Security Analyst
+        location: Gothenburg, Sweden
+        start_date: 2019-04
+        end_date: 2022-01
         highlights:
           - Designed a UI for the VS open file switcher (Ctrl-Tab)
             and extended it to tool windows
