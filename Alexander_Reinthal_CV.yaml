@@ -10,21 +10,6 @@ cv:
     - network: GitHub
       username: reinthal
   sections:
-    education:
-    - institution: Chalmers Technical University
-      area: Engineering Physics
-      degree: MS
-      start_date: 2016-09
-      end_date: 2018-06
-      highlights:
-        - '**Coursework:** Statistical Physics, Neural Networks & Machine Learning'
-    - institution: Gothenburg University
-      area: Computer Science
-      degree: BS
-      start_date: 2013-09
-      end_date: 2016-06
-      highlights:
-        - '**Coursework:** Algorithms, Testing, Debugging & Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security'
     experience:
       - company: Knowit Solutions Cocreate
         position: Data Engineer / Tech Lead / Delivery Manager
@@ -44,14 +29,22 @@ cv:
         highlights:
           - Built out new internal tooling that was well received by other analysts.
           - Educated other analysts in understanding how to analyze the alert flow.
-    publications:
-      - title: Data Modelling for Predicting Exploits
-        authors:
-          - '***Reinthal, A***'
-          - 'Filippakis, E.,'
-          - Almgren, M.
-        doi: 10.1007/978-3-030-03638-6_21
-        date: 2018-11
+      - company: Jeppesen, A Boeing Company
+        position: Python Software Engineer
+        location: Gothenburg, Sweden
+        start_date: 2018-09
+        end_date: 2019-03
+        hightlights:
+          - Helped other young talents to write better python code.
+          - Made a technical guide on how to integrate a SAML into a Jeppesen product
+      - company: Ericsson
+        position: Python Software Engineer
+        location: Gothenburg, Sweden
+        start_date: 2017-06
+        end_date: 2018-10
+        hightlights:
+          - Lead a team to implement a log parsing tool which resulted in Ericsson hiring a team of engineers to continue its development.
+
     projects:
       - name: Dagster
         date: '[github.com/dagster-io/dagster](https://github.com/dagster-io/dagster)'
@@ -94,6 +87,29 @@ cv:
       - label: Technologies
         details: .NET, Microsoft SQL Server, XCode, Interface
           Builder
+    education:
+    - institution: Chalmers Technical University
+      area: Engineering Physics
+      degree: MS
+      start_date: 2016-09
+      end_date: 2018-06
+      highlights:
+        - '**Coursework:** Statistical Physics, Neural Networks & Machine Learning'
+    - institution: Gothenburg University
+      area: Computer Science
+      degree: BS
+      start_date: 2013-09
+      end_date: 2016-06
+      highlights:
+        - '**Coursework:** Algorithms, Testing, Debugging & Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security'
+    publications:
+      - title: Data Modelling for Predicting Exploits
+        authors:
+          - '***Reinthal, A***'
+          - 'Filippakis, E.,'
+          - Almgren, M.
+        doi: 10.1007/978-3-030-03638-6_21
+        date: 2018-11
 design:
   theme: classic
   font: Source Sans 3
