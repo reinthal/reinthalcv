@@ -17,26 +17,19 @@ cv:
         start_date: 2022-02
         end_date: present
         highlights:
-          - Managed and did work in migrating legacy data pipelines to a modern data stack using Snowflake, Dagster and Dbt. This cut cloud-costs by 50%.
-          - Automated a consultant-to-job-ad matching process for managers using LLMs.
+          - Managed and did work in migrating legacy data pipelines to a modern data stack using Snowflake, 
+            Dagster and Dbt. This cut cloud-costs by 50%.
           - Helped parent company align data tooling to facilitate BI insights from subsidiaries.
-          - Lead agile R&D team to integrate car software telemetry data into software integration platform. Project discontinued due telemetry not yet implemented in software.
+          - Lead agile R&D team to integrate car software telemetry data into software integration platform. 
+            Project discontinued due telemetry not yet implemented in software.
       - company: NTT Security
         position: Security Analyst
         location: Gothenburg, Sweden
         start_date: 2019-04
         end_date: 2022-01
         highlights:
-          - Built out new internal tooling that was well received by other analysts.
-          - Educated other analysts in understanding how to analyze the alert flow.
-      - company: Jeppesen, A Boeing Company
-        position: Python Software Engineer
-        location: Gothenburg, Sweden
-        start_date: 2018-09
-        end_date: 2019-03
-        highlights:
-          - Helped other young talents to write better python code.
-          - Made a technical guide on how to integrate a SAML into a Jeppesen product
+            - Built out new internal tooling that was well received by other analysts.
+            - Educated other analysts in understanding how to analyze the alert flow.
       - company: Ericsson
         position: Python Software Engineer
         location: Gothenburg, Sweden
@@ -44,7 +37,6 @@ cv:
         end_date: 2018-10
         highlights:
           - Lead a team to implement a log parsing tool which resulted in Ericsson hiring a team of engineers to continue its development.
-
     projects:
       - name: Dagster
         date: '[github.com/dagster-io/dagster](https://github.com/dagster-io/dagster)'
@@ -57,18 +49,6 @@ cv:
         highlights:
           - Internal tool for automating analysis of malicious domains
           - 'Tools Used: python3 and python2, Sci-kit-learn, xgboost, asyncio, MongoDB, fastapi, rabbitmq, redis, docker, docker-compose'
-      - name: My Nix Configs
-        date: '[github.com/reinthal/nixos-config](https://github.com/reinthal/nixos-config)'
-        highlights:
-          - Reproducible builds of my workstations and some self-hosted services like Tor Exit nodes
-          - 'Tools Used: Linux, nix'
-      - name: Mtga Hack
-        date: '[github.com/reinthal/mtga-hack](https://github.com/reinthal/mtga-hack)'
-        highlights:
-          - This repo consists code and documentation that activates a built-in debugging GUI in an effort to reverse
-            engineer Magic the Gathering Arena (MTGA).
-          - MTGA is a notoriously expensive online card collecting and strategy game
-          - 'Tools Used: DNSpy, C#, monkey-patching, Harmony .NET Patching Framework, code-injection'
       - name: My Kubernetes Configs
         date: '[github.com/reinthal/my-kubernetes-infra](https://github.com/reinthal/my-kubernetes-infra)'
         highlights:
