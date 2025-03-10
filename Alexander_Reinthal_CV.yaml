@@ -12,8 +12,8 @@ cv:
   sections:
     alexander_reinthal:
       - '***Senior Data Engineer, Independent Contributor & Open-Source Advocate*** with expertise in real-time data ingestion,
-    data modeling, and orchestrating cloud-based data workloads. Strong background in Apache Flink, Databricks & Unity Catalog, Dagster, and Snowflake
-    (similar to AWS Glue, S3, and EMR-equivalent architectures). Proven open-source contributions to Dagster & DLT Hub.
+    data modeling, and orchestrating cloud-based data workloads. Strong background in ***Apache Flink, Databricks & Unity Catalog, and Snowflake
+  ,similar to AWS Glue, S3, and EMR-equivalent architectures***. Proven open-source contributions to Dagster & DLT Hub.
     Passionate about developer experience, mentoring engineers in distributed systems, and ML-driven analytics.'
     experience:
       - company: Knowit Solutions Cocreate
@@ -22,12 +22,12 @@ cv:
         start_date: 2022-02
         end_date: present
         highlights:
-          - Led an agile R&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline logs using Apache Flink (AWS Kinesis/Data Streams equivalent) & Spark Structured Streaming.
-          - Designed scalable data pipelines on Databricks & Snowflake, equivalent to AWS Glue & Athena, enabling advanced analytics workloads.
+          - Led an agile R&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline logs using ***Apache Flink (AWS Kinesis/Data Streams equivalent) & Spark Structured Streaming***.
+          - Designed scalable data pipelines on ***Databricks & Snowflake, equivalent to AWS Glue & Athena***, enabling advanced analytics workloads.
           - Served as the technical lead, engaging with a client to design and implement a modern data platform leveraging Snowflake, Dagster, and dbt.
           - Owned the development of an asset-centric data modeling approach for Databricks & Delta Live Tables, enhancing streaming data reliability and developer experience.
           - Mentored junior engineers in Python, SQL, DAG-based orchestration, and modern data engineering best practices. Led workshops on aligning technical solutions with business objectives.
-          - Collaborated with stakeholders to refine data governance, enforce upstream data contracts, and improve real-time data visibility.
+          - Collaborated with stakeholders to refine data governance, mediate upstream data contracts, and improve data visibility using effective metadata management.
 
       - company: NTT Security
         position: Security Analyst
@@ -53,13 +53,13 @@ cv:
       - name: HowIgotPwned
         date: '[GitHub](https://github.com/reinthal/howigotpwned)'
         highlights:
-          - Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie, MinIO (AWS S3 equivalent), and Dagster to analyze high-volume data.  
+          - Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie (similar to AWS Glue), MinIO (AWS S3 equivalent), and Dagster to analyze high-volume data.  
           - Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on AWS S3, demonstrating cloud-scale flexibility.  
 
       - name: Datalake Stack (On-Prem Equivalent of AWS Data Architecture)
         date: '[GitHub](https://github.com/reinthal/datalake-stack)'
         highlights:
-          - Designed and implemented an on-premise data lake solution for Kubernetes using Nessie (Glue equivalent), Apache Iceberg, MinIO (AWS S3 equivalent), Apache Flink and Spark.  
+          - Designed and implemented an on-premise data lake solution for Kubernetes using Nessie (similar to AWS Glue), Apache Iceberg, MinIO (AWS S3 equivalent), Apache Flink and Spark.  
           - Integrated modern orchestration frameworks (FluxCD and Traefik) to manage multi-tenant data workloads efficiently.  
 
       - name: Open Source Contributions
@@ -73,14 +73,16 @@ cv:
         details: Data Modeling, Data Warehousing, Data Lakehouse Solutions
       - label: Semantic Layers
         details: dbt Cloud, Cube.dev
+      - label: Data Catalogs
+        details: '***Polaris, Snowflake, Unity & Nessie (Similar to Amazon Glue)***'
       - label: Big Data & Streaming
-        details: Apache Flink, Apache Spark (AWS EMR equivalent), RabbitMQ, Kafka
-      - label: Data Engineering Tools
-        details: Apache Flink, Apache Spark, Databricks & Delta Live Tables, Snowflake, dbt, Dagster, Airflow
+        details: '***Apache Flink, Apache Spark (AWS EMR equivalent)***, RabbitMQ'
+      - label: Data Engineering Tools & Platforms
+        details: '***Databricks & Delta Live Tables, Snowflake (similar to Amazon Athena)***, dbt, Dagster'
       - label: Languages
         details: Python, SQL, Java, Terraform, Nix, Rust, C++, Assembly, R
       - label: Cloud & Platforms
-        details: AWS (S3, Glue, ECS, EMR, Athena), MinIO (AWS S3 equivalent), Azure, Kubernetes, Proxmox
+        details: MinIO & Azure Blob Storage (AWS S3 equivalent), Azure, Kubernetes, Proxmox
       - label: Infrastructure & DevOps
         details: Docker, Podman, FluxCD, Git, CI/CD pipelines, Terraform, Helm
       - label: Business Intelligence Tools  
