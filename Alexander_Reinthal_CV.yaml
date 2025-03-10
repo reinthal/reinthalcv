@@ -17,10 +17,12 @@ cv:
         start_date: 2022-02
         end_date: present
         highlights:
-          - Lead agile R&D team to ingest large volumes of CI-pipeline data using Spark structured streaming and Apache Flink.
-          - Helped parent company with greenfield deploying Databricks & Delta Live Tables for streaming tables using asset centric code structure.
-          - Managed and did work in migrating legacy data pipelines to a modern data stack using Snowflake, 
-            Dagster and Dbt. This cut cloud-costs by 50%.
+          - Led an agile R&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline logs using \textbf{Apache Flink (AWS Kinesis/Data Streams equivalent)} & Spark Structured Streaming.
+          - Designed scalable data pipelines on Databricks & Snowflake, equivalent to AWS Glue & Athena.
+          - Served as the technical lead engaging with a client in Designed and implementing a modern data platform leveraging Snowflake, Dagster, and dbt, reducing cloud costs by 50%.
+          - Owned the development of an asset-centric data modeling approach for Databricks & Delta Live Tables, improving streaming data reliability & developer experience.
+          - Mentored junior engineers, fostering skill development in Python, SQL, effective coding and business mindset.
+          - Collaborated with stakeholders to refine data requirements and upstream data contracts.
       - company: NTT Security
         position: Security Analyst
         location: Gothenburg, Sweden
@@ -40,8 +42,8 @@ cv:
       - name: HowIgotPwned
         date: '[github.com/reinthal/howigotpwned](https://github.com/reinthal/howigotpwned)'
         highlights:
-          - 'Hack data in a modern data lakehouse stack'
-          - 'Apache Iceberg, Flink & Spark, Nessie, Dagster'
+          - 'Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie and Minio (AWS S3), and Dagster to analyze large-scale data efficiently'
+          - 'Prototyped high-volume data ingestion with real-time processing from network interfaces using Apache Flink and AWS S3 Backed Iceberg tables.'
       - name: Dagster
         date: '[github.com/dagster-io/dagster](https://github.com/dagster-io/dagster)'
         highlights:
@@ -55,16 +57,24 @@ cv:
           - FluxCD configurations for a modern data stack using langfuse for LLM telemetry, 
             Elastic Search, OpenWebUI for a chatbot, Rancher and Traefik for ingress.
           -  'Tools Used: Fluxcd, Kubectl, k9s'
-      - name: Looker Plus Plus
-        date: '[github.com/reinthal/lpp](https://github.com/reinthal/lpp)'
+      - name: Open Source Contributions
+        date: '[github.com/reinthal](https://github.com/reinthal)'
         highlights:
-          - Internal tool for automating analysis of malicious domains
-          - 'Tools Used: python3 and python2, Sci-kit-learn, xgboost, asyncio, MongoDB, fastapi, rabbitmq, redis, docker, docker-compose'
+          - '[github.com/dagster-io/dagster](https://github.com/dagster-io/dagster/pull/24188): Engaged with and contributed to Dagster open-source project , focusing on workflow orchestration, scheduling, and monitoring of data pipelines'
+          - '[github.com/dlthub/verified-sources](https://github.com/dlt-hub/verified-sources/pull/594): Engaged with and encouraged junior developer to upstream changes to dlthub, a light-weight python data ingestion tool.'
     technologies:
+      - label: Data Architectures
+        details: Data Modeling, Data Warehousing, Data Lakehouse Solutions
+      - label: Big Data & Streaming
+        details: Apache Flink, Apache Spark Structured Streaming (EMR equivalent), rabbit-mq
+      - label: Data Engineering Tools
+        details: Apache Flink, Apache Spark, Databricks & Delta Live Tables, Snowflake, DBT, Dagster, Airflow
       - label: Languages
-        details: python, sql, c#, java, terraform, nix, rust, c++, assembly, R
-      - label: Technologies
-        details: Flink, Spark, Dagster, Snowflake & Databricks, DBT, Kubernetes, podman, docker, , ETL, Azure, AWS, Proxmox, git 
+        details: python, sql, java, terraform, nix, rust, c++, assembly, R
+      - label: Cloud & Platforms
+        details: TODO FIX AWS (S3, ECS, Glue, EMR) , Azure, Kubernetes, Proxmox 
+      - label: Infrastructure & DevOps
+        details: Docker, Podman, FluxCD, Git, CI/CD pipelines
     education:
     - institution: Chalmers Technical University
       area: Engineering Physics
