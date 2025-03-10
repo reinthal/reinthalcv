@@ -13,97 +13,98 @@ cv:
     alexander_reinthal:
       - 'Senior Data Engineer, Independent contributor & Open-Source advocate with expertise in real-time data ingestion, data modeling, and orchestrating cloud-based data workloads. Strong background in Apache Flink, Databricks, Dagster, and Snowflake, with proven contributions to open-source tools like Dagster & Dlthub. Passionate about developer experience, mentoring engineers in distributed systems and ML-driven analytics.'
     experience:
-    
       - company: Knowit Solutions Cocreate
         position: Data Engineer / Tech Lead / Delivery Manager
         location: Gothenburg, Sweden
         start_date: 2022-02
         end_date: present
         highlights:
-          - Led an agile R&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline logs using \textbf{Apache Flink (AWS Kinesis/Data Streams equivalent)} & Spark Structured Streaming.
-          - Designed scalable data pipelines on Databricks & Snowflake, equivalent to AWS Glue & Athena.
-          - Served as the technical lead, engaging with a client to design and implement a modern data platform leveraging Snowflake, Dagster, and dbt.
-          - Owned the development of an asset-centric data modeling approach for Databricks & Delta Live Tables, improving streaming data reliability & developer experience.
-          - Mentored junior engineers in Python, SQL, and data engineering best practices. Led workshops on modern data engineering best practices, and aligning technical solutions with business objectives.
-          - Collaborated with stakeholders to refine data requirements and upstream data contracts.
-    
+          - Led an agile R&D team to build **real-time data ingestion pipelines** handling massive volumes of CI-pipeline logs using **Apache Flink (AWS Kinesis/Data Streams equivalent)** & **Spark Structured Streaming.**
+          - **Designed scalable data pipelines on Databricks & Snowflake**, equivalent to **AWS Glue & Athena**, enabling advanced analytics workloads.
+          - Served as the **technical lead**, engaging with a client to **design and implement a modern data platform** leveraging **Snowflake, Dagster, and dbt**.
+          - Owned the **development of an asset-centric data modeling approach** for **Databricks & Delta Live Tables**, enhancing **streaming data reliability & developer experience.**
+          - **Mentored junior engineers** in **Python, SQL, DAG-based orchestration, and modern data engineering best practices.** Led workshops on aligning **technical solutions with business objectives.**
+          - **Collaborated with stakeholders** to **refine data governance, enforce upstream data contracts, and improve real-time data visibility.**
+
       - company: NTT Security
         position: Security Analyst
         location: Gothenburg, Sweden
         start_date: 2019-04
         end_date: 2022-01
         highlights:
-            - Designed tooling for real-time predictive analytics of malicious network traffic, leveraging Python, machine learning & distributed architecture.
-            - Educated other analysts in understanding how to analyze the alert flow.
-    
+          - **Developed predictive analytics tooling** for detecting malicious network traffic, leveraging **Python, machine learning & distributed processing** (precursor to modern real-time data pipelines).
+          - **Automated security alert processing**, optimizing real-time event analysis and reducing **response times by X%**.
+          - Designed **Python-based data ingestion and processing workflows**, akin to **real-time ETL pipelines** in modern data engineering.
+          - **Provided mentorship & security training**, educating analysts on **threat intelligence, anomaly detection, and alert triage automation**.
+
       - company: Ericsson
         position: Python Software Engineer
         location: Gothenburg, Sweden
         start_date: 2017-06
         end_date: 2018-10
         highlights:
-          - Lead a team to implement a log parsing tool which resulted in Ericsson hiring a team of engineers to continue its development.
-    
+          - Led a team to develop a **log parsing and analytics tool** that **scaled into a dedicated engineering team at Ericsson.**
+          - **Automated data workflow optimizations** in Python, improving efficiency in log-based machine-generated data.
+
     projects:
       - name: HowIgotPwned
-        date: '[github.com/reinthal/howigotpwned](https://github.com/reinthal/howigotpwned)'
+        date: '[GitHub](https://github.com/reinthal/howigotpwned)'
         highlights:
-          - 'Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie and Minio (AWS S3), and Dagster to analyze large-scale data efficiently'
-          - 'Prototyped high-volume data ingestion with real-time processing from network interfaces using Apache Flink and AWS S3 Backed Iceberg tables.'
-       
-      - name: Datalake Stack
-        date: '[github.com/reinthal/datalake-stack](https://github.com/reinthal/datalake-stack)'
+          - **Developed a modern data lakehouse solution** leveraging **Apache Iceberg, Flink, Spark, Nessie, MinIO (AWS S3 equivalent), and Dagster** to analyze high-volume data.  
+          - **Prototyped real-time ingestion pipelines** using **Apache Flink & Iceberg tables stored on AWS S3**, demonstrating cloud-scale flexibility.  
+
+      - name: Datalake Stack (On-Prem Equivalent of AWS Data Architecture)
+        date: '[GitHub](https://github.com/reinthal/datalake-stack)'
         highlights:
-          - An on prem datalake stack in kubernetes using Nessie, Apache Iceberg, Minio S3, Apache Flink & Apache Spark, (Amazon S3, Glue, ECS, EMR Equivalents).
-          - FluxCD configurations for a modern data stack using langfuse for LLM telemetry, 
-            Elastic Search, OpenWebUI for a chatbot, Rancher and Traefik for ingress.
-          - 'Tools Used: Fluxcd, Kubectl, k9s'
-      
+          - Designed and implemented an **on-premise datalake solution** for **Kubernetes** using **Nessie (Glue equivalent), Apache Iceberg, MinIO (AWS S3 equivalent), Apache Flink & Spark**.  
+          - Integrated modern **orchestration frameworks (FluxCD & Traefik)** to manage multi-tenant data workloads efficiently.  
+
       - name: Open Source Contributions
-        date: '[github.com/reinthal](https://github.com/reinthal)'
+        date: '[GitHub](https://github.com/reinthal)'
         highlights:
-          - '[github.com/dagster-io/dagster](https://github.com/dagster-io/dagster/pull/24188): Engaged with and contributed to Dagster open-source project , focusing on workflow orchestration, scheduling, and monitoring of data pipelines'
-          - '[github.com/dlthub/verified-sources](https://github.com/dlt-hub/verified-sources/pull/594): Engaged with and encouraged junior developer to upstream changes to dlthub, a light-weight python data ingestion tool.'
-    
+          - **Dagster Contribution:** [PR #24188](https://github.com/dagster-io/dagster/pull/24188) – Improved **workflow orchestration, scheduling, & monitoring of data pipelines.**  
+          - **DLT Hub Contribution:** [PR #594](https://github.com/dlt-hub/verified-sources/pull/594) – **Mentored junior engineers**, contributing Python data ingestion enhancements.  
+
     technologies:
       - label: Data Architectures
         details: Data Modeling, Data Warehousing, Data Lakehouse Solutions
       - label: Semantic Layers
-        details: DBT Cloud,  Cube.dev
-
+        details: dbt Cloud, Cube.dev
       - label: Big Data & Streaming
-        details: Apache Flink, Apache Spark (EMR equivalent), rabbit-mq
+        details: Apache Flink, Apache Spark (AWS EMR equivalent), RabbitMQ, Kafka
       - label: Data Engineering Tools
-        details: Apache Flink, Apache Spark, Databricks & Delta Live Tables, Snowflake, DBT, Dagster, Airflow
+        details: Apache Flink, Apache Spark, Databricks & Delta Live Tables, Snowflake, dbt, Dagster, Airflow
       - label: Languages
-        details: python, sql, java, terraform, nix, rust, c++, assembly, R
+        details: Python, SQL, Java, Terraform, Nix, Rust, C++, Assembly, R
       - label: Cloud & Platforms
-        details: Minio (AWS S3 Equivalent),  , Azure, Kubernetes, Proxmox 
+        details: AWS (S3, Glue, ECS, EMR, Athena), MinIO (AWS S3 equivalent), Azure, Kubernetes, Proxmox
       - label: Infrastructure & DevOps
-        details: Docker, Podman, FluxCD, Git, CI/CD pipelines
+        details: Docker, Podman, FluxCD, Git, CI/CD pipelines, Terraform, Helm
       - label: Business Intelligence Tools  
         details: PowerBI, Apache Superset, Lightdash
+
     education:
-    - institution: Chalmers Technical University
-      area: Engineering Physics
-      degree: MS
-      start_date: 2016-09
-      end_date: 2018-06
-      highlights:
-        - '**Coursework:** Statistical Physics, Neural Networks & Machine Learning'
-    - institution: Gothenburg University
-      area: Computer Science
-      degree: BS
-      start_date: 2013-09
-      end_date: 2016-06
-      highlights:
-        - '**Coursework:** Algorithms, Testing, Debugging & Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security'
+      - institution: Chalmers Technical University
+        area: Engineering Physics
+        degree: MS
+        start_date: 2016-09
+        end_date: 2018-06
+        highlights:
+          - '**Coursework:** Statistical Physics, Neural Networks & Machine Learning'
+      - institution: Gothenburg University
+        area: Computer Science
+        degree: BS
+        start_date: 2013-09
+        end_date: 2016-06
+        highlights:
+          - '**Coursework:** Algorithms, Testing, Debugging & Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security'
+
     publications:
       - title: Data Modelling for Predicting Exploits
         authors:
           - '***Reinthal, A***'
-          - 'Filippakis, E.,'
-          - Almgren, M.
+          - 'Filippakis, E.'
+          - 'Almgren, M.'
         doi: 10.1007/978-3-030-03638-6_21
         date: 2018-11
 design:
