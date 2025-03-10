@@ -10,7 +10,10 @@ cv:
     - network: GitHub
       username: reinthal
   sections:
+    alexander_reinthal:
+      - 'Senior Data Engineer, Independent contributor & Open-Source advocate with expertise in real-time data ingestion, data modeling, and orchestrating cloud-based data workloads. Strong background in Apache Flink, Databricks, Dagster, and Snowflake, with proven contributions to open-source tools like Dagster & Dlthub. Passionate about developer experience, mentoring engineers in distributed systems and ML-driven analytics.'
     experience:
+    
       - company: Knowit Solutions Cocreate
         position: Data Engineer / Tech Lead / Delivery Manager
         location: Gothenburg, Sweden
@@ -19,18 +22,20 @@ cv:
         highlights:
           - Led an agile R&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline logs using \textbf{Apache Flink (AWS Kinesis/Data Streams equivalent)} & Spark Structured Streaming.
           - Designed scalable data pipelines on Databricks & Snowflake, equivalent to AWS Glue & Athena.
-          - Served as the technical lead engaging with a client in Designed and implementing a modern data platform leveraging Snowflake, Dagster, and dbt, reducing cloud costs by 50%.
+          - Served as the technical lead, engaging with a client to design and implement a modern data platform leveraging Snowflake, Dagster, and dbt.
           - Owned the development of an asset-centric data modeling approach for Databricks & Delta Live Tables, improving streaming data reliability & developer experience.
-          - Mentored junior engineers, fostering skill development in Python, SQL, effective coding and business mindset.
+          - Mentored junior engineers in Python, SQL, and data engineering best practices. Led workshops on modern data engineering best practices, and aligning technical solutions with business objectives.
           - Collaborated with stakeholders to refine data requirements and upstream data contracts.
+    
       - company: NTT Security
         position: Security Analyst
         location: Gothenburg, Sweden
         start_date: 2019-04
         end_date: 2022-01
         highlights:
-            - Built my own system tooling for real time predictive analytics to help analysts find malicious network traffic.
+            - Designed tooling for real-time predictive analytics of malicious network traffic, leveraging Python, machine learning & distributed architecture.
             - Educated other analysts in understanding how to analyze the alert flow.
+    
       - company: Ericsson
         position: Python Software Engineer
         location: Gothenburg, Sweden
@@ -38,33 +43,34 @@ cv:
         end_date: 2018-10
         highlights:
           - Lead a team to implement a log parsing tool which resulted in Ericsson hiring a team of engineers to continue its development.
+    
     projects:
       - name: HowIgotPwned
         date: '[github.com/reinthal/howigotpwned](https://github.com/reinthal/howigotpwned)'
         highlights:
           - 'Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie and Minio (AWS S3), and Dagster to analyze large-scale data efficiently'
           - 'Prototyped high-volume data ingestion with real-time processing from network interfaces using Apache Flink and AWS S3 Backed Iceberg tables.'
-      - name: Dagster
-        date: '[github.com/dagster-io/dagster](https://github.com/dagster-io/dagster)'
+       
+      - name: Datalake Stack
+        date: '[github.com/reinthal/datalake-stack](https://github.com/reinthal/datalake-stack)'
         highlights:
-          - Have contributed to the above open source project.
-          - Dagster is a data orchestration tool that manages workflows by organizing, scheduling, and monitoring data pipelines.
-          - 'Tools used: Pytest, python3.10, buildkite'
-       - name: My Kubernetes Infra
-        date: '[github.com/reinthal/my-kubernetes-infra](https://github.com/reinthal/my-kubernetes-infra)'
-        highlights:
-          - Kubernetes Manifests to test deploying using FluxCD before deploying at customers.
+          - An on prem datalake stack in kubernetes using Nessie, Apache Iceberg, Minio S3, Apache Flink & Apache Spark, (Amazon S3, Glue, ECS, EMR Equivalents).
           - FluxCD configurations for a modern data stack using langfuse for LLM telemetry, 
             Elastic Search, OpenWebUI for a chatbot, Rancher and Traefik for ingress.
-          -  'Tools Used: Fluxcd, Kubectl, k9s'
+          - 'Tools Used: Fluxcd, Kubectl, k9s'
+      
       - name: Open Source Contributions
         date: '[github.com/reinthal](https://github.com/reinthal)'
         highlights:
           - '[github.com/dagster-io/dagster](https://github.com/dagster-io/dagster/pull/24188): Engaged with and contributed to Dagster open-source project , focusing on workflow orchestration, scheduling, and monitoring of data pipelines'
           - '[github.com/dlthub/verified-sources](https://github.com/dlt-hub/verified-sources/pull/594): Engaged with and encouraged junior developer to upstream changes to dlthub, a light-weight python data ingestion tool.'
+    
     technologies:
       - label: Data Architectures
         details: Data Modeling, Data Warehousing, Data Lakehouse Solutions
+      - label: Semantic Layers
+        details: DBT Cloud,  Cube.dev
+
       - label: Big Data & Streaming
         details: Apache Flink, Apache Spark Structured Streaming (EMR equivalent), rabbit-mq
       - label: Data Engineering Tools
@@ -72,9 +78,11 @@ cv:
       - label: Languages
         details: python, sql, java, terraform, nix, rust, c++, assembly, R
       - label: Cloud & Platforms
-        details: TODO FIX AWS (S3, ECS, Glue, EMR) , Azure, Kubernetes, Proxmox 
+        details: Minio (AWS S3 Equivalent),  , Azure, Kubernetes, Proxmox 
       - label: Infrastructure & DevOps
         details: Docker, Podman, FluxCD, Git, CI/CD pipelines
+      - label: Business Intelligence Tools  
+        details: PowerBI, Apache Superset, Lightdash
     education:
     - institution: Chalmers Technical University
       area: Engineering Physics
