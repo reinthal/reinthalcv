@@ -72,7 +72,7 @@ cv:
         details: DBT Cloud,  Cube.dev
 
       - label: Big Data & Streaming
-        details: Apache Flink, Apache Spark Structured Streaming (EMR equivalent), rabbit-mq
+        details: Apache Flink, Apache Spark (EMR equivalent), rabbit-mq
       - label: Data Engineering Tools
         details: Apache Flink, Apache Spark, Databricks & Delta Live Tables, Snowflake, DBT, Dagster, Airflow
       - label: Languages
