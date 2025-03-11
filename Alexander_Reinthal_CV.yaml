@@ -22,7 +22,8 @@ cv:
         start_date: 2022-02
         end_date: present
         highlights:
-          - Led an agile R&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline logs using ***Apache Flink (AWS Kinesis/Data Streams equivalent) & Spark Structured Streaming***.
+          - 'Led an agile R&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline logs using ***Apache Flink (AWS Kinesis/Data Streams equivalent) & Spark Structured Streaming***.'
+
           - Designed scalable data pipelines on ***Databricks & Snowflake, equivalent to AWS Glue & Athena***, enabling advanced analytics workloads.
           - Served as the technical lead, engaging with a client to design and implement a modern data platform leveraging Snowflake, Dagster, and dbt.
           - Owned the development of an asset-centric data modeling approach for Databricks & Delta Live Tables, enhancing streaming data reliability and developer experience.
