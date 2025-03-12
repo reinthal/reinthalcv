@@ -10,7 +10,7 @@
 
 # Alexander Reinthal
 
-***Senior Data Engineer, Independent Contributor & Open-Source Advocate*** with expertise in real-time data ingestion, data modeling, and orchestrating cloud-based data workloads. Strong background in ***Apache Spark, Flink & Iceberg, Databricks & Unity Catalog, and Snowflake ,similar to AWS Glue, S3, Redshift and EMR-equivalent architectures***. Proven open-source contributions to Dagster & DLT Hub. Passionate about developer experience, mentoring engineers in distributed systems, and ML-driven analytics.
+***Senior Data Engineer, Independent Contributor & Open-Source Advocate*** with expertise in real-time data ingestion, data modeling, and orchestrating cloud-based data workloads. Strong background in ***Apache Spark, Flink & Iceberg, Databricks & Unity Catalog, and Snowflake ,similar to AWS Glue, S3, Redshift and EMR from the amazon product offering***. Proven open-source contributions to Dagster & DLT Hub. Passionate about developer experience, mentoring engineers in distributed systems, and ML-driven analytics.
 
 # Experience
 
@@ -18,9 +18,9 @@
 
 - Feb 2022 – present
 - Gothenburg, Sweden
-- Worked remotely leading development of an asset-centric data modeling approach for Databricks & Delta Live Tables, enhancing streaming data reliability and developer experience.
-- Led an agile R&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline logs using ***Apache Flink (AWS Kinesis/Data Streams equivalent) & Spark Structured Streaming***.
-- Designed scalable data pipelines on ***Databricks & Snowflake, similar to AWS EMR & Amazon Redshift***, enabling advanced analytics workloads.
+- Worked remotely leading development of an asset-centric data modeling approach for Databricks & Delta Live Tables, enhancing data reliability and developer experience.
+- Led an agile R&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline events using ***Apache Flink (similar to AWS Kinesis) & Spark Structured Streaming***.
+- Designed scalable data pipelines on ***Databricks & Snowflake, similar to AWS EMR & AWSAWS  Redshift***, enabling advanced analytics workloads.
 - Served as the technical lead, engaging with a client to design and implement a modern data platform leveraging Snowflake, Dagster, and dbt.
 - Mentored junior engineers in Python, SQL, DAG-based orchestration, and modern data engineering best practices. Led workshops on aligning technical solutions with business objectives.
 - Collaborated with stakeholders to refine data governance, mediate upstream data contracts, and improve data visibility using effective metadata management.
@@ -65,13 +65,13 @@
 
 - Data Architectures: Data Modeling, Data Warehousing, Data Lakehouse Solutions
 - Semantic Layers: dbt Cloud, Cube.dev
-- Data Catalogs: ***Polaris, Snowflake, Unity & Nessie (Similar to Amazon Glue)***
-- Big Data & Streaming: ***Apache Flink, Apache Spark (AWS EMR equivalent)***, RabbitMQ
-- Data Engineering Tools & Platforms: ***Databricks & Delta Live Tables, Snowflake (similar to Amazon Athena)***, dbt, Dagster
+- Data Catalogs: Polaris, Snowflake, Unity & Nessie ***(Similar to AWS Glue)***
+- Big Data & Streaming: Apache Flink, Apache Spark, RabbitMQ
+- Data Engineering Tools & Platforms: ***Databricks & Delta Live Tables, Snowflake (similar to AWS EMR & Redshift)***, dbt, dlthub, Dagster
 - Languages: Python, SQL, Java, Terraform, Nix, Rust, C++, Assembly, R
 - Cloud & Platforms: AWS, MinIO & Azure Blob Storage (AWS S3 equivalent), Azure, Kubernetes, Proxmox
 - Infrastructure & DevOps: Docker, Podman, FluxCD, Git, CI/CD pipelines, Terraform, Helm
-- Business Intelligence Tools: PowerBI, Apache Superset, Lightdash
+- Business Intelligence Tools: PowerBI, Apache Superset, Lightdash, Streamlit
 # Education
 
 ## Chalmers Technical University, MS in Engineering Physics
