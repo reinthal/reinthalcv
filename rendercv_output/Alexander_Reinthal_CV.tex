@@ -1,0 +1,433 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=2 cm, % seperation between body and page edge from the top
+    bottom=2 cm, % seperation between body and page edge from the bottom
+    left=2 cm, % seperation between body and page edge from the left
+    right=2 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage[explicit]{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Alexander Reinthal's CV},
+    pdfauthor={Alexander Reinthal},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage[default, type1]{sourcesanspro} 
+
+% Some settings:
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\makeatletter
+\let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
+\patchcmd{\ps@customFooterStyle}{\thepage}{
+    \color{gray}\textit{\small Alexander Reinthal - Page \thepage{} of \pageref*{LastPage}}
+}{}{} % replace number by desired string
+\makeatother
+\pagestyle{customFooterStyle}
+
+\titleformat{\section}{
+    % avoid page braking right after the section title
+    \needspace{4\baselineskip}
+    % make the font size of the section title large and color it with the primary color
+    \Large\color{primaryColor}
+}{
+}{
+}{
+    % print bold title, give 0.15 cm space and draw a line of 0.8 pt thickness
+    % from the end of the title to the end of the body
+    \textbf{#1}\hspace{0.15cm}\titlerule[0.8pt]\hspace{-0.1cm}
+}[] % section title formatting
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+% \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0.4 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0.2 cm + 0.00001 cm
+    }{
+        0.2 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{1 cm, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\color{primaryColor}\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in March 2025}\hspace{\widthof{Last updated in March 2025}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{}
+
+    \placelastupdatedtext
+    \begin{header}
+        \fontsize{30 pt}{30 pt}
+        \textbf{Alexander Reinthal}
+
+        \vspace{0.3 cm}
+
+        \normalsize
+        \mbox{{\footnotesize\faMapMarker*}\hspace*{0.13cm}Gothenburg, Sweden}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{mailto:email@reinthal.me}{{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}email@reinthal.me}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{tel:+46-73-036-28-78}{{\footnotesize\faPhone*}\hspace*{0.13cm}073-036 28 78}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://reinthal.me/}{{\footnotesize\faLink}\hspace*{0.13cm}reinthal.me}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/alexander-reinthal}{{\footnotesize\faLinkedinIn}\hspace*{0.13cm}alexander-reinthal}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{https://github.com/reinthal}{{\footnotesize\faGithub}\hspace*{0.13cm}reinthal}}%
+    \end{header}
+
+    \vspace{0.3 cm - 0.3 cm}
+
+
+    \section{Alexander Reinthal}
+
+
+
+        
+        \begin{onecolentry}
+            \textbf{\textit{Senior Data Engineer, Independent Contributor \& Open-Source Advocate}} with expertise in real-time data ingestion, data modeling, and orchestrating cloud-based data workloads. Strong background in \textbf{\textit{Apache Spark, Flink \& Iceberg, Databricks \& Unity Catalog, and Snowflake ,similar to AWS Glue, S3, Redshift and EMR-equivalent architectures}}. Proven open-source contributions to Dagster \& DLT Hub. Passionate about developer experience, mentoring engineers in distributed systems, and ML-driven analytics.
+        \end{onecolentry}
+
+
+    
+    \section{Experience}
+
+
+
+        
+        \begin{twocolentry}{
+            Gothenburg, Sweden
+
+        Feb 2022 – present
+        }
+            \textbf{Knowit Solutions Cocreate}, Data Engineer / Tech Lead / Delivery Manager
+            \begin{highlights}
+                \item Worked remotely leading development of an asset-centric data modeling approach for Databricks \& Delta Live Tables, enhancing streaming data reliability and developer experience.
+                \item Led an agile R\&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline logs using \textbf{\textit{Apache Flink (AWS Kinesis/Data Streams equivalent) \& Spark Structured Streaming}}.
+                \item Designed scalable data pipelines on \textbf{\textit{Databricks \& Snowflake, similar to AWS EMR \& Amazon Redshift}}, enabling advanced analytics workloads.
+                \item Served as the technical lead, engaging with a client to design and implement a modern data platform leveraging Snowflake, Dagster, and dbt.
+                \item Mentored junior engineers in Python, SQL, DAG-based orchestration, and modern data engineering best practices. Led workshops on aligning technical solutions with business objectives.
+                \item Collaborated with stakeholders to refine data governance, mediate upstream data contracts, and improve data visibility using effective metadata management.
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Gothenburg, Sweden
+
+        Apr 2019 – Jan 2022
+        }
+            \textbf{NTT Security}, Security Analyst
+            \begin{highlights}
+                \item Developed predictive analytics tooling for detecting malicious network traffic, leveraging Python, machine learning, and distributed processing (precursor to modern real-time data pipelines).
+                \item Automated security alert processing, optimizing real-time event analysis and reducing response times.
+                \item Designed Python-based data ingestion and processing workflows, akin to real-time ETL pipelines in modern data engineering.
+                \item Provided mentorship and security training, educating analysts on threat intelligence, anomaly detection, and alert triage automation.
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            Gothenburg, Sweden
+
+        June 2017 – Oct 2018
+        }
+            \textbf{Ericsson}, Python Software Engineer
+            \begin{highlights}
+                \item Led a team to develop a log parsing and analytics tool that scaled into a dedicated engineering team at Ericsson.
+                \item Automated data workflow optimizations in Python, improving efficiency in log-based machine-generated data.
+            \end{highlights}
+        \end{twocolentry}
+
+
+
+    
+    \section{Projects}
+
+
+
+        
+        \begin{twocolentry}{
+            \href{https://github.com/reinthal/howigotpwned}{GitHub}
+        }
+            \textbf{HowIgotPwned}
+            \begin{highlights}
+                \item Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie \textbf{\textit{(similar to AWS Glue), MinIO (AWS S3 equivalent)}}, and Dagster to analyze high-volume data.
+                \item Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on Minio, Similar to AWS S3.
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            \href{https://github.com/reinthal/datalake-stack}{GitHub}
+        }
+            \textbf{Datalake Stack (On-Prem Equivalent of AWS Data Architecture)}
+            \begin{highlights}
+                \item Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark. \textbf{\textit{Similar to AWS Glue, AWS S3 Tables and AWS S3}}.
+                \item Inspired work to scale our open source data platform to multiple customers.
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            \href{https://github.com/reinthal}{GitHub}
+        }
+            \textbf{Open Source Contributions}
+            \begin{highlights}
+                \item Dagster Contribution: \href{https://github.com/dagster-io/dagster/pull/24188}{PR \#24188} – Improved workflow orchestration, scheduling, and monitoring of data pipelines. 
+                \item DLT Hub Contribution: \href{https://github.com/dlt-hub/verified-sources/pull/594}{PR \#594} – Mentored junior engineers, contributing Python data ingestion enhancements.  
+            \end{highlights}
+        \end{twocolentry}
+
+
+
+    
+    \section{Technologies}
+
+
+
+        
+        \begin{onecolentry}
+            \textbf{Data Architectures:} Data Modeling, Data Warehousing, Data Lakehouse Solutions
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Semantic Layers:} dbt Cloud, Cube.dev
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Data Catalogs:} \textbf{\textit{Polaris, Snowflake, Unity \& Nessie (Similar to Amazon Glue)}}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Big Data \& Streaming:} \textbf{\textit{Apache Flink, Apache Spark (AWS EMR equivalent)}}, RabbitMQ
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Data Engineering Tools \& Platforms:} \textbf{\textit{Databricks \& Delta Live Tables, Snowflake (similar to Amazon Athena)}}, dbt, Dagster
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Languages:} Python, SQL, Java, Terraform, Nix, Rust, C++, Assembly, R
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Cloud \& Platforms:} AWS, MinIO \& Azure Blob Storage (AWS S3 equivalent), Azure, Kubernetes, Proxmox
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Infrastructure \& DevOps:} Docker, Podman, FluxCD, Git, CI/CD pipelines, Terraform, Helm
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Business Intelligence Tools:} PowerBI, Apache Superset, Lightdash
+        \end{onecolentry}
+
+
+    
+    \section{Education}
+
+
+
+        
+        \begin{threecolentry}{\textbf{MS}}{
+            Sept 2016 – June 2018
+        }
+            \textbf{Chalmers Technical University}, Engineering Physics
+            \begin{highlights}
+                \item Coursework: Statistical Physics, Neural Networks and Machine Learning
+            \end{highlights}
+        \end{threecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{threecolentry}{\textbf{BS}}{
+            Sept 2013 – June 2016
+        }
+            \textbf{Gothenburg University}, Computer Science
+            \begin{highlights}
+                \item Coursework: Algorithms, Testing, Debugging and Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security
+            \end{highlights}
+        \end{threecolentry}
+
+
+    
+    \section{Publications}
+
+
+
+        
+        \begin{samepage}
+            \begin{twocolentry}{
+                Nov 2018
+            }
+                \textbf{Data Modelling for Predicting Exploits}
+
+                \vspace{0.10 cm}
+
+                \mbox{Reinthal, A}, \mbox{Filippakis, E.}, \mbox{Almgren, M.}
+                \vspace{0.10 cm}
+
+        \href{https://doi.org/10.1007/978-3-030-03638-6_21}{$10.1007/978-3-030-03638-6_21$}
+            \end{twocolentry}
+        \end{samepage}
+
+
+    
+
+\end{document}

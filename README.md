@@ -1,12 +1,16 @@
 # Alexander Reinthal's CV
 
 - Phone: +46 73 036 28 78
-- Email: email at reinthal dot me
+- Email: [email@reinthal.me](mailto:email@reinthal.me)
 - Location: Gothenburg, Sweden
 - Website: [reinthal.me](https://reinthal.me/)
 - LinkedIn: [alexander-reinthal](https://linkedin.com/in/alexander-reinthal)
 - GitHub: [reinthal](https://github.com/reinthal)
 
+
+# Alexander Reinthal
+
+***Senior Data Engineer, Independent Contributor & Open-Source Advocate*** with expertise in real-time data ingestion, data modeling, and orchestrating cloud-based data workloads. Strong background in ***Apache Spark, Flink & Iceberg, Databricks & Unity Catalog, and Snowflake ,similar to AWS Glue, S3, Redshift and EMR-equivalent architectures***. Proven open-source contributions to Dagster & DLT Hub. Passionate about developer experience, mentoring engineers in distributed systems, and ML-driven analytics.
 
 # Experience
 
@@ -14,69 +18,75 @@
 
 - Feb 2022 – present
 - Gothenburg, Sweden
-- Managed and did work in migrating legacy data pipelines to a modern data stack using Snowflake, Dagster and Dbt. This cut cloud-costs by 50%.
-- Helped parent company align data tooling to facilitate BI insights from subsidiaries.
-- Lead agile R&D team to integrate car software telemetry data into software integration platform. Project discontinued due telemetry not yet implemented in software.
+- Worked remotely leading development of an asset-centric data modeling approach for Databricks & Delta Live Tables, enhancing streaming data reliability and developer experience.
+- Led an agile R&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline logs using ***Apache Flink (AWS Kinesis/Data Streams equivalent) & Spark Structured Streaming***.
+- Designed scalable data pipelines on ***Databricks & Snowflake, similar to AWS EMR & Amazon Redshift***, enabling advanced analytics workloads.
+- Served as the technical lead, engaging with a client to design and implement a modern data platform leveraging Snowflake, Dagster, and dbt.
+- Mentored junior engineers in Python, SQL, DAG-based orchestration, and modern data engineering best practices. Led workshops on aligning technical solutions with business objectives.
+- Collaborated with stakeholders to refine data governance, mediate upstream data contracts, and improve data visibility using effective metadata management.
 
 ## NTT Security, Security Analyst
 
 - Apr 2019 – Jan 2022
 - Gothenburg, Sweden
-- Built out new internal tooling that was well received by other analysts.
-- Educated other analysts in understanding how to analyze the alert flow.
+- Developed predictive analytics tooling for detecting malicious network traffic, leveraging Python, machine learning, and distributed processing (precursor to modern real-time data pipelines).
+- Automated security alert processing, optimizing real-time event analysis and reducing response times.
+- Designed Python-based data ingestion and processing workflows, akin to real-time ETL pipelines in modern data engineering.
+- Provided mentorship and security training, educating analysts on threat intelligence, anomaly detection, and alert triage automation.
 
 ## Ericsson, Python Software Engineer
 
 - June 2017 – Oct 2018
 - Gothenburg, Sweden
-- Lead a team to implement a log parsing tool which resulted in Ericsson hiring a team of engineers to continue its development.
+- Led a team to develop a log parsing and analytics tool that scaled into a dedicated engineering team at Ericsson.
+- Automated data workflow optimizations in Python, improving efficiency in log-based machine-generated data.
 
 # Projects
 
-## Dagster
+## HowIgotPwned
 
-- [github.com/dagster-io/dagster](https://github.com/dagster-io/dagster)
-- Have contributed to the above open source project.
-- Dagster is a data orchestration tool that manages workflows by organizing, scheduling, and monitoring data pipelines.
-- Tools used: Pytest, python3.10, buildkite
+- [GitHub](https://github.com/reinthal/howigotpwned)
+- Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie ***(similar to AWS Glue), MinIO (AWS S3 equivalent)***, and Dagster to analyze high-volume data.
+- Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on Minio, Similar to AWS S3.
 
-## Looker Plus Plus
+## Datalake Stack (On-Prem Equivalent of AWS Data Architecture)
 
-- [github.com/reinthal/lpp](https://github.com/reinthal/lpp)
-- Internal tool for automating analysis of malicious domains
-- Tools Used: python3 and python2, Sci-kit-learn, xgboost, asyncio, MongoDB, fastapi, rabbitmq, redis, docker, docker-compose
+- [GitHub](https://github.com/reinthal/datalake-stack)
+- Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark. ***Similar to AWS Glue, AWS S3 Tables and AWS S3***.
+- Inspired work to scale our open source data platform to multiple customers.
 
-## My Kubernetes Configs
+## Open Source Contributions
 
-- [github.com/reinthal/my-kubernetes-infra](https://github.com/reinthal/my-kubernetes-infra)
-- Kubernetes Manifests to test deploying using FluxCD before deploying at customers.
-- FluxCD configurations for a modern data stack using langfuse for LLM telemetry, Elastic Search, Openmetadata, OpenWebUI for a chatbot, Rancher and Traefik for ingress.
-- Tools Used: Fluxcd, Kubectl, k9s
-
-## k3s hosts in proxmox
-
-- [github.com/reinthal/k3s-proxmox-tf](https://github.com/reinthal/k3s-proxmox-tf)
-- Terraform script to deploy k3s hosts in my homelab to test new software before using it in production.
-- Tools Used: Terraform
+- [GitHub](https://github.com/reinthal)
+- Dagster Contribution: [PR #24188](https://github.com/dagster-io/dagster/pull/24188) – Improved workflow orchestration, scheduling, and monitoring of data pipelines. 
+- DLT Hub Contribution: [PR #594](https://github.com/dlt-hub/verified-sources/pull/594) – Mentored junior engineers, contributing Python data ingestion enhancements.  
 
 # Technologies
 
-- Languages: python, R, sql, c#, java, terraform, nix, c++, assembly
-- Technologies: Dagster, Snowflake, DBT, Kubernetes, Kubeflow, podman, docker, Databricks, ETL, Azure, AWS, Proxmox, git
+- Data Architectures: Data Modeling, Data Warehousing, Data Lakehouse Solutions
+- Semantic Layers: dbt Cloud, Cube.dev
+- Data Catalogs: ***Polaris, Snowflake, Unity & Nessie (Similar to Amazon Glue)***
+- Big Data & Streaming: ***Apache Flink, Apache Spark (AWS EMR equivalent)***, RabbitMQ
+- Data Engineering Tools & Platforms: ***Databricks & Delta Live Tables, Snowflake (similar to Amazon Athena)***, dbt, Dagster
+- Languages: Python, SQL, Java, Terraform, Nix, Rust, C++, Assembly, R
+- Cloud & Platforms: AWS, MinIO & Azure Blob Storage (AWS S3 equivalent), Azure, Kubernetes, Proxmox
+- Infrastructure & DevOps: Docker, Podman, FluxCD, Git, CI/CD pipelines, Terraform, Helm
+- Business Intelligence Tools: PowerBI, Apache Superset, Lightdash
 # Education
 
 ## Chalmers Technical University, MS in Engineering Physics
 
 - Sept 2016 – June 2018
-- **Coursework:** Statistical Physics, Neural Networks & Machine Learning
+- Coursework: Statistical Physics, Neural Networks and Machine Learning
 
 ## Gothenburg University, BS in Computer Science
 
 - Sept 2013 – June 2016
-- **Coursework:** Algorithms, Testing, Debugging & Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security
+- Coursework: Algorithms, Testing, Debugging and Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security
 
 # Publications
 
 ## Data Modelling for Predicting Exploits ([10.1007/978-3-030-03638-6_21](https://doi.org/10.1007/978-3-030-03638-6_21))
 - Nov 2018
-- ***Reinthal, A***, Filippakis, E.,, Almgren, M.
+- Reinthal, A, Filippakis, E., Almgren, M.
+

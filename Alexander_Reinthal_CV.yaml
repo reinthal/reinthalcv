@@ -10,6 +10,11 @@ cv:
     - network: GitHub
       username: reinthal
   sections:
+    alexander_reinthal:
+      - '***Senior Data Engineer, Independent Contributor & Open-Source Advocate*** with expertise in real-time data ingestion,
+    data modeling, and orchestrating cloud-based data workloads. Strong background in ***Apache Spark, Flink & Iceberg, Databricks & Unity Catalog, and Snowflake
+  ,similar to AWS Glue, S3, Redshift and EMR-equivalent architectures***. Proven open-source contributions to Dagster & DLT Hub.
+    Passionate about developer experience, mentoring engineers in distributed systems, and ML-driven analytics.'
     experience:
       - company: Knowit Solutions Cocreate
         position: Data Engineer / Tech Lead / Delivery Manager
@@ -17,77 +22,95 @@ cv:
         start_date: 2022-02
         end_date: present
         highlights:
-          - Lead agile R&D team to ingest large volumes of CI-pipeline data using Spark structured streaming and Apache Flink.
-          - Helped parent company with greenfield deploying Databricks & Delta Live Tables for streaming tables using asset centric code structure.
-          - Managed and did work in migrating legacy data pipelines to a modern data stack using Snowflake, 
-            Dagster and Dbt. This cut cloud-costs by 50%.
+          - Worked remotely leading development of an asset-centric data modeling approach for Databricks & Delta Live Tables, enhancing streaming data reliability and developer experience.
+          - 'Led an agile R&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline logs using ***Apache Flink (AWS Kinesis/Data Streams equivalent) & Spark Structured Streaming***.'
+          - Designed scalable data pipelines on ***Databricks & Snowflake, similar to AWS EMR & Amazon Redshift***, enabling advanced analytics workloads.
+          - Served as the technical lead, engaging with a client to design and implement a modern data platform leveraging Snowflake, Dagster, and dbt.
+          - Mentored junior engineers in Python, SQL, DAG-based orchestration, and modern data engineering best practices. Led workshops on aligning technical solutions with business objectives.
+          - Collaborated with stakeholders to refine data governance, mediate upstream data contracts, and improve data visibility using effective metadata management.
+     
       - company: NTT Security
         position: Security Analyst
         location: Gothenburg, Sweden
         start_date: 2019-04
         end_date: 2022-01
         highlights:
-            - Built my own system tooling for real time predictive analytics to help analysts find malicious network traffic.
-            - Educated other analysts in understanding how to analyze the alert flow.
+          - Developed predictive analytics tooling for detecting malicious network traffic, leveraging Python, machine learning, and distributed processing (precursor to modern real-time data pipelines).
+          - Automated security alert processing, optimizing real-time event analysis and reducing response times.
+          - Designed Python-based data ingestion and processing workflows, akin to real-time ETL pipelines in modern data engineering.
+          - Provided mentorship and security training, educating analysts on threat intelligence, anomaly detection, and alert triage automation.
       - company: Ericsson
         position: Python Software Engineer
         location: Gothenburg, Sweden
         start_date: 2017-06
         end_date: 2018-10
         highlights:
-          - Lead a team to implement a log parsing tool which resulted in Ericsson hiring a team of engineers to continue its development.
+          - Led a team to develop a log parsing and analytics tool that scaled into a dedicated engineering team at Ericsson.
+          - Automated data workflow optimizations in Python, improving efficiency in log-based machine-generated data.
+
     projects:
       - name: HowIgotPwned
-        date: '[github.com/reinthal/howigotpwned](https://github.com/reinthal/howigotpwned)'
+        date: '[GitHub](https://github.com/reinthal/howigotpwned)'
         highlights:
-          - 'Hack data in a modern data lakehouse stack'
-          - 'Apache Iceberg, Flink & Spark, Nessie, Dagster'
-      - name: Dagster
-        date: '[github.com/dagster-io/dagster](https://github.com/dagster-io/dagster)'
+          - 'Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie ***(similar to AWS Glue), MinIO (AWS S3 equivalent)***, and Dagster to analyze high-volume data.'
+          - Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on Minio, Similar to AWS S3.  
+
+      - name: Datalake Stack (On-Prem Equivalent of AWS Data Architecture)
+        date: '[GitHub](https://github.com/reinthal/datalake-stack)'
         highlights:
-          - Have contributed to the above open source project.
-          - Dagster is a data orchestration tool that manages workflows by organizing, scheduling, and monitoring data pipelines.
-          - 'Tools used: Pytest, python3.10, buildkite'
-       - name: My Kubernetes Infra
-        date: '[github.com/reinthal/my-kubernetes-infra](https://github.com/reinthal/my-kubernetes-infra)'
+          - 'Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark. ***Similar to AWS Glue, AWS S3 Tables and AWS S3***.'
+          - Inspired work to scale our open source data platform to multiple customers.  
+
+      - name: Open Source Contributions
+        date: '[GitHub](https://github.com/reinthal)'
         highlights:
-          - Kubernetes Manifests to test deploying using FluxCD before deploying at customers.
-          - FluxCD configurations for a modern data stack using langfuse for LLM telemetry, 
-            Elastic Search, OpenWebUI for a chatbot, Rancher and Traefik for ingress.
-          -  'Tools Used: Fluxcd, Kubectl, k9s'
-      - name: Looker Plus Plus
-        date: '[github.com/reinthal/lpp](https://github.com/reinthal/lpp)'
-        highlights:
-          - Internal tool for automating analysis of malicious domains
-          - 'Tools Used: python3 and python2, Sci-kit-learn, xgboost, asyncio, MongoDB, fastapi, rabbitmq, redis, docker, docker-compose'
+          - 'Dagster Contribution: [PR #24188](https://github.com/dagster-io/dagster/pull/24188) – Improved workflow orchestration, scheduling, and monitoring of data pipelines. '
+          - 'DLT Hub Contribution: [PR #594](https://github.com/dlt-hub/verified-sources/pull/594) – Mentored junior engineers, contributing Python data ingestion enhancements.  '
+
     technologies:
+      - label: Data Architectures
+        details: Data Modeling, Data Warehousing, Data Lakehouse Solutions
+      - label: Semantic Layers
+        details: dbt Cloud, Cube.dev
+      - label: Data Catalogs
+        details: '***Polaris, Snowflake, Unity & Nessie (Similar to Amazon Glue)***'
+      - label: Big Data & Streaming
+        details: '***Apache Flink, Apache Spark (AWS EMR equivalent)***, RabbitMQ'
+      - label: Data Engineering Tools & Platforms
+        details: '***Databricks & Delta Live Tables, Snowflake (similar to Amazon Athena)***, dbt, Dagster'
       - label: Languages
-        details: python, sql, c#, java, terraform, nix, rust, c++, assembly, R
-      - label: Technologies
-        details: Flink, Spark, Dagster, Snowflake & Databricks, DBT, Kubernetes, podman, docker, , ETL, Azure, AWS, Proxmox, git 
+        details: Python, SQL, Java, Terraform, Nix, Rust, C++, Assembly, R
+      - label: Cloud & Platforms
+        details: AWS, MinIO & Azure Blob Storage (AWS S3 equivalent), Azure, Kubernetes, Proxmox
+      - label: Infrastructure & DevOps
+        details: Docker, Podman, FluxCD, Git, CI/CD pipelines, Terraform, Helm
+      - label: Business Intelligence Tools  
+        details: PowerBI, Apache Superset, Lightdash
+
     education:
-    - institution: Chalmers Technical University
-      area: Engineering Physics
-      degree: MS
-      start_date: 2016-09
-      end_date: 2018-06
-      highlights:
-        - '**Coursework:** Statistical Physics, Neural Networks & Machine Learning'
-    - institution: Gothenburg University
-      area: Computer Science
-      degree: BS
-      start_date: 2013-09
-      end_date: 2016-06
-      highlights:
-        - '**Coursework:** Algorithms, Testing, Debugging & Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security'
+      - institution: Chalmers Technical University
+        area: Engineering Physics
+        degree: MS
+        start_date: 2016-09
+        end_date: 2018-06
+        highlights:
+          - 'Coursework: Statistical Physics, Neural Networks and Machine Learning'
+      - institution: Gothenburg University
+        area: Computer Science
+        degree: BS
+        start_date: 2013-09
+        end_date: 2016-06
+        highlights:
+          - 'Coursework: Algorithms, Testing, Debugging and Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security'
+
     publications:
       - title: Data Modelling for Predicting Exploits
         authors:
-          - '***Reinthal, A***'
-          - 'Filippakis, E.,'
-          - Almgren, M.
+          - 'Reinthal, A'
+          - 'Filippakis, E.'
+          - 'Almgren, M.'
         doi: 10.1007/978-3-030-03638-6_21
-        date: 2018-11
+        date: 2018-11 
 design:
   theme: classic
   font: Source Sans 3
