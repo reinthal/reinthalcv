@@ -12,8 +12,8 @@ cv:
   sections:
     alexander_reinthal:
       - '***Senior Data Engineer, Independent Contributor & Open-Source Advocate*** with expertise in real-time data ingestion,
-    data modeling, and orchestrating cloud-based data workloads. Strong background in ***Apache Flink, Databricks & Unity Catalog, and Snowflake
-  ,similar to AWS Glue, S3, and EMR-equivalent architectures***. Proven open-source contributions to Dagster & DLT Hub.
+    data modeling, and orchestrating cloud-based data workloads. Strong background in ***Apache Spark, Flink & Iceberg, Databricks & Unity Catalog, and Snowflake
+  ,similar to AWS Glue, S3, Redshift and EMR-equivalent architectures***. Proven open-source contributions to Dagster & DLT Hub.
     Passionate about developer experience, mentoring engineers in distributed systems, and ML-driven analytics.'
     experience:
       - company: Knowit Solutions Cocreate
@@ -22,14 +22,13 @@ cv:
         start_date: 2022-02
         end_date: present
         highlights:
+          - Worked remotely leading development of an asset-centric data modeling approach for Databricks & Delta Live Tables, enhancing streaming data reliability and developer experience.
           - 'Led an agile R&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline logs using ***Apache Flink (AWS Kinesis/Data Streams equivalent) & Spark Structured Streaming***.'
-
-          - Designed scalable data pipelines on ***Databricks & Snowflake, equivalent to AWS Glue & Athena***, enabling advanced analytics workloads.
+          - Designed scalable data pipelines on ***Databricks & Snowflake, similar to AWS EMR & Amazon Redshift***, enabling advanced analytics workloads.
           - Served as the technical lead, engaging with a client to design and implement a modern data platform leveraging Snowflake, Dagster, and dbt.
-          - Owned the development of an asset-centric data modeling approach for Databricks & Delta Live Tables, enhancing streaming data reliability and developer experience.
           - Mentored junior engineers in Python, SQL, DAG-based orchestration, and modern data engineering best practices. Led workshops on aligning technical solutions with business objectives.
           - Collaborated with stakeholders to refine data governance, mediate upstream data contracts, and improve data visibility using effective metadata management.
-
+     
       - company: NTT Security
         position: Security Analyst
         location: Gothenburg, Sweden
@@ -40,7 +39,6 @@ cv:
           - Automated security alert processing, optimizing real-time event analysis and reducing response times.
           - Designed Python-based data ingestion and processing workflows, akin to real-time ETL pipelines in modern data engineering.
           - Provided mentorship and security training, educating analysts on threat intelligence, anomaly detection, and alert triage automation.
-
       - company: Ericsson
         position: Python Software Engineer
         location: Gothenburg, Sweden
@@ -60,8 +58,8 @@ cv:
       - name: Datalake Stack (On-Prem Equivalent of AWS Data Architecture)
         date: '[GitHub](https://github.com/reinthal/datalake-stack)'
         highlights:
-          - Designed and implemented an on-premise data lake solution for Kubernetes using Nessie (similar to AWS Glue), Apache Iceberg, MinIO (AWS S3 equivalent), Apache Flink and Spark.  
-          - Integrated modern orchestration frameworks (FluxCD and Traefik) to manage multi-tenant data workloads efficiently.  
+          - Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark. Similar to AWS Glue, AWS S3 Tables  and AWS S3.
+          - Inspired work to scale our open source data platform to multiple customers.  
 
       - name: Open Source Contributions
         date: '[GitHub](https://github.com/reinthal)'
