@@ -46,13 +46,13 @@
 ## HowIgotPwned
 
 - [GitHub](https://github.com/reinthal/howigotpwned)
-- Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie (similar to AWS Glue), MinIO (AWS S3 equivalent), and Dagster to analyze high-volume data.
-- Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on AWS S3, demonstrating cloud-scale flexibility.
+- Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie ***(similar to AWS Glue), MinIO (AWS S3 equivalent)***, and Dagster to analyze high-volume data.
+- Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on Minio, Similar to AWS S3.
 
 ## Datalake Stack (On-Prem Equivalent of AWS Data Architecture)
 
 - [GitHub](https://github.com/reinthal/datalake-stack)
-- Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark. Similar to AWS Glue, AWS S3 Tables  and AWS S3.
+- Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark. ***Similar to AWS Glue, AWS S3 Tables and AWS S3***.
 - Inspired work to scale our open source data platform to multiple customers.
 
 ## Open Source Contributions
@@ -69,7 +69,7 @@
 - Big Data & Streaming: ***Apache Flink, Apache Spark (AWS EMR equivalent)***, RabbitMQ
 - Data Engineering Tools & Platforms: ***Databricks & Delta Live Tables, Snowflake (similar to Amazon Athena)***, dbt, Dagster
 - Languages: Python, SQL, Java, Terraform, Nix, Rust, C++, Assembly, R
-- Cloud & Platforms: MinIO & Azure Blob Storage (AWS S3 equivalent), Azure, Kubernetes, Proxmox
+- Cloud & Platforms: AWS, MinIO & Azure Blob Storage (AWS S3 equivalent), Azure, Kubernetes, Proxmox
 - Infrastructure & DevOps: Docker, Podman, FluxCD, Git, CI/CD pipelines, Terraform, Helm
 - Business Intelligence Tools: PowerBI, Apache Superset, Lightdash
 # Education

@@ -52,13 +52,13 @@ cv:
       - name: HowIgotPwned
         date: '[GitHub](https://github.com/reinthal/howigotpwned)'
         highlights:
-          - Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie (similar to AWS Glue), MinIO (AWS S3 equivalent), and Dagster to analyze high-volume data.  
-          - Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on AWS S3, demonstrating cloud-scale flexibility.  
+          - 'Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie ***(similar to AWS Glue), MinIO (AWS S3 equivalent)***, and Dagster to analyze high-volume data.'
+          - Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on Minio, Similar to AWS S3.  
 
       - name: Datalake Stack (On-Prem Equivalent of AWS Data Architecture)
         date: '[GitHub](https://github.com/reinthal/datalake-stack)'
         highlights:
-          - Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark. Similar to AWS Glue, AWS S3 Tables  and AWS S3.
+          - 'Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark. ***Similar to AWS Glue, AWS S3 Tables and AWS S3***.'
           - Inspired work to scale our open source data platform to multiple customers.  
 
       - name: Open Source Contributions
@@ -81,7 +81,7 @@ cv:
       - label: Languages
         details: Python, SQL, Java, Terraform, Nix, Rust, C++, Assembly, R
       - label: Cloud & Platforms
-        details: MinIO & Azure Blob Storage (AWS S3 equivalent), Azure, Kubernetes, Proxmox
+        details: AWS, MinIO & Azure Blob Storage (AWS S3 equivalent), Azure, Kubernetes, Proxmox
       - label: Infrastructure & DevOps
         details: Docker, Podman, FluxCD, Git, CI/CD pipelines, Terraform, Helm
       - label: Business Intelligence Tools  
