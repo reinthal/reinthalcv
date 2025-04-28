@@ -18,8 +18,7 @@ jobs:
 
       - name: Install devenv.sh
         run: |
-          curl -L https://get.devenv.sh/latest-standalone | bash
-          sudo mv devenv /usr/local/bin/
+          nix-env --install --attr devenv -f https://github.com/NixOS/nixpkgs/tarball/nixpkgs-unstable
 
       - name: Build CV
         run: |
