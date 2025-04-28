@@ -34,6 +34,6 @@ jobs:
         run: |
           cp rendercv_output/Alexander_Reinthal_CV.md README.md
           git add -u
-          git commit -m "Update CV files" || echo "No changes to commit"
+          git commit -m "Update CV files" || echo "No changes to commit!"
           git push
 
