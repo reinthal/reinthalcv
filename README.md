@@ -10,7 +10,7 @@
 
 # Alexander Reinthal
 
-***Senior Data Platform Engineer, Independent Contributor & Nix Advocate*** with expertise in building excellent reproducible environments from development to production. My Mission is to help build a safer future for the AI. Passionate about developer experience, mentoring engineers and Nix.
+***Senior Data Platform Engineer, Independent Contributor & Nix Advocate*** with expertise in building excellent reproducible environments from development to production. My Mission is to help build a safer future for AI. Passionate about developer experience, mentoring engineers and Nix.
 
 # Experience
 
@@ -28,7 +28,7 @@
 
 - Apr 2019 – Jan 2022
 - Gothenburg, Sweden
-- Developed predictive analytics tooling for detecting malicious network traffic, leveraging Python, machine learning, and distributed processing (precursor to modern real-time data pipelines).
+- Developed predictive analytics tooling for detecting malicious network traffic, leveraging Python, machine learning, and distributed processing.
 - Automated security alert processing, optimizing real-time event analysis and reducing response times.
 - Designed Python-based data ingestion and processing workflows, akin to real-time ETL pipelines in modern data engineering.
 - Provided mentorship and security training, educating analysts on threat intelligence, anomaly detection, and alert triage automation.
@@ -45,19 +45,20 @@
 ## NixosConfig
 
 - [GitHub](https://github.com/reinthal/nixos-config)
-- NixOS configuration for my personal laptop, workstations  and production servers.
+- NixOS configuration for my personal laptop, workstations and production servers.
+
+## Datalake Stack
+
+- [GitHub](https://github.com/reinthal/datalake-stack)
+- Kubernetes cluster for a data lakehouse leveraging Apache Iceberg. Secondary use is to test LLM observability tools before putting them into production. Configs built using FluxCD.
+- Inspired work to scale our open source data platform to multiple customers.
+- Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark.
 
 ## HowIgotPwned
 
 - [GitHub](https://github.com/reinthal/howigotpwned)
 - Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie and Dagster to analyze high-volume data.
 - Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on Minio.
-
-## Datalake Stack (My Personal Kubernetes Cluster)
-
-- [GitHub](https://github.com/reinthal/datalake-stack)
-- Inspired work to scale our open source data platform to multiple customers.
-- Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark.
 
 ## Open Source Contributions
 
