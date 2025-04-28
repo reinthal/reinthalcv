@@ -1,0 +1,33 @@
+name: Build CV
+on:
+  push:
+    paths:
+      - 'Alexander_Reinthal_CV.yaml'
+      - '.github/workflows/makecv.yaml'
+      - 'devenv.yaml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
+
+      - name: Install devenv.sh
+        run: |
+          curl -L https://get.devenv.sh/latest-standalone | bash
+          sudo mv devenv /usr/local/bin/
+
+      - name: Build CV
+        run: |
+          devenv shell rendercv render Alexander_Reinthal_CV.yaml
+
+      - name: Upload CV artifact
+
+        uses: actions/upload-artifact@v3
+        with:
+          name: cv
+          path: Alexander_Reinthal_CV.pdf
