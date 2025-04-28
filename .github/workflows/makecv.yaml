@@ -28,10 +28,12 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          git status
 
       - name: Commit and push generated CV files
         run: |
-          git add Alexander_Reinthal_CV.pdf README.md
+          cp rendercv_output/Alexander_Reinthal_CV.md README.md
+          git add -u
           git commit -m "Update CV files" || echo "No changes to commit"
           git push
 
