@@ -156,7 +156,7 @@
         \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
         \LenToUnit{\paperheight-1.0 cm}
     ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in March 2025}\hspace{\widthof{Last updated in March 2025}}
+        \small\color{gray}\textit{Last updated in April 2025}\hspace{\widthof{Last updated in April 2025}}
     }}}%
   }%
 }%
@@ -216,7 +216,7 @@
 
         
         \begin{onecolentry}
-            \textbf{\textit{Senior Data Engineer, Independent Contributor \& Open-Source Advocate}} with expertise in real-time data ingestion, data modeling, and orchestrating cloud-based data workloads. Strong background in \textbf{\textit{Apache Spark, Flink \& Iceberg, Databricks \& Unity Catalog, and Snowflake ,similar to AWS Glue, S3, Redshift and EMR from the amazon product offering}}. Proven open-source contributions to Dagster \& DLT Hub. Passionate about developer experience, mentoring engineers in distributed systems, and ML-driven analytics.
+            \textbf{\textit{Senior Data Platform Engineer, Independent Contributor \& Nix Advocate}} with expertise in building excellent reproducible environments from development to production. My Mission is to help build a safer future for AI. Passionate about developer experience, mentoring engineers and Nix.
         \end{onecolentry}
 
 
@@ -231,14 +231,13 @@
 
         Feb 2022 – present
         }
-            \textbf{Knowit Solutions Cocreate}, Data Engineer / Tech Lead / Delivery Manager
+            \textbf{Knowit Solutions Cocreate}, Data Platform Engineer / Tech Lead / Delivery Manager
             \begin{highlights}
-                \item Worked remotely leading development of an asset-centric data modeling approach for Databricks \& Delta Live Tables, enhancing data reliability and developer experience.
-                \item Led an agile R\&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline events using \textbf{\textit{Apache Flink (similar to AWS Kinesis) \& Spark Structured Streaming}}.
-                \item Designed scalable data pipelines on \textbf{\textit{Databricks \& Snowflake, similar to AWS EMR \& AWSAWS  Redshift}}, enabling advanced analytics workloads.
-                \item Served as the technical lead, engaging with a client to design and implement a modern data platform leveraging Snowflake, Dagster, and dbt.
-                \item Mentored junior engineers in Python, SQL, DAG-based orchestration, and modern data engineering best practices. Led workshops on aligning technical solutions with business objectives.
-                \item Collaborated with stakeholders to refine data governance, mediate upstream data contracts, and improve data visibility using effective metadata management.
+                \item Compared multiple LLM observability tools for use with a job-ad-to-consultant matching LLM platform. (LangChain, Langfuse, Arize Phoenix).
+                \item Deployed Arize Phoenix (Similar to Langfuse) to monitor LLM calls and model performance.
+                \item Lead initiative of migrating current development environments from Makefiles \& VM deployment to Nix \& Kubernetes (FluxCD, SOPS, GitOps, Nix devenvs, CI/CD pipelines, Terraform)
+                \item Worked remotely leading development of a data platform for Databricks \& Delta Live Tables using Nix development environments, CI/CD pipelines, GitOps \& Terraform.
+                \item Served as the technical lead, engaging with a client to design and implement a modern data platform using Python, poetry, Nix, Terraform, Custom Wireguard VPN gateway, CI/CD pipelines and GitOps for Data.
             \end{highlights}
         \end{twocolentry}
 
@@ -252,7 +251,7 @@
         }
             \textbf{NTT Security}, Security Analyst
             \begin{highlights}
-                \item Developed predictive analytics tooling for detecting malicious network traffic, leveraging Python, machine learning, and distributed processing (precursor to modern real-time data pipelines).
+                \item Developed predictive analytics tooling for detecting malicious network traffic, leveraging Python, machine learning, and distributed processing.
                 \item Automated security alert processing, optimizing real-time event analysis and reducing response times.
                 \item Designed Python-based data ingestion and processing workflows, akin to real-time ETL pipelines in modern data engineering.
                 \item Provided mentorship and security training, educating analysts on threat intelligence, anomaly detection, and alert triage automation.
@@ -283,12 +282,11 @@
 
         
         \begin{twocolentry}{
-            \href{https://github.com/reinthal/howigotpwned}{GitHub}
+            \href{https://github.com/reinthal/nixos-config}{GitHub}
         }
-            \textbf{HowIgotPwned}
+            \textbf{NixosConfig}
             \begin{highlights}
-                \item Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie \textbf{\textit{(similar to AWS Glue), MinIO (AWS S3 equivalent)}}, and Dagster to analyze high-volume data.
-                \item Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on Minio, Similar to AWS S3.
+                \item NixOS configuration for my personal laptop, workstations and production servers.
             \end{highlights}
         \end{twocolentry}
 
@@ -298,10 +296,24 @@
         \begin{twocolentry}{
             \href{https://github.com/reinthal/datalake-stack}{GitHub}
         }
-            \textbf{Datalake Stack (On-Prem Equivalent of AWS Data Architecture)}
+            \textbf{Datalake Stack}
             \begin{highlights}
-                \item Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark. \textbf{\textit{Similar to AWS Glue, AWS S3 Tables and AWS S3}}.
+                \item Kubernetes cluster for a data lakehouse leveraging Apache Iceberg. Secondary use is to test LLM observability tools before putting them into production. Configs built using FluxCD.
                 \item Inspired work to scale our open source data platform to multiple customers.
+                \item Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark.
+            \end{highlights}
+        \end{twocolentry}
+
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{
+            \href{https://github.com/reinthal/howigotpwned}{GitHub}
+        }
+            \textbf{HowIgotPwned}
+            \begin{highlights}
+                \item Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie and Dagster to analyze high-volume data.
+                \item Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on Minio.
             \end{highlights}
         \end{twocolentry}
 
@@ -327,55 +339,31 @@
 
         
         \begin{onecolentry}
-            \textbf{Data Architectures:} Data Modeling, Data Warehousing, Data Lakehouse Solutions
+            \textbf{Infrastructure \& DevOps:} Nix, uv, Docker, Podman, SOPS,  FluxCD (Similar to ArgoCD), Git, Github Actions, CI/CD pipelines, Terraform, Ansible, Helm
         \end{onecolentry}
 
         \vspace{0.2 cm}
 
         \begin{onecolentry}
-            \textbf{Semantic Layers:} dbt Cloud, Cube.dev
+            \textbf{Monitoring \& Observability:} Langfuse, Arize Phoenix, Splunk, Prometheus, Grafana, Loki, Elasticsearch, Kibana, Graylog
         \end{onecolentry}
 
         \vspace{0.2 cm}
 
         \begin{onecolentry}
-            \textbf{Data Catalogs:} Polaris, Snowflake, Unity \& Nessie \textbf{\textit{(Similar to AWS Glue)}}
+            \textbf{Languages:} Python, SQL, Terraform, Nix, Go, Rust, C/C++, Assembly, Java, R
         \end{onecolentry}
 
         \vspace{0.2 cm}
 
         \begin{onecolentry}
-            \textbf{Big Data \& Streaming:} Apache Flink, Apache Spark, RabbitMQ
+            \textbf{Data Engineering Tools \& Platforms:} Spark, Flink, Iceberg, Nessie, Databricks \& Delta Live Tables, Snowflake, dbt, dlthub, Dagster
         \end{onecolentry}
 
         \vspace{0.2 cm}
 
         \begin{onecolentry}
-            \textbf{Data Engineering Tools \& Platforms:} Databricks \& Delta Live Tables, Snowflake \textbf{\textit{(similar to AWS EMR \& Redshift)}}, dbt, dlthub, Dagster
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            \textbf{Languages:} Python, SQL, Java, Terraform, Nix, Rust, C++, Assembly, R
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            \textbf{Cloud \& Platforms:} AWS, MinIO \& Azure Blob Storage (AWS S3 equivalent), Azure, Kubernetes, Proxmox
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            \textbf{Infrastructure \& DevOps:} Docker, Podman, FluxCD, Git, CI/CD pipelines, Terraform, Helm
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            \textbf{Business Intelligence Tools:} PowerBI, Apache Superset, Lightdash, Streamlit
+            \textbf{Business Intelligence Tools:} PowerBI, Apache Superset, Evidence, Lightdash, Streamlit
         \end{onecolentry}
 
 

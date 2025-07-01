@@ -1,0 +1,39 @@
+name: Build CV
+on:
+  push:
+    paths:
+      - 'Alexander_Reinthal_CV.yaml'
+      - '.github/workflows/makecv.yaml'
+      - 'devenv.yaml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
+
+      - name: Install devenv.sh
+        run: |
+          nix-env --install --attr devenv -f https://github.com/NixOS/nixpkgs/tarball/nixpkgs-unstable
+
+      - name: Build CV
+        run: |
+          devenv shell rendercv render Alexander_Reinthal_CV.yaml
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git status
+
+      - name: Commit and push generated CV files
+        run: |
+          cp rendercv_output/Alexander_Reinthal_CV.md README.md
+          git add -u
+          git commit -m "Update CV files" || echo "No changes to commit!"
+          git push
+

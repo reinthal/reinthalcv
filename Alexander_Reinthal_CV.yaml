@@ -11,23 +11,19 @@ cv:
       username: reinthal
   sections:
     alexander_reinthal:
-      - '***Senior Data Engineer, Independent Contributor & Open-Source Advocate*** with expertise in real-time data ingestion,
-    data modeling, and orchestrating cloud-based data workloads. Strong background in ***Apache Spark, Flink & Iceberg, Databricks & Unity Catalog, and Snowflake
-  ,similar to AWS Glue, S3, Redshift and EMR from the amazon product offering***. Proven open-source contributions to Dagster & DLT Hub.
-    Passionate about developer experience, mentoring engineers in distributed systems, and ML-driven analytics.'
+      - '***Senior Data Platform Engineer, Independent Contributor & Nix Advocate*** with expertise in building excellent reproducible environments from development to production. My Mission is to help build a safer future for AI. Passionate about developer experience, mentoring engineers and Nix.'
     experience:
       - company: Knowit Solutions Cocreate
-        position: Data Engineer / Tech Lead / Delivery Manager
+        position: Data Platform Engineer / Tech Lead / Delivery Manager
         location: Gothenburg, Sweden
         start_date: 2022-02
         end_date: present
         highlights:
-          - Worked remotely leading development of an asset-centric data modeling approach for Databricks & Delta Live Tables, enhancing data reliability and developer experience.
-          - 'Led an agile R&D team to build real-time data ingestion pipelines handling massive volumes of CI-pipeline events using ***Apache Flink (similar to AWS Kinesis) & Spark Structured Streaming***.'
-          - Designed scalable data pipelines on ***Databricks & Snowflake, similar to AWS EMR & AWSAWS  Redshift***, enabling advanced analytics workloads.
-          - Served as the technical lead, engaging with a client to design and implement a modern data platform leveraging Snowflake, Dagster, and dbt.
-          - Mentored junior engineers in Python, SQL, DAG-based orchestration, and modern data engineering best practices. Led workshops on aligning technical solutions with business objectives.
-          - Collaborated with stakeholders to refine data governance, mediate upstream data contracts, and improve data visibility using effective metadata management.
+          - Compared multiple LLM observability tools for use with a job-ad-to-consultant matching LLM platform. (LangChain, Langfuse, Arize Phoenix).
+          - Deployed Arize Phoenix (Similar to Langfuse) to monitor LLM calls and model performance.
+          - 'Lead initiative of migrating current development environments from Makefiles & VM deployment to Nix & Kubernetes (FluxCD, SOPS, GitOps, Nix devenvs, CI/CD pipelines, Terraform)'
+          - Worked remotely leading development of a data platform for Databricks & Delta Live Tables using Nix development environments, CI/CD pipelines, GitOps & Terraform.
+          - Served as the technical lead, engaging with a client to design and implement a modern data platform using Python, poetry, Nix, Terraform, Custom Wireguard VPN gateway, CI/CD pipelines and GitOps for Data.
      
       - company: NTT Security
         position: Security Analyst
@@ -35,7 +31,7 @@ cv:
         start_date: 2019-04
         end_date: 2022-01
         highlights:
-          - Developed predictive analytics tooling for detecting malicious network traffic, leveraging Python, machine learning, and distributed processing (precursor to modern real-time data pipelines).
+          - Developed predictive analytics tooling for detecting malicious network traffic, leveraging Python, machine learning, and distributed processing.
           - Automated security alert processing, optimizing real-time event analysis and reducing response times.
           - Designed Python-based data ingestion and processing workflows, akin to real-time ETL pipelines in modern data engineering.
           - Provided mentorship and security training, educating analysts on threat intelligence, anomaly detection, and alert triage automation.
@@ -47,19 +43,25 @@ cv:
         highlights:
           - Led a team to develop a log parsing and analytics tool that scaled into a dedicated engineering team at Ericsson.
           - Automated data workflow optimizations in Python, improving efficiency in log-based machine-generated data.
-
     projects:
+      
+      - name: NixosConfig
+        date: '[GitHub](https://github.com/reinthal/nixos-config)'
+        highlights:
+          - 'NixOS configuration for my personal laptop, workstations and production servers.'
+      
+      - name: Datalake Stack
+        date: '[GitHub](https://github.com/reinthal/datalake-stack)'
+        highlights:
+          - 'Kubernetes cluster for a data lakehouse leveraging Apache Iceberg. Secondary use is to test LLM observability tools before putting them into production. Configs built using FluxCD.'
+          - Inspired work to scale our open source data platform to multiple customers.  
+          - 'Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark.'
+      
       - name: HowIgotPwned
         date: '[GitHub](https://github.com/reinthal/howigotpwned)'
         highlights:
-          - 'Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie ***(similar to AWS Glue), MinIO (AWS S3 equivalent)***, and Dagster to analyze high-volume data.'
-          - Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on Minio, Similar to AWS S3.  
-
-      - name: Datalake Stack (On-Prem Equivalent of AWS Data Architecture)
-        date: '[GitHub](https://github.com/reinthal/datalake-stack)'
-        highlights:
-          - 'Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark. ***Similar to AWS Glue, AWS S3 Tables and AWS S3***.'
-          - Inspired work to scale our open source data platform to multiple customers.  
+          - 'Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie and Dagster to analyze high-volume data.'
+          - Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on Minio.  
 
       - name: Open Source Contributions
         date: '[GitHub](https://github.com/reinthal)'
@@ -68,24 +70,16 @@ cv:
           - 'DLT Hub Contribution: [PR #594](https://github.com/dlt-hub/verified-sources/pull/594) – Mentored junior engineers, contributing Python data ingestion enhancements.  '
 
     technologies:
-      - label: Data Architectures
-        details: Data Modeling, Data Warehousing, Data Lakehouse Solutions
-      - label: Semantic Layers
-        details: dbt Cloud, Cube.dev
-      - label: Data Catalogs
-        details: 'Polaris, Snowflake, Unity & Nessie ***(Similar to AWS Glue)***'
-      - label: Big Data & Streaming
-        details: 'Apache Flink, Apache Spark, RabbitMQ'
-      - label: Data Engineering Tools & Platforms
-        details: 'Databricks & Delta Live Tables, Snowflake ***(similar to AWS EMR & Redshift)***, dbt, dlthub, Dagster'
-      - label: Languages
-        details: Python, SQL, Java, Terraform, Nix, Rust, C++, Assembly, R
-      - label: Cloud & Platforms
-        details: AWS, MinIO & Azure Blob Storage (AWS S3 equivalent), Azure, Kubernetes, Proxmox
       - label: Infrastructure & DevOps
-        details: Docker, Podman, FluxCD, Git, CI/CD pipelines, Terraform, Helm
+        details: Nix, uv, Docker, Podman, SOPS,  FluxCD (Similar to ArgoCD), Git, Github Actions, CI/CD pipelines, Terraform, Ansible, Helm
+      - label: Monitoring & Observability
+        details: Langfuse, Arize Phoenix, Splunk, Prometheus, Grafana, Loki, Elasticsearch, Kibana, Graylog
+      - label: Languages
+        details: Python, SQL, Terraform, Nix, Go, Rust, C/C++, Assembly, Java, R
+      - label: Data Engineering Tools & Platforms
+        details: 'Spark, Flink, Iceberg, Nessie, Databricks & Delta Live Tables, Snowflake, dbt, dlthub, Dagster'
       - label: Business Intelligence Tools  
-        details: PowerBI, Apache Superset, Lightdash, Streamlit
+        details: PowerBI, Apache Superset, Evidence, Lightdash, Streamlit
 
     education:
       - institution: Chalmers Technical University
