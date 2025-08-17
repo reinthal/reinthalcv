@@ -7,7 +7,7 @@ readme = "README.md"
 package-mode = false
 [tool.poetry.dependencies]
 python = "~3.12.6"
-rendercv = "^1.14"
+rendercv = {extras = ["full"], version = "^2.2"}
 
 
 [build-system]
