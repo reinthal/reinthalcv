@@ -10,8 +10,11 @@ cv:
     - network: GitHub
       username: reinthal
   sections:
-    alexander_reinthal:
-      - '***Senior Data Platform Engineer, Independent Contributor & Nix Advocate*** with expertise in building excellent reproducible environments from development to production. My Mission is to help build a safer future for AI. Passionate about developer experience, mentoring engineers and Nix.'
+    _:
+      - I am pivoting my career to work on AI Safety research, with the goal of contributing to Anthropic's mission of building safe and beneficial AI systems. Drawing on my background in machine learning, cybersecurity, and data engineering, I have made arrangements to take a 12-month sabbatical from my current employment to pursue full-time research, beginning with the ARENA curriculum in September 2025.
+      - I am particularly interested in model organisms of misalignment—creating controlled environments to study how alignment failures might arise in practice. Additionally, my cybersecurity background drives my concern for more immediate risks, such as the cyber-capabilities of large language models and their potential for misuse in adversarial scenarios.
+      
+    
     education:
       - institution: Chalmers Technical University
         area: Engineering Physics
