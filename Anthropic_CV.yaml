@@ -13,8 +13,17 @@ cv:
     _:
       - I am pivoting my career to work on AI Safety research, with the goal of contributing to Anthropic's mission of building safe and beneficial AI systems. Drawing on my background in machine learning, cybersecurity, and data engineering, I have made arrangements to take a 12-month sabbatical from my current employment to pursue full-time research, beginning with the ARENA curriculum in September 2025.
       - I am particularly interested in model organisms of misalignment—creating controlled environments to study how alignment failures might arise in practice. Additionally, my cybersecurity background drives my concern for more immediate risks, such as the cyber-capabilities of large language models and their potential for misuse in adversarial scenarios.
-      
-    
+    publications:
+      - title: Data Modelling for Predicting Exploits
+        authors:
+          - 'Reinthal, A'
+          - 'Filippakis, E.'
+          - 'Almgren, M.'
+        doi: 10.1007/978-3-030-03638-6_21
+        url: https://link.springer.com/chapter/10.1007/978-3-030-03638-6_21
+        journal: 'Springer LNCS: Information Security Practice and Experience'
+        date: 2018-11
+        summary: 'Peer-reviewed research on machine learning applications in cybersecurity, demonstrating experimental methodology and rigorous evaluation techniques for adversarial scenarios'
     education:
       - institution: Chalmers Technical University
         area: Engineering Physics
@@ -46,10 +55,7 @@ cv:
         summary:
         highlights:
           - Compared multiple LLM observability tools for use with a job-ad-to-consultant matching LLM platform. (LangChain, Langfuse, Arize Phoenix).
-          - Deployed Arize Phoenix (Similar to Langfuse) to monitor LLM calls and model performance.
-          - 'Lead initiative of migrating current development environments from Makefiles & VM deployment to Nix & Kubernetes (FluxCD, SOPS, GitOps, Nix devenvs, CI/CD pipelines, Terraform)'
-          - Worked remotely leading development of a data platform for Databricks & Delta Live Tables using Nix development environments, CI/CD pipelines, GitOps & Terraform.
-          - Served as the technical lead, engaging with a client to design and implement a modern data platform using Python, poetry, Nix, Terraform, Custom Wireguard VPN gateway, CI/CD pipelines and GitOps for Data.
+          - Deployed Arize Phoenix to monitor LLM calls and model performance in production environments.
       - company: NTT Security
         position: Security Analyst
         date:
@@ -59,8 +65,6 @@ cv:
         summary:
         highlights:
           - Developed predictive analytics tooling for detecting malicious network traffic, leveraging Python, machine learning, and distributed processing.
-          - Automated security alert processing, optimizing real-time event analysis and reducing response times.
-          - Designed Python-based data ingestion and processing workflows, akin to real-time ETL pipelines in modern data engineering.
           - Provided mentorship and security training, educating analysts on threat intelligence, anomaly detection, and alert triage automation.
       - company: Ericsson
         position: Python Software Engineer
@@ -71,65 +75,58 @@ cv:
         summary:
         highlights:
           - Led a team to develop a log parsing and analytics tool that scaled into a dedicated engineering team at Ericsson.
-          - Automated data workflow optimizations in Python, improving efficiency in log-based machine-generated data.
-    projects:
-      - name: '[NixosConfig](https://github.com/reinthal/nixos-config)'
+    research_projects:
+      - name: 'Data Modeling for Predicting Exploits'
         date:
-        start_date:
+        start_date: 2017
+        end_date: 2018
+        location:
+        summary: Machine learning research project for predicting software exploits, resulting in peer-reviewed publication
+        highlights:
+          - 'Developed experimental methodology for feature engineering and model validation in cybersecurity domain'
+          - 'Identified and addressed subtle ways that experiments can be compromised, ensuring robust evaluation protocols'
+          - 'Applied rigorous statistical analysis and cross-validation techniques to assess model performance on adversarial scenarios'
+          - 'Published peer-reviewed findings in Springer LNCS (DOI: 10.1007/978-3-030-03638-6_21)'
+      - name: '[Malicious Domain Prediction System](https://github.com/reinthal/lpp)'
+        date:
+        start_date: 2021
         end_date:
         location:
-        summary: NixOS configuration for my personal laptop, workstations and production servers.
+        summary: Real-time ML prediction application for assessing malicious domains
         highlights:
-          - 'NixOS configuration for my personal laptop, workstations and production servers.'
-      - name: '[Datalake Stack](https://github.com/reinthal/datalake-stack)'
+          - 'Developed experimental methodology for feature engineering and model validation in cybersecurity domain'
+          - 'Implemented real-time inference pipeline with performance monitoring and model drift detection'
+          - 'Applied rigorous evaluation techniques to assess model performance on adversarial examples'
+    technical_projects:
+      - name: '[Data Breach Analysis Pipeline](https://github.com/reinthal/howigotpwned)'
         date:
-        start_date:
+        start_date: 2024
         end_date:
         location:
-        summary: Kubernetes cluster for a data lakehouse leveraging Apache Iceberg
+        summary: Modern data lakehouse solution for analyzing large-scale password breach data
         highlights:
-          - 'Kubernetes cluster for a data lakehouse leveraging Apache Iceberg. Secondary use is to test LLM observability tools before putting them into production. Configs built using FluxCD.'
-          - Inspired work to scale our open source data platform to multiple customers.  
-          - 'Designed and implemented an on-premise data lake solution for Kubernetes using Dagster, Nessie, Apache Iceberg, MinIO, Apache Flink and Spark.'
-      - name: '[HowIgotPwned](https://github.com/reinthal/howigotpwned)'
-        date:
-        start_date:
-        end_date:
-        location:
-        summary: Modern data lakehouse solution leveraging Apache Iceberg
-        highlights:
-          - 'Developed a modern data lakehouse solution leveraging Apache Iceberg, Flink, Spark, Nessie and Dagster to analyze high-volume data.'
-          - Prototyped real-time ingestion pipelines using Apache Flink and Iceberg tables stored on Minio.  
+          - 'Developed scalable data processing pipeline using Apache Iceberg, Flink, and Spark to analyze high-volume breach data'
+          - 'Implemented real-time ingestion and analysis capabilities for cybersecurity research applications'
       - name: '[Open Source Contributions](https://github.com/reinthal)'
         date:
         start_date:
         end_date:
         location:
-        summary: Contributions to various open source projects
+        summary: Contributions to ML and data engineering open source projects
         highlights:
-          - 'Dagster Contribution: [PR #24188](https://github.com/dagster-io/dagster/pull/24188) – Improved workflow orchestration, scheduling, and monitoring of data pipelines. '
-          - 'DLT Hub Contribution: [PR #594](https://github.com/dlt-hub/verified-sources/pull/594) – Mentored junior engineers, contributing Python data ingestion enhancements.  '
+          - 'Dagster Contribution: [PR #24188](https://github.com/dagster-io/dagster/pull/24188) – Enhanced workflow orchestration for ML pipeline monitoring'
+          - 'DLT Hub Contribution: [PR #594](https://github.com/dlt-hub/verified-sources/pull/594) – Improved data ingestion reliability for ML applications'
     skills:
+      - label: Machine Learning & AI
+        details: PyTorch, XGBoost, SciKit Learn, Jupyter,  LLM Observability (LangChain, Langfuse, Arize Phoenix),
+      - label: Programming Languages
+        details: Python, Javascript, SQL, Rust, C/C++, R, Nix, Terraform
+      - label: Research & Data Analysis
+        details: Experimental Design, Statistical Analysis, Distributed Processing, Real-time Analytics, Anomaly Detection
       - label: Infrastructure & DevOps
-        details: Nix, uv, Docker, Podman, SOPS,  FluxCD (Similar to ArgoCD), Git, Github Actions, CI/CD pipelines, Terraform, Ansible, Helm
-      - label: Monitoring & Observability
-        details: Langfuse, Arize Phoenix, Splunk, Prometheus, Grafana, Loki, Elasticsearch, Kibana, Graylog
-      - label: Languages
-        details: Python, SQL, Terraform, Nix, Go, Rust, C/C++, Assembly, Java, R
-      - label: Data Engineering Tools & Platforms
-        details: 'Spark, Flink, Iceberg, Nessie, Databricks & Delta Live Tables, Snowflake, dbt, dlthub, Dagster'
-      - label: Business Intelligence Tools  
-        details: PowerBI, Apache Superset, Evidence, Lightdash, Streamlit
-    publications:
-      - title: Data Modelling for Predicting Exploits
-        authors:
-          - 'Reinthal, A'
-          - 'Filippakis, E.'
-          - 'Almgren, M.'
-        doi: 10.1007/978-3-030-03638-6_21
-        url:
-        journal:
-        date: 2018-11
+        details: Nix, Docker, Kubernetes, FluxCD, GitOps, CI/CD pipelines, Terraform, AWS (EC2, S3, IAM)
+      - label: Data Engineering & Platforms
+        details: 'Spark, Flink, Iceberg, Databricks, Dagster, Snowflake, dbt, Apache Superset'
 design:
   theme: sb2nov
   page:
