@@ -24,8 +24,8 @@
   # services.postgres.enable = true;
 
   # https://devenv.sh/scripts/
-  scripts.hello.exec = ''
-    echo hello from $GREET
+  scripts.make-cv.exec = ''
+    rendercv render Alexander_Reinthal_CV.yaml
   '';
 
   enterShell = ''
