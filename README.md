@@ -10,7 +10,7 @@
 
 #  
 
-I am pivoting my career to work on AI Safety research, with the goal of contributing to Anthropic's mission of building safe and beneficial AI systems. Drawing on my background in machine learning, cybersecurity, and data engineering, I have made arrangements to take a 12-month sabbatical from my current employment to pursue full-time research, beginning with the ARENA curriculum in September 2025.
+I am pivoting my career to work on AI Safety research, with the goal of contributing to the mission of building safe and beneficial AI systems. Drawing on my background in machine learning, cybersecurity, and data engineering, I have made arrangements to take a 12-month sabbatical from my current employment to pursue full-time research, beginning with the ARENA curriculum in September 2025.
 
 I am particularly interested in model organisms of misalignment—creating controlled environments to study how alignment failures might arise in practice. Additionally, my cybersecurity background drives my concern for more immediate risks, such as the cyber-capabilities of large language models and their potential for misuse in adversarial scenarios.
 
