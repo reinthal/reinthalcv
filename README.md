@@ -8,11 +8,9 @@
 - GitHub: [reinthal](https://github.com/reinthal)
 
 
-#  2025
+#  
 
-I am pivoting my career to work on AI Safety research, with the goal of contributing to the mission of building safe and beneficial AI systems. Drawing on my background in machine learning, cybersecurity, and data engineering, I have made arrangements to take a 12-month sabbatical from my current employment to pursue full-time research, beginning with the ARENA curriculum in September 2025.
-
-I am particularly interested in model organisms of misalignment—creating controlled environments to study how alignment failures might arise in practice. Additionally, my cybersecurity background drives my concern for more immediate risks, such as the cyber-capabilities of large language models and their potential for misuse in adversarial scenarios.
+I want to help reduce the risk of loss of control to AI through technical research. I am particularly interested research with concrete theories of change that help AI labs and/or inform policy makers before the alignment window closes. My seven years of industry experience in both cybersecurity and machine-learning in combination with excellent communication skills and ability to research makes me a unique candidate for this line of work.
 
 # Publications
 
@@ -41,6 +39,7 @@ I am particularly interested in model organisms of misalignment—creating contr
 
 - Feb 2022 – present
 - Gothenburg, Sweden
+- Mentored junior engineers
 - Compared multiple LLM observability tools for use with a job-ad-to-consultant matching LLM platform. (LangChain, Langfuse, Arize Phoenix).
 - Deployed Arize Phoenix to monitor LLM calls and model performance in production environments.
 
@@ -64,15 +63,12 @@ I am particularly interested in model organisms of misalignment—creating contr
 - 2017 – 2018
 - Developed experimental methodology for feature engineering and model validation in cybersecurity domain
 - Identified and addressed subtle ways that experiments can be compromised, ensuring robust evaluation protocols
-- Applied rigorous statistical analysis and cross-validation techniques to assess model performance on adversarial scenarios
 - Published peer-reviewed findings in Springer LNCS (DOI: 10.1007/978-3-030-03638-6_21)
 
 ## [Malicious Domain Prediction System](https://github.com/reinthal/lpp)
 
 - 2021 – present
-- Developed experimental methodology for feature engineering and model validation in cybersecurity domain
-- Implemented real-time inference pipeline with performance monitoring and model drift detection
-- Applied rigorous evaluation techniques to assess model performance on adversarial examples
+- Implemented real-time inference pipeline with performance monitoring
 
 # Technical Projects
 
@@ -80,7 +76,6 @@ I am particularly interested in model organisms of misalignment—creating contr
 
 - 2024 – present
 - Developed scalable data processing pipeline using Apache Iceberg, Flink, and Spark to analyze high-volume breach data
-- Implemented real-time ingestion and analysis capabilities for cybersecurity research applications
 
 ## [Open Source Contributions](https://github.com/reinthal)
 
