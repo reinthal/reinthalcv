@@ -20,7 +20,7 @@ cv:
           - 'Almgren, M.'
         doi: 10.1007/978-3-030-03638-6_21
         url: https://link.springer.com/chapter/10.1007/978-3-030-03638-6_21
-        journal: 'Springer LNCS: Information Security Practice and Experience'
+        journal: 'Springer LNCS: Nordic Conference on Secure IT Systems'
         date: 2018-11
         summary: 'Peer-reviewed research on machine learning applications in cybersecurity, demonstrating experimental methodology and evaluation techniques for adversarial scenarios'
     education:
