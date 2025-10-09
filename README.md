@@ -17,7 +17,7 @@ I want to help reduce the risk of loss of control to AI through technical resear
 ## Data Modelling for Predicting Exploits ([10.1007/978-3-030-03638-6_21](https://doi.org/10.1007/978-3-030-03638-6_21))
 - Nov 2018
 - Reinthal, A, Filippakis, E., Almgren, M.
-- Springer LNCS: Information Security Practice and Experience
+- Springer LNCS: Nordic Conference on Secure IT Systems
 
 # Education
 
