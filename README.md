@@ -10,7 +10,11 @@
 
 #  
 
-I want to help reduce the risk of loss of control to AI through technical research. I am particularly interested research with concrete theories of change that help AI labs and/or inform policy makers before the alignment window closes. My seven years of industry experience in both cybersecurity and machine-learning in combination with excellent communication skills and ability to research makes me a unique candidate for this line of work.
+Welcome to my resumé.
+
+Convincing yourself is easy. Changing your mind is hard. I am pivoting my career to work in AI safety research.
+
+I have 7 years of industry experience 3 years in cybersecurity, machine learning and data engineering.
 
 # Publications
 
@@ -62,7 +66,7 @@ I want to help reduce the risk of loss of control to AI through technical resear
 
 - 2017 – 2018
 - Developed experimental methodology for feature engineering and model validation in cybersecurity domain
-- Identified and addressed subtle ways that experiments can be compromised, ensuring robust evaluation protocols
+- Dsicovered subtle ways that experiments can be compromised, ensuring robust evaluation protocols
 - Published peer-reviewed findings in Springer LNCS (DOI: 10.1007/978-3-030-03638-6_21)
 
 ## [Malicious Domain Prediction System](https://github.com/reinthal/lpp)
@@ -76,6 +80,7 @@ I want to help reduce the risk of loss of control to AI through technical resear
 
 - 2024 – present
 - Developed scalable data processing pipeline using Apache Iceberg, Flink, and Spark to analyze high-volume breach data
+- Passion project to test new technologies that required big data
 
 ## [Open Source Contributions](https://github.com/reinthal)
 
