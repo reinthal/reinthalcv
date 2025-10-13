@@ -11,7 +11,9 @@ cv:
       username: reinthal
   sections:
     _:
-      - I want to help reduce the risk of loss of control to AI through technical research. I am particularly interested research with concrete theories of change that help AI labs and/or inform policy makers before the alignment window closes. My seven years of industry experience in both cybersecurity and machine-learning in combination with excellent communication skills and ability to research makes me a unique candidate for this line of work.
+      - Welcome to my resumé. 
+      - Convincing yourself is easy. Changing your mind is hard. I am pivoting my career to work in AI safety research. 
+      - I have 7 years of industry experience 3 years in cybersecurity, machine learning and data engineering.
     publications:
       - title: Data Modelling for Predicting Exploits
         authors:
@@ -84,7 +86,7 @@ cv:
         summary: Machine learning research project for predicting software exploits, resulting in peer-reviewed publication
         highlights:
           - 'Developed experimental methodology for feature engineering and model validation in cybersecurity domain'
-          - 'Identified and addressed subtle ways that experiments can be compromised, ensuring robust evaluation protocols'
+          - 'Dsicovered subtle ways that experiments can be compromised, ensuring robust evaluation protocols'
           - 'Published peer-reviewed findings in Springer LNCS (DOI: 10.1007/978-3-030-03638-6_21)'
       - name: '[Malicious Domain Prediction System](https://github.com/reinthal/lpp)'
         date:
@@ -103,12 +105,13 @@ cv:
         summary: Modern data lakehouse solution for analyzing large-scale password breach data
         highlights:
           - 'Developed scalable data processing pipeline using Apache Iceberg, Flink, and Spark to analyze high-volume breach data'
+          - 'Passion project to test new technologies that required big data'
       - name: '[Open Source Contributions](https://github.com/reinthal)'
         date:
         start_date:
         end_date:
         location:
-        summary: Contributions to ML and data engineering open source projects
+        summary: Contributions to data engineering open source projects
         highlights:
           - 'Dagster Contribution: [PR #24188](https://github.com/dagster-io/dagster/pull/24188) – Enhanced workflow orchestration for ML pipeline monitoring'
           - 'DLT Hub Contribution: [PR #594](https://github.com/dlt-hub/verified-sources/pull/594) – Improved data ingestion reliability for ML applications'
