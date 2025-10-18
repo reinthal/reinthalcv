@@ -14,7 +14,7 @@ Welcome to my resumé.
 
 I am pivoting my career to work in AI safety research.
 
-I have 7 years of industry experience 3 years in cybersecurity, machine learning and data engineering.
+I have 7 years of industry experience ranging from cybersecurity operations, to machine learning and data engineering.
 
 # Publications
 
