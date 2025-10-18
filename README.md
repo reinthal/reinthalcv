@@ -12,7 +12,7 @@
 
 Welcome to my resumé.
 
-Convincing yourself is easy. Changing your mind is hard. I am pivoting my career to work in AI safety research.
+I am pivoting my career to work in AI safety research.
 
 I have 7 years of industry experience 3 years in cybersecurity, machine learning and data engineering.
 
