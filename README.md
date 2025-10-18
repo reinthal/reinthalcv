@@ -1,6 +1,6 @@
 # Alexander Reinthal's CV
 
-- Phone: +46 73 036 28 78
+- Phone: +46 70 918 68 50
 - Email: [email@reinthal.me](mailto:email@reinthal.me)
 - Location: Gothenburg, Sweden
 - Website: [reinthal.me](https://reinthal.me/)
@@ -39,7 +39,7 @@ I have 7 years of industry experience 3 years in cybersecurity, machine learning
 
 # Experience
 
-## Knowit Solutions Cocreate, Data Platform Engineer / Tech Lead / Delivery Manager
+## Knowit Solutions Cocreate, Data Platform Engineer / Tech Lead / Data Scientist
 
 - Feb 2022 – present
 - Gothenburg, Sweden
