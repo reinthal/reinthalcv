@@ -2,7 +2,7 @@ cv:
   name: Alexander Reinthal
   location: Gothenburg, Sweden
   email: email@reinthal.me
-  phone: "+46730362878"
+  phone: "+46709186850"
   website: https://reinthal.me/
   social_networks:
     - network: LinkedIn
@@ -48,7 +48,7 @@ cv:
           - 'Coursework: Algorithms, Testing, Debugging and Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security'
     experience:
       - company: Knowit Solutions Cocreate
-        position: Data Platform Engineer / Tech Lead / Delivery Manager
+        position: Data Platform Engineer / Tech Lead / Data Scientist
         date:
         start_date: 2022-02
         end_date: present
