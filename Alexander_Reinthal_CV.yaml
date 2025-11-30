@@ -13,8 +13,18 @@ cv:
     _:
       - Welcome to my resumé. 
       - I am pivoting my career to work in AI safety research. 
-      - I have 7 years of industry experience ranging from cybersecurity operations, to machine learning and data engineering.
+      - I have 7 years of industry experience ranging from cybersecurity operations, to machine learning and data science & engineering.
     publications:
+      - title: Detecting Piecewise Cyber Espionage in Model APIs
+        authors:
+          - "Arthur Colle"
+          - "Alexander Reinthal"
+          - "David Williams-King"
+          - "Yingquan Li"
+          - "Lihn Le"
+        date: 2025-11
+        url: https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx
+        summary: "Studied how piecewise misuse activity can be detected in model APIs where regular guardrails like Llama Guard 3 fails. Our results showed that this can be done when modelling misuse using the cyber-kill chain and correlating data like ip addresses across requests."
       - title: Data Modelling for Predicting Exploits
         authors:
           - 'Reinthal, A'
@@ -96,6 +106,8 @@ cv:
         summary: Real-time ML prediction application for assessing malicious domains
         highlights:
           - 'Implemented real-time inference pipeline with performance monitoring'
+    Certificates:
+      - bullet: 'Bluedot AGI Strategy, Completed: 2025-10-07'
     technical_projects:
       - name: '[Data Breach Analysis Pipeline](https://github.com/reinthal/howigotpwned)'
         date:
