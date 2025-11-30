@@ -14,9 +14,13 @@ Welcome to my resumé.
 
 I am pivoting my career to work in AI safety research.
 
-I have 7 years of industry experience ranging from cybersecurity operations, to machine learning and data engineering.
+I have 7 years of industry experience ranging from cybersecurity operations, to machine learning and data science & engineering.
 
 # Publications
+
+## Detecting Piecewise Cyber Espionage in Model APIs ([https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx](apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx))
+- Nov 2025
+- Arthur Colle, Alexander Reinthal, David Williams-King, Yingquan Li, Lihn Le
 
 ## Data Modelling for Predicting Exploits ([10.1007/978-3-030-03638-6_21](https://doi.org/10.1007/978-3-030-03638-6_21))
 - Nov 2018
@@ -74,6 +78,9 @@ I have 7 years of industry experience ranging from cybersecurity operations, to 
 - 2021 – present
 - Implemented real-time inference pipeline with performance monitoring
 
+# Certificates
+
+- Bluedot AGI Strategy, Completed: 2025-10-07
 # Technical Projects
 
 ## [Data Breach Analysis Pipeline](https://github.com/reinthal/howigotpwned)
