@@ -10,11 +10,7 @@
 
 #  
 
-Welcome to my resumé.
-
-I am pivoting my career to work in AI safety research.
-
-I have 7 years of industry experience ranging from cybersecurity operations, to machine learning and data science & engineering.
+7 years of industry experience - cybersecurity operations - machine learning - data science & engineering
 
 # Publications
 
@@ -42,6 +38,14 @@ I have 7 years of industry experience ranging from cybersecurity operations, to 
 - Coursework: Algorithms, Testing, Debugging and Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security
 
 # Experience
+
+## ARENA 7.0, Fellow Participant
+
+- Jan 2026 – Feb 2026
+- ARENA prepares fellows for work as researchers in technical AI Safety.
+- The curriculum is tought over four high-paced weeks and covers
+- the transformer architecture, mechanistic interpretability, RLHF
+- evals, working with the Inspect framework and much more.
 
 ## Knowit Solutions Cocreate, Data Platform Engineer / Tech Lead / Data Scientist
 
