@@ -62,6 +62,7 @@ cv:
         end_date: 2026-02
         summary:
         highlights:
+          - Research projects placed 1st (Detecting Deception in Chinese Models) and 3rd (Inoculation Prompting Against Emergent Misalignment).
           - ARENA prepares fellows for work as researchers in technical AI Safety.
           - The curriculum is tought over four high-paced weeks and covers
           - the transformer architecture, mechanistic interpretability, RLHF
@@ -97,6 +98,37 @@ cv:
         highlights:
           - Led a team to develop a log parsing and analytics tool that scaled into a dedicated engineering team at Ericsson.
     research_projects:
+      - name: 'Novel AI Control Protocol Classes: Evaluation and Scalability'
+        date:
+        start_date: 2025-06
+        end_date: present
+        location:
+        summary: 'Ongoing AI safety research through AI Safety Camp, investigating alternative control protocol classes and their scaling properties as model capabilities increase'
+        highlights:
+          - 'Building on Greenblatt et al.'s control evaluation framework to evaluate hierarchical and parallel control structures against simple trusted-untrusted model pairs'
+          - 'Researching whether complex oversight structures offer superior safety-usefulness Pareto frontiers, particularly as the capability gap between trusted and untrusted models widens'
+          - 'Evaluating scaling laws describing how safety degrades with capability gaps and identifying potential phase transitions where control methods fail'
+      - name: '[Detecting Deception in Chinese Models](https://github.com/reinthal/deception-detection-in-chinese-modelsels)'
+        date:
+        start_date: 2026-01
+        end_date: 2026-02
+        location:
+        summary: 'ARENA 7.0 research project (1st place) applying linear probing to detect deception and political censorship in Chinese-origin language models'
+        highlights:
+          - 'Extended "Detecting Strategic Deception Using Linear Probes" to Qwen 2.5 models, achieving AUROC 0.849 on deception detection'
+          - 'Investigated whether deception and political censorship share the same linear representation in activation space using custom datasets on politically sensitive topics'
+          - 'Discovered that Qwen spontaneously switches to Chinese when asked sensitive questions in English, consistent with an anti-jailbreaking mechanism'
+          - 'Conducted layer sweeps, steering experiments, and probing across model scales (7B to 32B), with larger models showing cleaner score separation'
+      - name: '[Inoculation Prompting Against Emergent Misalignment](https://github.com/reinthal/inoculation-prompting-against-em)'
+        date:
+        start_date: 2026-01
+        end_date: 2026-02
+        location:
+        summary: 'ARENA 7.0 capstone project (3rd place) testing whether inoculation prompting during supervised fine-tuning can suppress emergent misalignment in language models'
+        highlights:
+          - 'Demonstrated that inoculation prompting reduced emergent misalignment from ~12% to ~2% while maintaining model coherence (Qwen2.5-14B)'
+          - 'Showed cross-task generalization: inoculation on one domain (medical/sports) reduces misalignment induced from a different domain (financial advice)'
+          - 'Conducted mechanistic interpretability experiments using rank-1 LoRA adapters to test whether emergent misalignment fine-tuning shifts activations along Anthropic'"'"'s "Assistant Axis"'
       - name: 'Data Modeling for Predicting Exploits'
         date:
         start_date: 2017
@@ -110,7 +142,7 @@ cv:
       - name: '[Malicious Domain Prediction System](https://github.com/reinthal/lpp)'
         date:
         start_date: 2021
-        end_date:
+        end_date: 2022
         location:
         summary: Real-time ML prediction application for assessing malicious domains
         highlights:
@@ -121,7 +153,7 @@ cv:
       - name: '[Data Breach Analysis Pipeline](https://github.com/reinthal/howigotpwned)'
         date:
         start_date: 2024
-        end_date:
+        end_date: 2025
         location:
         summary: Modern data lakehouse solution for analyzing large-scale password breach data
         highlights:
