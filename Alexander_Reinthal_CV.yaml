@@ -13,16 +13,6 @@ cv:
     _:
       - 7 years of industry experience - cybersecurity operations - machine learning - data science & engineering
     publications:
-      - title: Detecting Piecewise Cyber Espionage in Model APIs
-        authors:
-          - "Arthur Colle"
-          - "Alexander Reinthal"
-          - "David Williams-King"
-          - "Yingquan Li"
-          - "Lihn Le"
-        date: 2025-11
-        url: https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx
-        summary: "Studied how piecewise misuse activity can be detected in model APIs where regular guardrails like Llama Guard 3 fails. Our results showed that this can be done when modelling misuse using the cyber-kill chain and correlating data like ip addresses across requests."
       - title: Data Modelling for Predicting Exploits
         authors:
           - 'Reinthal, A'
@@ -33,30 +23,52 @@ cv:
         journal: 'Springer LNCS: Nordic Conference on Secure IT Systems'
         date: 2018-11
         summary: 'Peer-reviewed research on machine learning applications in cybersecurity, demonstrating experimental methodology and evaluation techniques for adversarial scenarios'
-    education:
-      - institution: Chalmers Technical University
-        area: Engineering Physics
-        degree: MS
+    research_projects:
+      - name: '[Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx)'
         date:
-        start_date: 2016-09
-        end_date: 2018-06
-        location: Gothenburg, Sweden
-        summary:
+        start_date: 2025-11
+        end_date: 2025-11
+        location:
+        summary: 'Apart Research sprint (4th place out of 641 submissions) studying detection of piecewise misuse activity in model APIs'
         highlights:
-          - 'Coursework: Statistical Physics, Neural Networks and Machine Learning'
-      - institution: Gothenburg University
-        area: Computer Science
-        degree: BS
+          - 'Showed that piecewise misuse — where individual requests appear benign — can be detected by modelling activity using the cyber kill chain'
+          - 'Correlated data across requests (e.g. IP addresses) to surface patterns that per-request guardrails like Llama Guard 3 miss'
+          - 'Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le'
+      - name: '[Detecting Deception in Chinese Models](https://github.com/reinthal/deception-detection-in-chinese-modelsels)'
         date:
-        start_date: 2013-09
-        end_date: 2016-06
-        location: Gothenburg, Sweden
-        summary:
+        start_date: 2026-01
+        end_date: 2026-02
+        location:
+        summary: 'ARENA 7.0 weekend hackathon (1st place) applying linear probing to detect deception and political censorship in Chinese-origin language models'
         highlights:
-          - 'Coursework: Algorithms, Testing, Debugging and Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security'
+          - 'Extended "Detecting Strategic Deception Using Linear Probes" to Qwen 2.5 models, achieving AUROC 0.849 on deception detection'
+          - 'Investigated whether deception and political censorship share the same linear representation in activation space using custom datasets on politically sensitive topics'
+          - 'Found optimal layers for probes, conducted steering experiments, and increased deception with model size (7B to 32B), with larger models showing cleaner deception-score separation between non-sensitive and sensitive topics'
+          - 'Discovered that Qwen spontaneously switches to Chinese when asked sensitive questions in English, consistent with a refusal/anti-jailbreaking mechanism'
+      - name: '[Inoculation Prompting Against Emergent Misalignment](https://github.com/reinthal/inoculation-prompting-against-em)'
+        date:
+        start_date: 2026-01
+        end_date: 2026-02
+        location:
+        summary: 'ARENA 7.0 capstone project (3rd place) testing whether inoculation prompting during supervised fine-tuning can revert emergent misalignment in language models'
+        highlights:
+          - 'Demonstrated that inoculation prompting reduced emergent misalignment from ~12% to ~2% while maintaining model coherence (Qwen2.5-14B)'
+          - 'Showed cross-task generalization: inoculation on one domain (medical/sports) reduces misalignment induced from a different domain (financial advice)'
+          - 'Conducted mechanistic interpretability experiments using rank-1 LoRA adapters to test whether emergent misalignment fine-tuning shifts activations along Anthropic''s "Assistant Axis"'
+      - name: 'Novel AI Control Protocol Classes: Evaluation and Scalability'
+        date:
+        start_date: 2026-01
+        end_date: present
+        location:
+        summary: 'Ongoing AI safety research through AI Safety Camp, investigating alternative control protocol classes and their scaling properties as model capabilities increase'
+        highlights:
+          - 'Building on Greenblatt et al.''s control evaluation framework to evaluate hierarchical and parallel control structures against simple trusted-untrusted model pairs'
+          - 'Researching whether complex oversight structures offer more safety-usefulness Pareto frontiers, particularly as the capability gap between trusted and untrusted models widens'
+    Certificates:
+      - bullet: 'Bluedot AGI Strategy, Completed: 2025-10-07'
     experience:
       - company: ARENA 7.0
-        position: Fellow Participant
+        position: Alum
         date:
         start_date: 2026-01
         end_date: 2026-02
@@ -64,9 +76,7 @@ cv:
         highlights:
           - Research projects placed 1st (Detecting Deception in Chinese Models) and 3rd (Inoculation Prompting Against Emergent Misalignment).
           - ARENA prepares fellows for work as researchers in technical AI Safety.
-          - The curriculum is tought over four high-paced weeks and covers
-          - the transformer architecture, mechanistic interpretability, RLHF
-          - evals, working with the Inspect framework and much more.
+          - The curriculum is tought over five high-paced weeks and teaches the transformer architecture, mechanistic interpretability, RLHF, evals and working with the Inspect framework by leading researchers in the field.
       - company: Knowit Solutions Cocreate
         position: Data Platform Engineer / Tech Lead / Data Scientist
         date:
@@ -97,68 +107,7 @@ cv:
         summary:
         highlights:
           - Led a team to develop a log parsing and analytics tool that scaled into a dedicated engineering team at Ericsson.
-    research_projects:
-      - name: 'Novel AI Control Protocol Classes: Evaluation and Scalability'
-        date:
-        start_date: 2025-06
-        end_date: present
-        location:
-        summary: 'Ongoing AI safety research through AI Safety Camp, investigating alternative control protocol classes and their scaling properties as model capabilities increase'
-        highlights:
-          - 'Building on Greenblatt et al.'s control evaluation framework to evaluate hierarchical and parallel control structures against simple trusted-untrusted model pairs'
-          - 'Researching whether complex oversight structures offer superior safety-usefulness Pareto frontiers, particularly as the capability gap between trusted and untrusted models widens'
-          - 'Evaluating scaling laws describing how safety degrades with capability gaps and identifying potential phase transitions where control methods fail'
-      - name: '[Detecting Deception in Chinese Models](https://github.com/reinthal/deception-detection-in-chinese-modelsels)'
-        date:
-        start_date: 2026-01
-        end_date: 2026-02
-        location:
-        summary: 'ARENA 7.0 research project (1st place) applying linear probing to detect deception and political censorship in Chinese-origin language models'
-        highlights:
-          - 'Extended "Detecting Strategic Deception Using Linear Probes" to Qwen 2.5 models, achieving AUROC 0.849 on deception detection'
-          - 'Investigated whether deception and political censorship share the same linear representation in activation space using custom datasets on politically sensitive topics'
-          - 'Discovered that Qwen spontaneously switches to Chinese when asked sensitive questions in English, consistent with an anti-jailbreaking mechanism'
-          - 'Conducted layer sweeps, steering experiments, and probing across model scales (7B to 32B), with larger models showing cleaner score separation'
-      - name: '[Inoculation Prompting Against Emergent Misalignment](https://github.com/reinthal/inoculation-prompting-against-em)'
-        date:
-        start_date: 2026-01
-        end_date: 2026-02
-        location:
-        summary: 'ARENA 7.0 capstone project (3rd place) testing whether inoculation prompting during supervised fine-tuning can suppress emergent misalignment in language models'
-        highlights:
-          - 'Demonstrated that inoculation prompting reduced emergent misalignment from ~12% to ~2% while maintaining model coherence (Qwen2.5-14B)'
-          - 'Showed cross-task generalization: inoculation on one domain (medical/sports) reduces misalignment induced from a different domain (financial advice)'
-          - 'Conducted mechanistic interpretability experiments using rank-1 LoRA adapters to test whether emergent misalignment fine-tuning shifts activations along Anthropic'"'"'s "Assistant Axis"'
-      - name: 'Data Modeling for Predicting Exploits'
-        date:
-        start_date: 2017
-        end_date: 2018
-        location:
-        summary: Machine learning research project for predicting software exploits, resulting in peer-reviewed publication
-        highlights:
-          - 'Developed experimental methodology for feature engineering and model validation in cybersecurity domain'
-          - 'Dsicovered subtle ways that experiments can be compromised, ensuring robust evaluation protocols'
-          - 'Published peer-reviewed findings in Springer LNCS (DOI: 10.1007/978-3-030-03638-6_21)'
-      - name: '[Malicious Domain Prediction System](https://github.com/reinthal/lpp)'
-        date:
-        start_date: 2021
-        end_date: 2022
-        location:
-        summary: Real-time ML prediction application for assessing malicious domains
-        highlights:
-          - 'Implemented real-time inference pipeline with performance monitoring'
-    Certificates:
-      - bullet: 'Bluedot AGI Strategy, Completed: 2025-10-07'
-    technical_projects:
-      - name: '[Data Breach Analysis Pipeline](https://github.com/reinthal/howigotpwned)'
-        date:
-        start_date: 2024
-        end_date: 2025
-        location:
-        summary: Modern data lakehouse solution for analyzing large-scale password breach data
-        highlights:
-          - 'Developed scalable data processing pipeline using Apache Iceberg, Flink, and Spark to analyze high-volume breach data'
-          - 'Passion project to test new technologies that required big data'
+    open_source_and_personal_projects:
       - name: '[Open Source Contributions](https://github.com/reinthal)'
         date:
         start_date:
@@ -168,17 +117,55 @@ cv:
         highlights:
           - 'Dagster Contribution: [PR #24188](https://github.com/dagster-io/dagster/pull/24188) – Enhanced workflow orchestration for ML pipeline monitoring'
           - 'DLT Hub Contribution: [PR #594](https://github.com/dlt-hub/verified-sources/pull/594) – Improved data ingestion reliability for ML applications'
+      - name: '[Malicious Domain Prediction System](https://github.com/reinthal/lpp)'
+        date:
+        start_date: 2020
+        end_date: 2021
+        location:
+        summary: Real-time ML prediction application for assessing malicious domains for cyber security operations
+        highlights:
+          - 'Reduced analysis of high-volume bad domains from 1 hour per shift to less than 20 minutes per shift'
+          - 'Implemented real-time inference pipeline with performance monitoring'
+      - name: '[Data Breach Analysis Pipeline](https://github.com/reinthal/howigotpwned)'
+        date:
+        start_date: 2024
+        end_date: 2025
+        location:
+        summary: Modern data lakehouse solution for analyzing large-scale password breach data
+        highlights:
+          - 'Developed scalable data processing pipeline using Apache Iceberg, Flink, and Spark to analyze high-volume breach data'
+          - 'Passion project to test new technologies that required big data'
     skills:
       - label: Machine Learning & AI
-        details: PyTorch, XGBoost, SciKit Learn, Jupyter,  LLM Observability (LangChain, Langfuse, Arize Phoenix),
+        details: PyTorch, Jax, Einops, XGBoost, SciKit Learn, Jupyter,  LLM Observability (Inspect, LangChain, Langfuse, Arize Phoenix),
       - label: Programming Languages
         details: Python, Javascript, SQL, Rust, C/C++, R, Nix, Terraform
-      - label: Research & Data Analysis
-        details: Experimental Design, Statistical Analysis, Distributed Processing, Real-time Analytics, Anomaly Detection
+      - label: Platforms & Tools
+        details: 'Modal, Runpod, Openweights, Weights & Biases, Spark, Flink, Iceberg, Databricks, Dagster, Snowflake, dbt, Apache Superset'
       - label: Infrastructure & DevOps
         details: Nix, Docker, Kubernetes, FluxCD, GitOps, CI/CD pipelines, Terraform, AWS (EC2, S3, IAM)
-      - label: Data Engineering & Platforms
-        details: 'Spark, Flink, Iceberg, Databricks, Dagster, Snowflake, dbt, Apache Superset'
+    education:
+      - institution: Chalmers Technical University
+        area: Engineering Physics
+        degree: MS
+        date:
+        start_date: 2016-09
+        end_date: 2018-06
+        location: Gothenburg, Sweden
+        summary:
+        highlights:
+          - 'Coursework: Statistical Physics, Neural Networks and Machine Learning'
+      - institution: Gothenburg University
+        area: Computer Science
+        degree: BS
+        date:
+        start_date: 2013-09
+        end_date: 2016-06
+        location: Gothenburg, Sweden
+        summary:
+        highlights:
+          - 'Coursework: Algorithms, Testing, Debugging and Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security'
+
 design:
   theme: sb2nov
   page:
@@ -326,6 +313,6 @@ locale:
     - November
     - December
 rendercv_settings:
-  date: '2025-08-17'
+  date: '2026-02-17'
   render_command:
   bold_keywords: []

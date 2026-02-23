@@ -6,6 +6,6 @@ devenv.local.nix
 
 # direnv
 .direnv
-
+**pycache**
 # pre-commit
 .pre-commit-config.yaml

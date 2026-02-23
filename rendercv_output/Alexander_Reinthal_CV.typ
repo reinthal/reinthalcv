@@ -3,7 +3,7 @@
 
 #let name = "Alexander Reinthal"
 #let locale-catalog-page-numbering-style = context { "Alexander Reinthal - Page " + str(here().page()) + " of " + str(counter(page).final().first()) + "" }
-#let locale-catalog-last-updated-date-style = "Last updated in Aug 2025"
+#let locale-catalog-last-updated-date-style = "Last updated in Feb 2026"
 #let locale-catalog-language = "en"
 #let design-page-size = "us-letter"
 #let design-section-titles-font-size = 1.4em
@@ -475,21 +475,6 @@
 
 #two-col-entry(
   left-content: [
-    #strong[Detecting Piecewise Cyber Espionage in Model APIs]
-
-  ],
-  right-content: [
-    Nov 2025
-  ],
-)
-#one-col-entry(content:[
-#v(design-highlights-top-margin);Arthur Colle, Alexander Reinthal, David Williams-King, Yingquan Li, Lihn Le
-
-#v(design-highlights-top-margin - design-text-leading)#link("https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx")[apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx]])
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
     #strong[Data Modelling for Predicting Exploits]
 
   ],
@@ -504,58 +489,84 @@
 
 
 
-== Education
+== Research Projects
 
 
-// YES DATE, NO DEGREE
 #two-col-entry(
   left-content: [
-    #strong[Chalmers Technical University]
-
-#emph[MS in Engineering Physics]
+    #link("https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx")[#strong[Detecting Piecewise Cyber Espionage in Model APIs]]
   ],
   right-content: [
-    #emph[Gothenburg, Sweden]
-
-#emph[Sept 2016 – June 2018]
+    #emph[Nov 2025 – Nov 2025]
   ],
 )
-#block(
-  [
-    #set par(spacing: 0pt)
-    #v(design-highlights-top-margin);#highlights([Coursework: Statistical Physics, Neural Networks and Machine Learning],)
+#one-col-entry(
+  content: [
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Apart Research sprint \(4th place out of 641 submissions\) studying detection of piecewise misuse activity in model APIs])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Showed that piecewise misuse — where individual requests appear benign — can be detected by modelling activity using the cyber kill chain],[Correlated data across requests \(e.g. IP addresses\) to surface patterns that per-request guardrails like Llama Guard 3 miss],[Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le],)
   ],
-  inset: (
-    left: design-entries-left-and-right-margin,
-    right: design-entries-left-and-right-margin,
-  ),
 )
 
 #v(design-entries-vertical-space-between-entries)
-// YES DATE, NO DEGREE
 #two-col-entry(
   left-content: [
-    #strong[Gothenburg University]
-
-#emph[BS in Computer Science]
+    #link("https://github.com/reinthal/deception-detection-in-chinese-modelsels")[#strong[Detecting Deception in Chinese Models]]
   ],
   right-content: [
-    #emph[Gothenburg, Sweden]
-
-#emph[Sept 2013 – June 2016]
+    #emph[Jan 2026 – Feb 2026]
   ],
 )
-#block(
-  [
-    #set par(spacing: 0pt)
-    #v(design-highlights-top-margin);#highlights([Coursework: Algorithms, Testing, Debugging and Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security],)
+#one-col-entry(
+  content: [
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [ARENA 7.0 weekend hackathon \(1st place\) applying linear probing to detect deception and political censorship in Chinese-origin language models])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Extended \"Detecting Strategic Deception Using Linear Probes\" to Qwen 2.5 models, achieving AUROC 0.849 on deception detection],[Investigated whether deception and political censorship share the same linear representation in activation space using custom datasets on politically sensitive topics],[Found optimal layers for probes, conducted steering experiments, and increased deception with model size \(7B to 32B\), with larger models showing cleaner deception-score separation between non-sensitive and sensitive topics],[Discovered that Qwen spontaneously switches to Chinese when asked sensitive questions in English, consistent with a refusal\/anti-jailbreaking mechanism],)
   ],
-  inset: (
-    left: design-entries-left-and-right-margin,
-    right: design-entries-left-and-right-margin,
-  ),
 )
 
+#v(design-entries-vertical-space-between-entries)
+#two-col-entry(
+  left-content: [
+    #link("https://github.com/reinthal/inoculation-prompting-against-em")[#strong[Inoculation Prompting Against Emergent Misalignment]]
+  ],
+  right-content: [
+    #emph[Jan 2026 – Feb 2026]
+  ],
+)
+#one-col-entry(
+  content: [
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [ARENA 7.0 capstone project \(3rd place\) testing whether inoculation prompting during supervised fine-tuning can revert emergent misalignment in language models])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Demonstrated that inoculation prompting reduced emergent misalignment from \~12\% to \~2\% while maintaining model coherence \(Qwen2.5-14B\)],[Showed cross-task generalization: inoculation on one domain \(medical\/sports\) reduces misalignment induced from a different domain \(financial advice\)],[Conducted mechanistic interpretability experiments using rank-1 LoRA adapters to test whether emergent misalignment fine-tuning shifts activations along Anthropic's \"Assistant Axis\"],)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+#two-col-entry(
+  left-content: [
+    #strong[Novel AI Control Protocol Classes: Evaluation and Scalability]
+  ],
+  right-content: [
+    #emph[Jan 2026 – present]
+  ],
+)
+#one-col-entry(
+  content: [
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Ongoing AI safety research through AI Safety Camp, investigating alternative control protocol classes and their scaling properties as model capabilities increase])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Building on Greenblatt et al.'s control evaluation framework to evaluate hierarchical and parallel control structures against simple trusted-untrusted model pairs],[Researching whether complex oversight structures offer more safety-usefulness Pareto frontiers, particularly as the capability gap between trusted and untrusted models widens],)
+  ],
+)
+
+
+
+== Certificates
+
+
+#one-col-entry(
+  content: [- Bluedot AGI Strategy, Completed: 2025-10-07],
+)
 
 
 == Experience
@@ -563,7 +574,7 @@
 
 #two-col-entry(
   left-content: [
-    #strong[Fellow Participant]
+    #strong[Alum]
 
 #emph[ARENA 7.0]
   ],
@@ -573,7 +584,7 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([ARENA prepares fellows for work as researchers in technical AI Safety.],[The curriculum is tought over four high-paced weeks and covers],[the transformer architecture, mechanistic interpretability, RLHF],[evals, working with the Inspect framework and much more.],)
+    #v(design-highlights-top-margin);#highlights([Research projects placed 1st \(Detecting Deception in Chinese Models\) and 3rd \(Inoculation Prompting Against Emergent Misalignment\).],[ARENA prepares fellows for work as researchers in technical AI Safety.],[The curriculum is tought over five high-paced weeks and teaches the transformer architecture, mechanistic interpretability, RLHF, evals and working with the Inspect framework by leading researchers in the field.],)
   ],
 )
 
@@ -636,72 +647,9 @@
 
 
 
-== Research Projects
+== Open Source and Personal Projects
 
 
-#two-col-entry(
-  left-content: [
-    #strong[Data Modeling for Predicting Exploits]
-  ],
-  right-content: [
-    #emph[2017 – 2018]
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Machine learning research project for predicting software exploits, resulting in peer-reviewed publication])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Developed experimental methodology for feature engineering and model validation in cybersecurity domain],[Dsicovered subtle ways that experiments can be compromised, ensuring robust evaluation protocols],[Published peer-reviewed findings in Springer LNCS \(: 10.1007\/978-3-030-03638-6\_21\)],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #link("https://github.com/reinthal/lpp")[#strong[Malicious Domain Prediction System]]
-  ],
-  right-content: [
-    #emph[2021 – present]
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Real-time ML prediction application for assessing malicious domains])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Implemented real-time inference pipeline with performance monitoring],)
-  ],
-)
-
-
-
-== Certificates
-
-
-#one-col-entry(
-  content: [- Bluedot AGI Strategy, Completed: 2025-10-07],
-)
-
-
-== Technical Projects
-
-
-#two-col-entry(
-  left-content: [
-    #link("https://github.com/reinthal/howigotpwned")[#strong[Data Breach Analysis Pipeline]]
-  ],
-  right-content: [
-    #emph[2024 – present]
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Modern data lakehouse solution for analyzing large-scale password breach data])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Developed scalable data processing pipeline using Apache Iceberg, Flink, and Spark to analyze high-volume breach data],[Passion project to test new technologies that required big data],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
 
 #one-col-entry(
   content: [
@@ -714,13 +662,47 @@
   ],
 )
 
+#v(design-entries-vertical-space-between-entries)
+#two-col-entry(
+  left-content: [
+    #link("https://github.com/reinthal/lpp")[#strong[Malicious Domain Prediction System]]
+  ],
+  right-content: [
+    #emph[2020 – 2021]
+  ],
+)
+#one-col-entry(
+  content: [
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Real-time ML prediction application for assessing malicious domains for cyber security operations])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Reduced analysis of high-volume bad domains from 1 hour per shift to less than 20 minutes per shift],[Implemented real-time inference pipeline with performance monitoring],)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+#two-col-entry(
+  left-content: [
+    #link("https://github.com/reinthal/howigotpwned")[#strong[Data Breach Analysis Pipeline]]
+  ],
+  right-content: [
+    #emph[2024 – 2025]
+  ],
+)
+#one-col-entry(
+  content: [
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Modern data lakehouse solution for analyzing large-scale password breach data])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Developed scalable data processing pipeline using Apache Iceberg, Flink, and Spark to analyze high-volume breach data],[Passion project to test new technologies that required big data],)
+  ],
+)
+
 
 
 == Skills
 
 
 #one-col-entry(
-  content: [#strong[Machine Learning & AI:] PyTorch, XGBoost, SciKit Learn, Jupyter,  LLM Observability \(LangChain, Langfuse, Arize Phoenix\)]
+  content: [#strong[Machine Learning & AI:] PyTorch, Jax, Einops, XGBoost, SciKit Learn, Jupyter,  LLM Observability \(Inspect, LangChain, Langfuse, Arize Phoenix\)]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
@@ -728,15 +710,65 @@
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Research & Data Analysis:] Experimental Design, Statistical Analysis, Distributed Processing, Real-time Analytics, Anomaly Detection]
+  content: [#strong[Platforms & Tools:] Modal, Runpod, Openweights, Weights & Biases, Spark, Flink, Iceberg, Databricks, Dagster, Snowflake, dbt, Apache Superset]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
   content: [#strong[Infrastructure & DevOps:] Nix, Docker, Kubernetes, FluxCD, GitOps, CI\/CD pipelines, Terraform, AWS \(EC2, S3, IAM\)]
 )
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [#strong[Data Engineering & Platforms:] Spark, Flink, Iceberg, Databricks, Dagster, Snowflake, dbt, Apache Superset]
+
+
+== Education
+
+
+// YES DATE, NO DEGREE
+#two-col-entry(
+  left-content: [
+    #strong[Chalmers Technical University]
+
+#emph[MS in Engineering Physics]
+  ],
+  right-content: [
+    #emph[Gothenburg, Sweden]
+
+#emph[Sept 2016 – June 2018]
+  ],
 )
+#block(
+  [
+    #set par(spacing: 0pt)
+    #v(design-highlights-top-margin);#highlights([Coursework: Statistical Physics, Neural Networks and Machine Learning],)
+  ],
+  inset: (
+    left: design-entries-left-and-right-margin,
+    right: design-entries-left-and-right-margin,
+  ),
+)
+
+#v(design-entries-vertical-space-between-entries)
+// YES DATE, NO DEGREE
+#two-col-entry(
+  left-content: [
+    #strong[Gothenburg University]
+
+#emph[BS in Computer Science]
+  ],
+  right-content: [
+    #emph[Gothenburg, Sweden]
+
+#emph[Sept 2013 – June 2016]
+  ],
+)
+#block(
+  [
+    #set par(spacing: 0pt)
+    #v(design-highlights-top-margin);#highlights([Coursework: Algorithms, Testing, Debugging and Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security],)
+  ],
+  inset: (
+    left: design-entries-left-and-right-margin,
+    right: design-entries-left-and-right-margin,
+  ),
+)
+
 
 
