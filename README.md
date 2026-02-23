@@ -14,38 +14,52 @@
 
 # Publications
 
-## Detecting Piecewise Cyber Espionage in Model APIs ([https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx](apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx))
-- Nov 2025
-- Arthur Colle, Alexander Reinthal, David Williams-King, Yingquan Li, Lihn Le
-
 ## Data Modelling for Predicting Exploits ([10.1007/978-3-030-03638-6_21](https://doi.org/10.1007/978-3-030-03638-6_21))
 - Nov 2018
 - Reinthal, A, Filippakis, E., Almgren, M.
 - Springer LNCS: Nordic Conference on Secure IT Systems
 
-# Education
+# Research Projects
 
-## Chalmers Technical University, MS in Engineering Physics
+## [Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx)
 
-- Sept 2016 – June 2018
-- Gothenburg, Sweden
-- Coursework: Statistical Physics, Neural Networks and Machine Learning
+- Nov 2025 – Nov 2025
+- Showed that piecewise misuse — where individual requests appear benign — can be detected by modelling activity using the cyber kill chain
+- Correlated data across requests (e.g. IP addresses) to surface patterns that per-request guardrails like Llama Guard 3 miss
+- Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le
 
-## Gothenburg University, BS in Computer Science
-
-- Sept 2013 – June 2016
-- Gothenburg, Sweden
-- Coursework: Algorithms, Testing, Debugging and Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security
-
-# Experience
-
-## ARENA 7.0, Fellow Participant
+## [Detecting Deception in Chinese Models](https://github.com/reinthal/deception-detection-in-chinese-modelsels)
 
 - Jan 2026 – Feb 2026
+- Extended "Detecting Strategic Deception Using Linear Probes" to Qwen 2.5 models, achieving AUROC 0.849 on deception detection
+- Investigated whether deception and political censorship share the same linear representation in activation space using custom datasets on politically sensitive topics
+- Found optimal layers for probes, conducted steering experiments, and increased deception with model size (7B to 32B), with larger models showing cleaner deception-score separation between non-sensitive and sensitive topics
+- Discovered that Qwen spontaneously switches to Chinese when asked sensitive questions in English, consistent with a refusal/anti-jailbreaking mechanism
+
+## [Inoculation Prompting Against Emergent Misalignment](https://github.com/reinthal/inoculation-prompting-against-em)
+
+- Jan 2026 – Feb 2026
+- Demonstrated that inoculation prompting reduced emergent misalignment from ~12% to ~2% while maintaining model coherence (Qwen2.5-14B)
+- Showed cross-task generalization: inoculation on one domain (medical/sports) reduces misalignment induced from a different domain (financial advice)
+- Conducted mechanistic interpretability experiments using rank-1 LoRA adapters to test whether emergent misalignment fine-tuning shifts activations along Anthropic's "Assistant Axis"
+
+## Novel AI Control Protocol Classes: Evaluation and Scalability
+
+- Jan 2026 – present
+- Building on Greenblatt et al.'s control evaluation framework to evaluate hierarchical and parallel control structures against simple trusted-untrusted model pairs
+- Researching whether complex oversight structures offer more safety-usefulness Pareto frontiers, particularly as the capability gap between trusted and untrusted models widens
+
+# Certificates
+
+- Bluedot AGI Strategy, Completed: 2025-10-07
+# Experience
+
+## ARENA 7.0, Alum
+
+- Jan 2026 – Feb 2026
+- Research projects placed 1st (Detecting Deception in Chinese Models) and 3rd (Inoculation Prompting Against Emergent Misalignment).
 - ARENA prepares fellows for work as researchers in technical AI Safety.
-- The curriculum is tought over four high-paced weeks and covers
-- the transformer architecture, mechanistic interpretability, RLHF
-- evals, working with the Inspect framework and much more.
+- The curriculum is tought over five high-paced weeks and teaches the transformer architecture, mechanistic interpretability, RLHF, evals and working with the Inspect framework by leading researchers in the field.
 
 ## Knowit Solutions Cocreate, Data Platform Engineer / Tech Lead / Data Scientist
 
@@ -68,40 +82,42 @@
 - Gothenburg, Sweden
 - Led a team to develop a log parsing and analytics tool that scaled into a dedicated engineering team at Ericsson.
 
-# Research Projects
-
-## Data Modeling for Predicting Exploits
-
-- 2017 – 2018
-- Developed experimental methodology for feature engineering and model validation in cybersecurity domain
-- Dsicovered subtle ways that experiments can be compromised, ensuring robust evaluation protocols
-- Published peer-reviewed findings in Springer LNCS (DOI: 10.1007/978-3-030-03638-6_21)
-
-## [Malicious Domain Prediction System](https://github.com/reinthal/lpp)
-
-- 2021 – present
-- Implemented real-time inference pipeline with performance monitoring
-
-# Certificates
-
-- Bluedot AGI Strategy, Completed: 2025-10-07
-# Technical Projects
-
-## [Data Breach Analysis Pipeline](https://github.com/reinthal/howigotpwned)
-
-- 2024 – present
-- Developed scalable data processing pipeline using Apache Iceberg, Flink, and Spark to analyze high-volume breach data
-- Passion project to test new technologies that required big data
+# Open Source and Personal Projects
 
 ## [Open Source Contributions](https://github.com/reinthal)
 
 - Dagster Contribution: [PR #24188](https://github.com/dagster-io/dagster/pull/24188) – Enhanced workflow orchestration for ML pipeline monitoring
 - DLT Hub Contribution: [PR #594](https://github.com/dlt-hub/verified-sources/pull/594) – Improved data ingestion reliability for ML applications
 
+## [Malicious Domain Prediction System](https://github.com/reinthal/lpp)
+
+- 2020 – 2021
+- Reduced analysis of high-volume bad domains from 1 hour per shift to less than 20 minutes per shift
+- Implemented real-time inference pipeline with performance monitoring
+
+## [Data Breach Analysis Pipeline](https://github.com/reinthal/howigotpwned)
+
+- 2024 – 2025
+- Developed scalable data processing pipeline using Apache Iceberg, Flink, and Spark to analyze high-volume breach data
+- Passion project to test new technologies that required big data
+
 # Skills
 
-- Machine Learning & AI: PyTorch, XGBoost, SciKit Learn, Jupyter,  LLM Observability (LangChain, Langfuse, Arize Phoenix),
+- Machine Learning & AI: PyTorch, Jax, Einops, XGBoost, SciKit Learn, Jupyter,  LLM Observability (Inspect, LangChain, Langfuse, Arize Phoenix),
 - Programming Languages: Python, Javascript, SQL, Rust, C/C++, R, Nix, Terraform
-- Research & Data Analysis: Experimental Design, Statistical Analysis, Distributed Processing, Real-time Analytics, Anomaly Detection
+- Platforms & Tools: Modal, Runpod, Openweights, Weights & Biases, Spark, Flink, Iceberg, Databricks, Dagster, Snowflake, dbt, Apache Superset
 - Infrastructure & DevOps: Nix, Docker, Kubernetes, FluxCD, GitOps, CI/CD pipelines, Terraform, AWS (EC2, S3, IAM)
-- Data Engineering & Platforms: Spark, Flink, Iceberg, Databricks, Dagster, Snowflake, dbt, Apache Superset
+# Education
+
+## Chalmers Technical University, MS in Engineering Physics
+
+- Sept 2016 – June 2018
+- Gothenburg, Sweden
+- Coursework: Statistical Physics, Neural Networks and Machine Learning
+
+## Gothenburg University, BS in Computer Science
+
+- Sept 2013 – June 2016
+- Gothenburg, Sweden
+- Coursework: Algorithms, Testing, Debugging and Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security
+
