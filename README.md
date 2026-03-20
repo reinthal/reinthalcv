@@ -36,12 +36,12 @@
 - Found optimal layers for probes, conducted steering experiments, and increased deception with model size (7B to 32B), with larger models showing cleaner deception-score separation between non-sensitive and sensitive topics
 - Discovered that Qwen spontaneously switches to Chinese when asked sensitive questions in English, consistent with a refusal/anti-jailbreaking mechanism
 
-## [Inoculation Prompting Against Emergent Misalignment](https://github.com/reinthal/inoculation-prompting-against-em)
+## [Robustness of Emergent Misalignment](https://github.com/reinthal/inoculation-prompting)
 
 - Jan 2026 – Feb 2026
-- Demonstrated that inoculation prompting reduced emergent misalignment from ~12% to ~2% while maintaining model coherence (Qwen2.5-14B)
-- Showed cross-task generalization: inoculation on one domain (medical/sports) reduces misalignment induced from a different domain (financial advice)
-- Conducted mechanistic interpretability experiments using rank-1 LoRA adapters to test whether emergent misalignment fine-tuning shifts activations along Anthropic's "Assistant Axis"
+- Found EM is brittle to further aligned SFT: 6/7 post-EM fine-tunes substantially reduced EM from a 31.02% baseline
+- Aligned/neutral controls sharply reduced EM (e.g., GSM8K 12.53%, CoT Cooking 0.30%, Good Medical 0.10%)
+- One self-distilled control (GSM8K Caps) increased EM to 38.83%, suggesting benign-seeming self-training can worsen EM
 
 ## Novel AI Control Protocol Classes: Evaluation and Scalability
 
