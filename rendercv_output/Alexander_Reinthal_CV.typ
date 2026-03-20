@@ -528,7 +528,7 @@
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #link("https://github.com/reinthal/inoculation-prompting-against-em")[#strong[Inoculation Prompting Against Emergent Misalignment]]
+    #link("https://github.com/reinthal/inoculation-prompting")[#strong[Robustness of Emergent Misalignment]]
   ],
   right-content: [
     #emph[Jan 2026 – Feb 2026]
@@ -536,9 +536,9 @@
 )
 #one-col-entry(
   content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [ARENA 7.0 capstone project \(3rd place\) testing whether inoculation prompting during supervised fine-tuning can revert emergent misalignment in language models])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [ARENA 7.0 capstone project \(3rd place\) testing whether emergent misalignment \(EM\) is robust to additional aligned\/neutral fine-tuning])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Demonstrated that inoculation prompting reduced emergent misalignment from \~12\% to \~2\% while maintaining model coherence \(Qwen2.5-14B\)],[Showed cross-task generalization: inoculation on one domain \(medical\/sports\) reduces misalignment induced from a different domain \(financial advice\)],[Conducted mechanistic interpretability experiments using rank-1 LoRA adapters to test whether emergent misalignment fine-tuning shifts activations along Anthropic's \"Assistant Axis\"],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Found EM is brittle to further aligned SFT: 6\/7 post-EM fine-tunes substantially reduced EM from a 31.02\% baseline],[Aligned\/neutral controls sharply reduced EM \(e.g., GSM8K 12.53\%, CoT Cooking 0.30\%, Good Medical 0.10\%\)],[One self-distilled control \(GSM8K Caps\) increased EM to 38.83\%, suggesting benign-seeming self-training can worsen EM],)
   ],
 )
 
