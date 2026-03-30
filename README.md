@@ -51,7 +51,7 @@
 
 # Certificates
 
-- Bluedot Technical Ai safety, Completed: 2026-03-21
+- Bluedot Technical AI safety, Completed: 2026-03-21
 - Bluedot AGI Strategy, Completed: 2025-10-07
 # Experience
 

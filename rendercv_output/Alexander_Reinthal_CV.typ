@@ -565,7 +565,7 @@
 
 
 #one-col-entry(
-  content: [- Bluedot Technical Ai safety, Completed: 2026-03-21],
+  content: [- Bluedot Technical AI safety, Completed: 2026-03-21],
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
