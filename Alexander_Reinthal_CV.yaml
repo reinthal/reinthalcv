@@ -65,8 +65,17 @@ cv:
           - 'Building on Greenblatt et al.''s control evaluation framework to evaluate hierarchical and parallel control structures against simple trusted-untrusted model pairs'
           - 'Researching whether complex oversight structures offer more safety-usefulness Pareto frontiers, particularly as the capability gap between trusted and untrusted models widens'
     Certificates:
+      - bullet: 'Bluedot Technical Ai safety, Completed: 2026-03-21'
       - bullet: 'Bluedot AGI Strategy, Completed: 2025-10-07'
     experience:
+      - company: Bluedot Impact
+        position: Facilitator
+        date:
+        start_date: 2026-03-16
+        end_date: 2026-03-21
+        summary:
+        highlights:
+          - Facilitated the Technical AI safety course during a one-week intensive course. Received outstanding feedback from course participants and we collectively started a 1-month plan accountability channel on the Bluedot slack ensure we stay on target.
       - company: ARENA 7.0
         position: Alum
         date:
