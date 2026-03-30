@@ -565,6 +565,10 @@
 
 
 #one-col-entry(
+  content: [- Bluedot Technical Ai safety, Completed: 2026-03-21],
+)
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
   content: [- Bluedot AGI Strategy, Completed: 2025-10-07],
 )
 
@@ -572,6 +576,23 @@
 == Experience
 
 
+#two-col-entry(
+  left-content: [
+    #strong[Facilitator]
+
+#emph[Bluedot Impact]
+  ],
+  right-content: [
+    #emph[Mar 2026 – Mar 2026]
+  ],
+)
+#one-col-entry(
+  content: [
+    #v(design-highlights-top-margin);#highlights([Facilitated the Technical AI safety course during a one-week intensive course. Received outstanding feedback from course participants and we collectively started a 1-month plan accountability channel on the Bluedot slack ensure we stay on target.],)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
     #strong[Alum]
