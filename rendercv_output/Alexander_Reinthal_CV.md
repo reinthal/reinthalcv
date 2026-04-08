@@ -115,7 +115,7 @@
 - Infrastructure & DevOps: Nix, Docker, Kubernetes, FluxCD, GitOps, CI/CD pipelines, Terraform, AWS (EC2, S3, IAM)
 # Education
 
-## Chalmers Technical University, MS in Engineering Physics
+## Chalmers University of Technology, MS in Engineering Physics
 
 - Sept 2016 – June 2018
 - Gothenburg, Sweden

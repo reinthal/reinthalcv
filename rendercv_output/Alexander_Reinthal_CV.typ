@@ -745,7 +745,7 @@
 // YES DATE, NO DEGREE
 #two-col-entry(
   left-content: [
-    #strong[Chalmers Technical University]
+    #strong[Chalmers University of Technology]
 
 #emph[MS in Engineering Physics]
   ],
