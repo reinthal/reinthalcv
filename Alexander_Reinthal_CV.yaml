@@ -154,7 +154,7 @@ cv:
       - label: Infrastructure & DevOps
         details: Nix, Docker, Kubernetes, FluxCD, GitOps, CI/CD pipelines, Terraform, AWS (EC2, S3, IAM)
     education:
-      - institution: Chalmers Technical University
+      - institution: Chalmers University of Technology
         area: Engineering Physics
         degree: MS
         date:
