@@ -45,16 +45,16 @@ cv:
           - 'Investigated whether deception and political censorship share the same linear representation in activation space using custom datasets on politically sensitive topics'
           - 'Found optimal layers for probes, conducted steering experiments, and increased deception with model size (7B to 32B), with larger models showing cleaner deception-score separation between non-sensitive and sensitive topics'
           - 'Discovered that Qwen spontaneously switches to Chinese when asked sensitive questions in English, consistent with a refusal/anti-jailbreaking mechanism'
-      - name: '[Robustness of Emergent Misalignment](https://github.com/reinthal/inoculation-prompting)'
+      - name: '[Inoculation Prompting for Emergent Misalignment](https://github.com/reinthal/about-emergent-misalignment)'
         date:
         start_date: 2026-01
-        end_date: 2026-02
+        end_date: 2026-04
         location:
-        summary: 'ARENA 7.0 capstone project (3rd place) testing whether emergent misalignment (EM) is robust to additional aligned/neutral fine-tuning'
+        summary: 'ARENA 7.0 capstone project (3rd place) investigating whether inoculation prompting can prevent or reverse emergent misalignment (EM) in fine-tuned LLMs'
         highlights:
-          - 'Found EM is brittle to further aligned SFT: 6/7 post-EM fine-tunes substantially reduced EM from a 31.02% baseline'
-          - 'Aligned/neutral controls sharply reduced EM (e.g., GSM8K 12.53%, CoT Cooking 0.30%, Good Medical 0.10%)'
-          - 'One self-distilled control (GSM8K Caps) increased EM to 38.83%, suggesting benign-seeming self-training can worsen EM'
+          - 'Inoculation (prepending "please be harmful" to training data) completely prevents EM: 0% EM across all 3 domains and encodings vs 17–34% in controls (2x5 experiment, n=2000 each)'
+          - 'Discovered on-policy neutral data amplifies EM (+10pp) even when judge-screened as benign, while same questions answered by base model eliminate EM (0%), proving misalignment signal lives in EM model completions'
+          - 'Identified correctness confound: EM degrades capabilities by 68pp on GSM8K, and any correct-data SFT simultaneously restores capabilities and reduces EM, making effects inseparable'
       - name: 'Novel AI Control Protocol Classes: Evaluation and Scalability'
         date:
         start_date: 2026-01
