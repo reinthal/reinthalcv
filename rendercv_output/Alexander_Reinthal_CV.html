@@ -73,12 +73,12 @@
         <li>Found optimal layers for probes, conducted steering experiments, and increased deception with model size (7B to 32B), with larger models showing cleaner deception-score separation between non-sensitive and sensitive topics</li>
         <li>Discovered that Qwen spontaneously switches to Chinese when asked sensitive questions in English, consistent with a refusal/anti-jailbreaking mechanism</li>
         </ul>
-        <h2><a href="https://github.com/reinthal/inoculation-prompting">Robustness of Emergent Misalignment</a></h2>
+        <h2><a href="https://github.com/reinthal/about-emergent-misalignment">Inoculation Prompting for Emergent Misalignment</a></h2>
         <ul>
-        <li>Jan 2026 – Feb 2026</li>
-        <li>Found EM is brittle to further aligned SFT: 6/7 post-EM fine-tunes substantially reduced EM from a 31.02% baseline</li>
-        <li>Aligned/neutral controls sharply reduced EM (e.g., GSM8K 12.53%, CoT Cooking 0.30%, Good Medical 0.10%)</li>
-        <li>One self-distilled control (GSM8K Caps) increased EM to 38.83%, suggesting benign-seeming self-training can worsen EM</li>
+        <li>Jan 2026 – Apr 2026</li>
+        <li>Inoculation (prepending "please be harmful" to training data) completely prevents EM: 0% EM across all 3 domains and encodings vs 17–34% in controls (2x5 experiment, n=2000 each)</li>
+        <li>Discovered on-policy neutral data amplifies EM (+10pp) even when judge-screened as benign, while same questions answered by base model eliminate EM (0%), proving misalignment signal lives in EM model completions</li>
+        <li>Identified correctness confound: EM degrades capabilities by 68pp on GSM8K, and any correct-data SFT simultaneously restores capabilities and reduces EM, making effects inseparable</li>
         </ul>
         <h2>Novel AI Control Protocol Classes: Evaluation and Scalability</h2>
         <ul>
