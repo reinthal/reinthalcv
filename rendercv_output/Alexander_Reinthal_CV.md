@@ -32,7 +32,6 @@ Cybersecurity ML engineer moving into frontier AI safety. 7 years building class
 
 - Jan 2026 – present
 - Owned red-teaming work-stream: identified which open-weight models best bypass refusal training to use as untrusted models in control evals.
-- Relevant to DeepMind responsibilities around AI control, agentic threat modelling, and long-horizon attack robustness.
 
 ## [Detecting Deception in Chinese Models](https://github.com/reinthal/deception-detection-in-chinese-models)
 

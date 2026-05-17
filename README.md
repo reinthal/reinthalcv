@@ -10,13 +10,13 @@
 
 #  
 
-7 years of industry experience - cybersecurity operations - machine learning - data science & engineering
+Cybersecurity ML engineer moving into frontier AI safety. 7 years building classifiers and detection pipelines for malicious traffic and software vulnerabilities (NTT Security; peer-reviewed exploit-prediction methodology adopted by Recorded Future). Recent AI safety work: 1st place ARENA 7.0 hackathon on deception probes, 4th of 641 at Apart Research on cross-request misuse detection in model APIs, and experience from AI control research at AI Safety Camp.
 
 # Publications
 
-## Data Modelling for Predicting Exploits ([10.1007/978-3-030-03638-6_21](https://doi.org/10.1007/978-3-030-03638-6_21))
+## Data Modeling for Predicting Software Exploits ([10.1007/978-3-030-03638-6_21](https://doi.org/10.1007/978-3-030-03638-6_21))
 - Nov 2018
-- Reinthal, A, Filippakis, E., Almgren, M.
+- Reinthal, A., Filippakis, E., Almgren, M.
 - Springer LNCS: Nordic Conference on Secure IT Systems
 
 # Research Projects
@@ -24,95 +24,81 @@
 ## [Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx)
 
 - Nov 2025 – Nov 2025
-- Showed that piecewise misuse — where individual requests appear benign — can be detected by modelling activity using the cyber kill chain
-- Correlated data across requests (e.g. IP addresses) to surface patterns that per-request guardrails like Llama Guard 3 miss
-- Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le
-
-## [Detecting Deception in Chinese Models](https://github.com/reinthal/deception-detection-in-chinese-modelsels)
-
-- Jan 2026 – Feb 2026
-- Extended "Detecting Strategic Deception Using Linear Probes" to Qwen 2.5 models, achieving AUROC 0.849 on deception detection
-- Investigated whether deception and political censorship share the same linear representation in activation space using custom datasets on politically sensitive topics
-- Found optimal layers for probes, conducted steering experiments, and increased deception with model size (7B to 32B), with larger models showing cleaner deception-score separation between non-sensitive and sensitive topics
-- Discovered that Qwen spontaneously switches to Chinese when asked sensitive questions in English, consistent with a refusal/anti-jailbreaking mechanism
-
-## [Inoculation Prompting for Emergent Misalignment](https://github.com/reinthal/about-emergent-misalignment)
-
-- Jan 2026 – Apr 2026
-- Inoculation (prepending "please be harmful" to training data) completely prevents EM: 0% EM across all 3 domains and encodings vs 17–34% in controls (2x5 experiment, n=2000 each)
-- Discovered on-policy neutral data amplifies EM (+10pp) even when judge-screened as benign, while same questions answered by base model eliminate EM (0%), proving misalignment signal lives in EM model completions
-- Identified correctness confound: EM degrades capabilities by 68pp on GSM8K, and any correct-data SFT simultaneously restores capabilities and reduces EM, making effects inseparable
+- Showed that piecewise misuse — individual requests that look benign in isolation — can be detected by modelling activity across the cyber kill chain.
+- Aggregated signals across disparate requests (e.g. IP correlation) to surface attack patterns that per-request guardrails like Llama Guard 3 miss.
+- Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le.
 
 ## Novel AI Control Protocol Classes: Evaluation and Scalability
 
 - Jan 2026 – present
-- Building on Greenblatt et al.'s control evaluation framework to evaluate hierarchical and parallel control structures against simple trusted-untrusted model pairs
-- Researching whether complex oversight structures offer more safety-usefulness Pareto frontiers, particularly as the capability gap between trusted and untrusted models widens
+- Owned red-teaming work-stream: identified which open-weight models best bypass refusal training to use as untrusted models in control evals.
 
-# Certificates
+## [Detecting Deception in Chinese Models](https://github.com/reinthal/deception-detection-in-chinese-models)
 
-- Bluedot Technical AI safety, Completed: 2026-03-21
-- Bluedot AGI Strategy, Completed: 2025-10-07
+- Jan 2026 – present
+- Linear probes for deception transfer to Llama-3.3-70B (AUROC > 0.74) but fail on Qwen-2.5-72B (AUROC < 0.5) while Qwen is more China-aligned on evals than Llama-3.3. A curious gap that warrants further research. Ongoing.
+- Awarded a Bluedot Impact rapid grant to extend the work to additional frontier open-weight models.
+
+## [About Emergent Misalignment](https://github.com/reinthal/about-emergent-misalignment)
+
+- Jan 2026 – present
+- Fine-tuned model organisms via SFT; showed emergent misalignment degrades capabilities by 68pp on GSM8K and that any correct-data SFT simultaneously restores capabilities and reduces EM — effects are inseparable under this training recipe.
+
 # Experience
 
 ## Bluedot Impact, Facilitator
 
-- Mar 2026 – Mar 2026
-- Facilitated the Technical AI safety course during a one-week intensive course. Received outstanding feedback from course participants and we collectively started a 1-month plan accountability channel on the Bluedot slack ensure we stay on target.
+- Mar 2026 – present
+- Part-time facilitator and mentor for the Technical AI Safety course and project track; consistent outstanding feedback from course participants.
 
 ## ARENA 7.0, Alum
 
 - Jan 2026 – Feb 2026
 - Research projects placed 1st (Detecting Deception in Chinese Models) and 3rd (Inoculation Prompting Against Emergent Misalignment).
-- ARENA prepares fellows for work as researchers in technical AI Safety.
-- The curriculum is tought over five high-paced weeks and teaches the transformer architecture, mechanistic interpretability, RLHF, evals and working with the Inspect framework by leading researchers in the field.
+- Five-week intensive curriculum on transformer internals, mechanistic interpretability, RLHF, evals, JAX, and the Inspect framework — taught by leading AI safety researchers.
 
 ## Knowit Solutions Cocreate, Data Platform Engineer / Tech Lead / Data Scientist
 
 - Feb 2022 – present
 - Gothenburg, Sweden
-- Mentored junior engineers
-- Compared multiple LLM observability tools for use with a job-ad-to-consultant matching LLM platform. (LangChain, Langfuse, Arize Phoenix).
-- Deployed Arize Phoenix to monitor LLM calls and model performance in production environments.
+- Implemented an OAuth-authenticated MCP gateway to secure agentic workflows — controlling tool access and authenticating model-side calls against downstream APIs.
+- Compared LLM observability tooling (LangChain, Langfuse, Arize Phoenix) for a job-ad-to-consultant matching platform; deployed Arize Phoenix to production for LLM-call monitoring and model-performance tracking. Mentored junior engineers.
 
 ## NTT Security, Security Analyst
 
 - Apr 2019 – Jan 2022
 - Gothenburg, Sweden
-- Developed predictive analytics tooling for detecting malicious network traffic, leveraging Python, machine learning, and distributed processing.
-- Provided mentorship and security training, educating analysts on threat intelligence, anomaly detection, and alert triage automation.
+- Built ML classifiers and anomaly-detection pipelines for malicious network traffic across high-volume customer environments using Python and distributed processing.
+- Designed alert-triage automation; mentored junior analysts on threat intelligence, anomaly detection, and triage workflows.
 
 ## Ericsson, Python Software Engineer
 
 - June 2017 – Oct 2018
 - Gothenburg, Sweden
-- Led a team to develop a log parsing and analytics tool that scaled into a dedicated engineering team at Ericsson.
+- Led a team building a log-parsing and analytics tool that grew into a dedicated Ericsson engineering team.
 
 # Open Source and Personal Projects
 
-## [Open Source Contributions](https://github.com/reinthal)
+## [Scheming Propensity Evals on Gemini 3.1 Pro](https://github.com/reinthal/scheming-propensity)
 
-- Dagster Contribution: [PR #24188](https://github.com/dagster-io/dagster/pull/24188) – Enhanced workflow orchestration for ML pipeline monitoring
-- DLT Hub Contribution: [PR #594](https://github.com/dlt-hub/verified-sources/pull/594) – Improved data ingestion reliability for ML applications
+- May 2026 – present
+- Implemented the eval suite in Inspect and validated it against Gemini 3.1 Pro. Used to establish baselines on open-source models for model organisms research.
 
-## [Malicious Domain Prediction System](https://github.com/reinthal/lpp)
+## [Casually Jailbreaking Gemini 2.5 Flash](https://www.reinthal.me/posts/casually-jailbreaking-gemini25-flash/)
 
-- 2020 – 2021
-- Reduced analysis of high-volume bad domains from 1 hour per shift to less than 20 minutes per shift
-- Implemented real-time inference pipeline with performance monitoring
+- 2026 – 2026
+- Practical demonstration of adversarial-robustness gaps in a production frontier model — directly relevant to the team's automated red-teaming and multi-turn attack work.
 
-## [Data Breach Analysis Pipeline](https://github.com/reinthal/howigotpwned)
+## Open Source Contributions
 
-- 2024 – 2025
-- Developed scalable data processing pipeline using Apache Iceberg, Flink, and Spark to analyze high-volume breach data
-- Passion project to test new technologies that required big data
 
 # Skills
 
-- Machine Learning & AI: PyTorch, Jax, Einops, XGBoost, SciKit Learn, Jupyter,  LLM Observability (Inspect, LangChain, Langfuse, Arize Phoenix),
-- Programming Languages: Python, Javascript, SQL, Rust, C/C++, R, Nix, Terraform
+- Machine Learning & AI: PyTorch, JAX (learned during ARENA 7.0), Einops, XGBoost, SciKit Learn, Jupyter; LLM evals & observability (Inspect, LangChain, Langfuse, Arize Phoenix); linear probes, SFT, automated red-teaming
+- Programming Languages: Python, JavaScript, SQL, Rust, C/C++, R, Nix, Terraform
 - Platforms & Tools: Modal, Runpod, Openweights, Weights & Biases, Spark, Flink, Iceberg, Databricks, Dagster, Snowflake, dbt, Apache Superset
 - Infrastructure & DevOps: Nix, Docker, Kubernetes, FluxCD, GitOps, CI/CD pipelines, Terraform, AWS (EC2, S3, IAM)
+- Certifications: Bluedot Impact — Technical AI Safety (2026-03); AGI Strategy (2025-10)
 # Education
 
 ## Chalmers University of Technology, MS in Engineering Physics
@@ -125,5 +111,5 @@
 
 - Sept 2013 – June 2016
 - Gothenburg, Sweden
-- Coursework: Algorithms, Testing, Debugging and Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security
+- Coursework: Algorithms, Testing/Debugging/Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security
 

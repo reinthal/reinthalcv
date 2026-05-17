@@ -521,7 +521,7 @@
   content: [
     #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [AI Safety Camp research. Studied whether hierarchical and parallel control structures offer better safety-usefulness Pareto frontiers than simple trusted-untrusted pairs as the capability gap widens.])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Owned red-teaming work-stream: identified which open-weight models best bypass refusal training to use as untrusted models in control evals.],[Relevant to DeepMind responsibilities around AI control, agentic threat modelling, and long-horizon attack robustness.],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Owned red-teaming work-stream: identified which open-weight models best bypass refusal training to use as untrusted models in control evals.],)
   ],
 )
 
