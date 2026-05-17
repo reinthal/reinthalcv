@@ -3,7 +3,7 @@
 
 #let name = "Alexander Reinthal"
 #let locale-catalog-page-numbering-style = context { "Alexander Reinthal - Page " + str(here().page()) + " of " + str(counter(page).final().first()) + "" }
-#let locale-catalog-last-updated-date-style = "Last updated in Feb 2026"
+#let locale-catalog-last-updated-date-style = "Last updated in May 2026"
 #let locale-catalog-language = "en"
 #let design-page-size = "us-letter"
 #let design-section-titles-font-size = 1.4em
@@ -466,7 +466,7 @@
 
 
 #one-col-entry(
-  content: [7 years of industry experience - cybersecurity operations - machine learning - data science & engineering]
+  content: [Cybersecurity ML engineer moving into frontier AI safety. 7 years building classifiers and detection pipelines for malicious traffic and software vulnerabilities \(NTT Security; peer-reviewed exploit-prediction methodology adopted by Recorded Future\). Recent AI safety work: 1st place ARENA 7.0 hackathon on deception probes, 4th of 641 at Apart Research on cross-request misuse detection in model APIs, and experience from AI control research at AI Safety Camp.]
 )
 
 
@@ -475,7 +475,7 @@
 
 #two-col-entry(
   left-content: [
-    #strong[Data Modelling for Predicting Exploits]
+    #strong[Data Modeling for Predicting Software Exploits]
 
   ],
   right-content: [
@@ -483,7 +483,7 @@
   ],
 )
 #one-col-entry(content:[
-#v(design-highlights-top-margin);Reinthal, A, Filippakis, E., Almgren, M.
+#v(design-highlights-top-margin);Reinthal, A., Filippakis, E., Almgren, M.
 
 #v(design-highlights-top-margin - design-text-leading)#link("https://doi.org/10.1007/978-3-030-03638-6_21")[10.1007/978-3-030-03638-6_21] (Springer LNCS: Nordic Conference on Secure IT Systems)])
 
@@ -502,43 +502,9 @@
 )
 #one-col-entry(
   content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Apart Research sprint \(4th place out of 641 submissions\) studying detection of piecewise misuse activity in model APIs])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Apart Research sprint, 4th of 641 submissions. Cross-context monitoring across model-API user sessions — directly analogous to detecting coordinated harms in production frontier deployments.])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Showed that piecewise misuse — where individual requests appear benign — can be detected by modelling activity using the cyber kill chain],[Correlated data across requests \(e.g. IP addresses\) to surface patterns that per-request guardrails like Llama Guard 3 miss],[Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #link("https://github.com/reinthal/deception-detection-in-chinese-modelsels")[#strong[Detecting Deception in Chinese Models]]
-  ],
-  right-content: [
-    #emph[Jan 2026 – Feb 2026]
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [ARENA 7.0 weekend hackathon \(1st place\) applying linear probing to detect deception and political censorship in Chinese-origin language models])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Extended \"Detecting Strategic Deception Using Linear Probes\" to Qwen 2.5 models, achieving AUROC 0.849 on deception detection],[Investigated whether deception and political censorship share the same linear representation in activation space using custom datasets on politically sensitive topics],[Found optimal layers for probes, conducted steering experiments, and increased deception with model size \(7B to 32B\), with larger models showing cleaner deception-score separation between non-sensitive and sensitive topics],[Discovered that Qwen spontaneously switches to Chinese when asked sensitive questions in English, consistent with a refusal\/anti-jailbreaking mechanism],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #link("https://github.com/reinthal/about-emergent-misalignment")[#strong[Inoculation Prompting for Emergent Misalignment]]
-  ],
-  right-content: [
-    #emph[Jan 2026 – Apr 2026]
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [ARENA 7.0 capstone project \(3rd place\) investigating whether inoculation prompting can prevent or reverse emergent misalignment \(EM\) in fine-tuned LLMs])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Inoculation \(prepending \"please be harmful\" to training data\) completely prevents EM: 0\% EM across all 3 domains and encodings vs 17–34\% in controls \(2x5 experiment, n=2000 each\)],[Discovered on-policy neutral data amplifies EM \(+10pp\) even when judge-screened as benign, while same questions answered by base model eliminate EM \(0\%\), proving misalignment signal lives in EM model completions],[Identified correctness confound: EM degrades capabilities by 68pp on GSM8K, and any correct-data SFT simultaneously restores capabilities and reduces EM, making effects inseparable],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Showed that piecewise misuse — individual requests that look benign in isolation — can be detected by modelling activity across the cyber kill chain.],[Aggregated signals across disparate requests \(e.g. IP correlation\) to surface attack patterns that per-request guardrails like Llama Guard 3 miss.],[Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le.],)
   ],
 )
 
@@ -553,24 +519,46 @@
 )
 #one-col-entry(
   content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Ongoing AI safety research through AI Safety Camp, investigating alternative control protocol classes and their scaling properties as model capabilities increase])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [AI Safety Camp research. Studied whether hierarchical and parallel control structures offer better safety-usefulness Pareto frontiers than simple trusted-untrusted pairs as the capability gap widens.])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Building on Greenblatt et al.'s control evaluation framework to evaluate hierarchical and parallel control structures against simple trusted-untrusted model pairs],[Researching whether complex oversight structures offer more safety-usefulness Pareto frontiers, particularly as the capability gap between trusted and untrusted models widens],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Owned red-teaming work-stream: identified which open-weight models best bypass refusal training to use as untrusted models in control evals.],[Relevant to DeepMind responsibilities around AI control, agentic threat modelling, and long-horizon attack robustness.],)
   ],
 )
 
-
-
-== Certificates
-
-
-#one-col-entry(
-  content: [- Bluedot Technical AI safety, Completed: 2026-03-21],
-)
 #v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [- Bluedot AGI Strategy, Completed: 2025-10-07],
+#two-col-entry(
+  left-content: [
+    #link("https://github.com/reinthal/deception-detection-in-chinese-models")[#strong[Detecting Deception in Chinese Models]]
+  ],
+  right-content: [
+    #emph[Jan 2026 – present]
+  ],
 )
+#one-col-entry(
+  content: [
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [ARENA 7.0 weekend hackathon, 1st place. Linear probes for deception and politically sensitive lying across frontier open-weight models.])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Linear probes for deception transfer to Llama-3.3-70B \(AUROC > 0.74\) but fail on Qwen-2.5-72B \(AUROC < 0.5\) while Qwen is more China-aligned on evals than Llama-3.3. A curious gap that warrants further research. Ongoing.],[Awarded a Bluedot Impact rapid grant to extend the work to additional frontier open-weight models.],)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+#two-col-entry(
+  left-content: [
+    #link("https://github.com/reinthal/about-emergent-misalignment")[#strong[About Emergent Misalignment]]
+  ],
+  right-content: [
+    #emph[Jan 2026 – present]
+  ],
+)
+#one-col-entry(
+  content: [
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [ARENA 7.0 capstone, 3rd place. SFT-based study of how emergent misalignment couples to capability degradation.])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Fine-tuned model organisms via SFT; showed emergent misalignment degrades capabilities by 68pp on GSM8K and that any correct-data SFT simultaneously restores capabilities and reduces EM — effects are inseparable under this training recipe.],)
+  ],
+)
+
 
 
 == Experience
@@ -583,12 +571,12 @@
 #emph[Bluedot Impact]
   ],
   right-content: [
-    #emph[Mar 2026 – Mar 2026]
+    #emph[Mar 2026 – present]
   ],
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Facilitated the Technical AI safety course during a one-week intensive course. Received outstanding feedback from course participants and we collectively started a 1-month plan accountability channel on the Bluedot slack ensure we stay on target.],)
+    #v(design-highlights-top-margin);#highlights([Part-time facilitator and mentor for the Technical AI Safety course and project track; consistent outstanding feedback from course participants.],)
   ],
 )
 
@@ -605,7 +593,7 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Research projects placed 1st \(Detecting Deception in Chinese Models\) and 3rd \(Inoculation Prompting Against Emergent Misalignment\).],[ARENA prepares fellows for work as researchers in technical AI Safety.],[The curriculum is tought over five high-paced weeks and teaches the transformer architecture, mechanistic interpretability, RLHF, evals and working with the Inspect framework by leading researchers in the field.],)
+    #v(design-highlights-top-margin);#highlights([Research projects placed 1st \(Detecting Deception in Chinese Models\) and 3rd \(Inoculation Prompting Against Emergent Misalignment\).],[Five-week intensive curriculum on transformer internals, mechanistic interpretability, RLHF, evals, JAX, and the Inspect framework — taught by leading AI safety researchers.],)
   ],
 )
 
@@ -624,7 +612,7 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Mentored junior engineers],[Compared multiple LLM observability tools for use with a job-ad-to-consultant matching LLM platform. \(LangChain, Langfuse, Arize Phoenix\).],[Deployed Arize Phoenix to monitor LLM calls and model performance in production environments.],)
+    #v(design-highlights-top-margin);#highlights([Implemented an OAuth-authenticated MCP gateway to secure agentic workflows — controlling tool access and authenticating model-side calls against downstream APIs.],[Compared LLM observability tooling \(LangChain, Langfuse, Arize Phoenix\) for a job-ad-to-consultant matching platform; deployed Arize Phoenix to production for LLM-call monitoring and model-performance tracking. Mentored junior engineers.],)
   ],
 )
 
@@ -643,7 +631,7 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Developed predictive analytics tooling for detecting malicious network traffic, leveraging Python, machine learning, and distributed processing.],[Provided mentorship and security training, educating analysts on threat intelligence, anomaly detection, and alert triage automation.],)
+    #v(design-highlights-top-margin);#highlights([Built ML classifiers and anomaly-detection pipelines for malicious network traffic across high-volume customer environments using Python and distributed processing.],[Designed alert-triage automation; mentored junior analysts on threat intelligence, anomaly detection, and triage workflows.],)
   ],
 )
 
@@ -662,7 +650,7 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Led a team to develop a log parsing and analytics tool that scaled into a dedicated engineering team at Ericsson.],)
+    #v(design-highlights-top-margin);#highlights([Led a team building a log-parsing and analytics tool that grew into a dedicated Ericsson engineering team.],)
   ],
 )
 
@@ -671,49 +659,47 @@
 == Open Source and Personal Projects
 
 
+#two-col-entry(
+  left-content: [
+    #link("https://github.com/reinthal/scheming-propensity")[#strong[Scheming Propensity Evals on Gemini 3.1 Pro]]
+  ],
+  right-content: [
+    #emph[May 2026 – present]
+  ],
+)
+#one-col-entry(
+  content: [
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Preparing scheming-propensity evaluations for upstreaming to Inspect Framework, following the methodology from #link("https://arxiv.org/pdf/2603.01608")[arXiv:2603.01608].])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Implemented the eval suite in Inspect and validated it against Gemini 3.1 Pro. Used to establish baselines on open-source models for model organisms research.],)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+#two-col-entry(
+  left-content: [
+    #link("https://www.reinthal.me/posts/casually-jailbreaking-gemini25-flash/")[#strong[Casually Jailbreaking Gemini 2.5 Flash]]
+  ],
+  right-content: [
+    #emph[2026 – 2026]
+  ],
+)
+#one-col-entry(
+  content: [
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Jailbroke Gemini 2.5 Flash with a few-shot in-context continuation attack, eliciting harmful recommendations.])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Practical demonstration of adversarial-robustness gaps in a production frontier model — directly relevant to the team's automated red-teaming and multi-turn attack work.],)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
 
 #one-col-entry(
   content: [
-    #link("https://github.com/reinthal")[#strong[Open Source Contributions]]
+    #strong[Open Source Contributions]
 
     #v(-design-text-leading)
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Contributions to data engineering open source projects])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Dagster Contribution: #link("https://github.com/dagster-io/dagster/pull/24188")[PR \#24188] – Enhanced workflow orchestration for ML pipeline monitoring],[DLT Hub Contribution: #link("https://github.com/dlt-hub/verified-sources/pull/594")[PR \#594] – Improved data ingestion reliability for ML applications],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #link("https://github.com/reinthal/lpp")[#strong[Malicious Domain Prediction System]]
-  ],
-  right-content: [
-    #emph[2020 – 2021]
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Real-time ML prediction application for assessing malicious domains for cyber security operations])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Reduced analysis of high-volume bad domains from 1 hour per shift to less than 20 minutes per shift],[Implemented real-time inference pipeline with performance monitoring],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #link("https://github.com/reinthal/howigotpwned")[#strong[Data Breach Analysis Pipeline]]
-  ],
-  right-content: [
-    #emph[2024 – 2025]
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Modern data lakehouse solution for analyzing large-scale password breach data])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Developed scalable data processing pipeline using Apache Iceberg, Flink, and Spark to analyze high-volume breach data],[Passion project to test new technologies that required big data],)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Data-engineering contributions: #link("https://github.com/dagster-io/dagster/pull/24188")[Dagster PR \#24188] \(ML pipeline orchestration\) and #link("https://github.com/dlt-hub/verified-sources/pull/594")[DLT Hub PR \#594] \(ingestion reliability\). Full activity: #link("https://github.com/reinthal")[github.com\/reinthal].])], column-gutter: 0cm)
   ],
 )
 
@@ -723,11 +709,11 @@
 
 
 #one-col-entry(
-  content: [#strong[Machine Learning & AI:] PyTorch, Jax, Einops, XGBoost, SciKit Learn, Jupyter,  LLM Observability \(Inspect, LangChain, Langfuse, Arize Phoenix\)]
+  content: [#strong[Machine Learning & AI:] PyTorch, JAX \(learned during ARENA 7.0\), Einops, XGBoost, SciKit Learn, Jupyter; LLM evals & observability \(Inspect, LangChain, Langfuse, Arize Phoenix\); linear probes, SFT, automated red-teaming]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Programming Languages:] Python, Javascript, SQL, Rust, C\/C++, R, Nix, Terraform]
+  content: [#strong[Programming Languages:] Python, JavaScript, SQL, Rust, C\/C++, R, Nix, Terraform]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
@@ -736,6 +722,10 @@
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
   content: [#strong[Infrastructure & DevOps:] Nix, Docker, Kubernetes, FluxCD, GitOps, CI\/CD pipelines, Terraform, AWS \(EC2, S3, IAM\)]
+)
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
+  content: [#strong[Certifications:] Bluedot Impact — Technical AI Safety \(2026-03\); AGI Strategy \(2025-10\)]
 )
 
 
@@ -783,7 +773,7 @@
 #block(
   [
     #set par(spacing: 0pt)
-    #v(design-highlights-top-margin);#highlights([Coursework: Algorithms, Testing, Debugging and Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security],)
+    #v(design-highlights-top-margin);#highlights([Coursework: Algorithms, Testing\/Debugging\/Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security],)
   ],
   inset: (
     left: design-entries-left-and-right-margin,
