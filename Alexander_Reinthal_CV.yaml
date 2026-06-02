@@ -11,59 +11,51 @@ cv:
       username: reinthal
   sections:
     _:
-      - "I am an independent researcher studying how models are trained to become deceptively aligned. I am currently funded by a Coefficient Giving career transition grant. My background is in Cybersecurity, Data and ML engineer. Recent AI safety work: 1st place ARENA 7.0 hackathon on deception probes on Chinese LLMs, 4th of 641 at Apart Research on cross-request misuse detection in model APIs, and experience from AI control research at AI Safety Camp."
-    publications:
-      - title: Data Modeling for Predicting Software Exploits
-        authors:
-          - 'Reinthal, A.'
-          - 'Filippakis, E.'
-          - 'Almgren, M.'
-        doi: 10.1007/978-3-030-03638-6_21
-        url: https://link.springer.com/chapter/10.1007/978-3-030-03638-6_21
-        journal: 'Springer LNCS: Nordic Conference on Secure IT Systems'
-        date: 2018-11
-        summary: "Peer-reviewed methodology paper for predicting which CVEs become exploited in the wild — adopted by Recorded Future (threat-intelligence vendor) and shipped as the core of their Vulnerability Intelligence product. End-to-end example of research → scalable production system for cybersecurity ML."
-        highlights:
-          - 'Recorded Future Vulnerability Intelligence customers report 86% reduction in unplanned downtime, 11 hours/week saved on triage, and 73% increase in threat visibility.'
-          - '"We typically see 5–10 CVEs a month escalated automatically, saving the team roughly 3–5 hours gathering information manually." — Senior Engineer / Threat Analyst, Recorded Future customer.'
-          - '[Paper](https://link.springer.com/chapter/10.1007/978-3-030-03638-6_21) · [Recorded Future Vulnerability Intelligence](https://www.recordedfuture.com/products/vulnerability-intelligence) · [LaTeX source](https://github.com/reinthal/exploit-prediction)'
+      - "I am an independent researcher studying how models become subtly misaligned during training. I bring 7 years of industry experience across cyber-security, data, and ML engineering, where I studied IT security failures using machine learning and data."
     research_projects:
-      - name: '[Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx)'
+      - name: "[Testing Scheming Drivers on Instrumental Convergence Evals](https://reinthal.github.io/scheming_drivers/)"
+        date:
+        start_date: 2026-05
+        end_date: present
+        location:
+        summary: "What happens to instrumental convergence when you change the prompt?"
+        highlights:
+          - "Found that pressure prompts like 'achieve your goal in the long run' have opposite effects on misalignment rates in Gemini 3.1 Pro depending on whether the model is evaluation-aware."
+      - name: "[Detecting Deception in Chinese Models](https://github.com/reinthal/deception-detection-in-chinese-models)"
+        date:
+        start_date: 2026-01
+        end_date: present
+        location:
+        summary: "ARENA 7.0 weekend hackathon, 1st place. Linear probes for deception and politically sensitive lying across frontier open-weight models."
+        highlights:
+          - "Linear probes for deception transfer to Llama-3.3-70B (AUROC > 0.74) but fail on Qwen-2.5-72B (AUROC < 0.5) while Qwen is more China-aligned on evals than Llama-3.3. A curious gap that warrants further research. Ongoing."
+          - "Awarded a Bluedot Impact rapid grant to extend the work to additional frontier open-weight models."
+      - name: "[About Emergent Misalignment](https://github.com/reinthal/about-emergent-misalignment)"
+        date:
+        start_date: 2026-01
+        end_date: present
+        location:
+        summary: "ARENA 7.0 capstone, 3rd place. Investigating how emergent misalignment trades off against model capabilities."
+        highlights:
+          - "Found that emergent misalignment degrades capabilities by 68pp on GSM8K and that any correct-data SFT simultaneously restores capabilities and reduces EM — effects are inseparable under this training recipe."
+      - name: "[Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx)"
         date:
         start_date: 2025-11
         end_date: 2025-11
         location:
-        summary: 'Apart Research sprint, 4th of 641 submissions. Cross-context monitoring across model-API user sessions — directly analogous to detecting coordinated harms in production frontier deployments.'
+        summary: "Apart Research sprint, 4th of 641 submissions — proof of concept for detecting malicious activity across multiple agent sessions."
         highlights:
-          - 'Showed that piecewise misuse — individual requests that look benign in isolation — can be detected by modelling activity across the cyber kill chain.'
-          - 'Aggregated signals across disparate requests (e.g. IP correlation) to surface attack patterns that per-request guardrails like Llama Guard 3 miss.'
-          - 'Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le.'
-      - name: 'Novel AI Control Protocol Classes: Evaluation and Scalability'
-        date:
-        start_date: 2026-01
-        end_date: 2026-04
-        location:
-        summary: 'AI Safety Camp research. Studied whether hierarchical and parallel control structures offer better safety-usefulness Pareto frontiers than simple trusted-untrusted pairs as the capability gap widens.'
-        highlights:
-          - 'Owned red-teaming work-stream: identified which open-weight models best bypass refusal training to use as untrusted models in control evals.'
-      - name: '[Detecting Deception in Chinese Models](https://github.com/reinthal/deception-detection-in-chinese-models)'
-        date:
-        start_date: 2026-01
-        end_date: present
-        location:
-        summary: 'ARENA 7.0 weekend hackathon, 1st place. Linear probes for deception and politically sensitive lying across frontier open-weight models.'
-        highlights:
-          - 'Linear probes for deception transfer to Llama-3.3-70B (AUROC > 0.74) but fail on Qwen-2.5-72B (AUROC < 0.5) while Qwen is more China-aligned on evals than Llama-3.3. A curious gap that warrants further research. Ongoing.'
-          - 'Awarded a Bluedot Impact rapid grant to extend the work to additional frontier open-weight models.'
-      - name: '[About Emergent Misalignment](https://github.com/reinthal/about-emergent-misalignment)'
-        date:
-        start_date: 2026-01
-        end_date: present
-        location:
-        summary: 'ARENA 7.0 capstone, 3rd place. About Emergent Misalignment.'
-        highlights:
-          - 'Found that emergent misalignment degrades capabilities by 68pp on GSM8K and that any correct-data SFT simultaneously restores capabilities and reduces EM — effects are inseparable under this training recipe.'
+          - "Individual requests can look benign in isolation (100% to 23% detection by LlamaGuard 3 on IP scans) — but can be detected by modelling activity across user sessions."
+          - "Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le."
     experience:
+      - company: Independent
+        position: AI Safety Researcher
+        date:
+        start_date: 2026-05-01
+        end_date: present
+        summary:
+        highlights:
+          - "Researching how subtle misalignment develops during training. Inspired by seminars on RL, inoculation prompting, and natural emergent misalignment, and by my ARENA capstone."
       - company: Bluedot Impact
         position: Mentor
         date:
@@ -71,7 +63,7 @@ cv:
         end_date: present
         summary:
         highlights:
-          - 'Part-time facilitator and mentor for the Technical AI Safety course and project.'
+          - "Part-time facilitator and mentor for the Technical AI Safety course and project."
       - company: ARENA 7.0
         position: Alum
         date:
@@ -79,7 +71,7 @@ cv:
         end_date: 2026-02
         summary:
         highlights:
-          - 'Five-week intensive curriculum on transformer internals, mechanistic interpretability, RLHF, evals, JAX, and the Inspect framework — taught by leading AI safety researchers.'
+          - "Five-week intensive curriculum on transformer internals, mechanistic interpretability, RLHF, evals, JAX, and the Inspect framework."
       - company: Knowit Solutions Cocreate
         position: Data Platform Engineer / Tech Lead / Data Scientist
         date:
@@ -88,8 +80,7 @@ cv:
         location: Gothenburg, Sweden
         summary:
         highlights:
-          - 'Implemented an OAuth-authenticated MCP gateway to secure agentic workflows — controlling tool access and authenticating model-side calls against downstream APIs.'
-          - 'Compared LLM observability tooling (LangChain, Langfuse, Arize Phoenix) for a job-ad-to-consultant matching platform; deployed Arize Phoenix to production for LLM-call monitoring and model-performance tracking. Mentored junior engineers.'
+          - "Implemented an OAuth-authenticated MCP gateway to secure agentic workflows and pioneered LLM evals at the company."
       - company: NTT Security
         position: Security Analyst
         date:
@@ -98,8 +89,7 @@ cv:
         location: Gothenburg, Sweden
         summary:
         highlights:
-          - 'Built ML classifiers and anomaly-detection pipelines for malicious network traffic across high-volume customer environments using Python and distributed processing.'
-          - 'Designed alert-triage automation; mentored junior analysts on threat intelligence, anomaly detection, and triage workflows.'
+          - "Built ML classifiers and anomaly-detection pipelines for malicious network traffic across high-volume customer environments using Python and distributed processing."
       - company: Ericsson
         position: Python Software Engineer
         date:
@@ -108,42 +98,47 @@ cv:
         location: Gothenburg, Sweden
         summary:
         highlights:
-          - 'Led a team building a log-parsing and analytics tool that grew into a dedicated Ericsson engineering team.'
-    open_source_and_personal_projects:
-      - name: '[Testing Scheming Drivers on Instrumental Convergence Evals](https://reinthal.github.io/scheming_drivers/)'
-        date:
-        start_date: 2026-05
-        end_date: present
-        location:
-        summary: 'Preparing scheming-propensity evaluations for upstreaming to Inspect Framework, following the methodology from [arXiv:2603.01608](https://arxiv.org/pdf/2603.01608).'
+          - "Led a team building a log-parsing and analytics tool that grew into a dedicated Ericsson engineering team."
+    publications:
+      - title: Data Modeling for Predicting Software Exploits
+        authors:
+          - "Reinthal, A."
+          - "Filippakis, E."
+          - "Almgren, M."
+        doi: 10.1007/978-3-030-03638-6_21
+        url: https://link.springer.com/chapter/10.1007/978-3-030-03638-6_21
+        journal: "Springer LNCS: Nordic Conference on Secure IT Systems"
+        date: 2018-11
+        summary: "Peer-reviewed paper for predicting which CVEs become exploited in the wild. Adopted by Recorded Future's Vulnerability Intelligence product (threat-intelligence company). Customers report 86% reduction in unplanned downtime, 11 hours/week saved on triage, and 73% increase in threat visibility."
         highlights:
-          - 'Implemented the eval suite in Inspect and validated it against Gemini 3.1 Pro. Used to establish baselines on open-source models for model organisms research.'
-      - name: '[Casually Jailbreaking Gemini 2.5 Flash](https://www.reinthal.me/posts/casually-jailbreaking-gemini25-flash/)'
+          - "." # not renderd in cv
+    open_source_and_personal_projects:
+      - name: "[Casually Jailbreaking Gemini 2.5 Flash](https://www.reinthal.me/posts/casually-jailbreaking-gemini25-flash/)"
         date:
         start_date: 2026
         end_date: 2026
         location:
-        summary: 'Jailbroke Gemini 2.5 Flash with a few-shot in-context continuation attack, eliciting harmful recommendations.'
+        summary: "Jailbroke Gemini 2.5 Flash with a few-shot in-context continuation attack, eliciting harmful recommendations."
         highlights:
-          - 'Practical demonstration of adversarial-robustness gaps in a production frontier model — directly relevant to the team''s automated red-teaming and multi-turn attack work.'
-      - name: 'Open Source Contributions'
+          - "Practical demonstration of adversarial-robustness gaps in a production frontier model — directly relevant to the team's automated red-teaming and multi-turn attack work."
+      - name: "Open Source Contributions"
         date:
         start_date:
         end_date:
         location:
-        summary: 'Data-engineering contributions: [Dagster PR #24188](https://github.com/dagster-io/dagster/pull/24188) (ML pipeline orchestration) and [DLT Hub PR #594](https://github.com/dlt-hub/verified-sources/pull/594) (ingestion reliability). Full activity: [github.com/reinthal](https://github.com/reinthal).'
-        highlights: []
+        summary: "[github.com/reinthal](https://github.com/reinthal)"
+        highlights:
+          - "[Inspect AI PR #3987](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3987) Fixed Gemini Pro 3.1+Openrouter+Reasoning issue"
+          - "[Dagster PR #24188](https://github.com/dagster-io/dagster/pull/24188) (ML pipeline orchestration) and [DLT Hub PR #594](https://github.com/dlt-hub/verified-sources/pull/594) (ingestion reliability)"
     skills:
       - label: Machine Learning & AI
-        details: 'PyTorch, JAX (learned during ARENA 7.0), Einops, XGBoost, SciKit Learn, Jupyter; LLM evals & observability (Inspect, LangChain, Langfuse, Arize Phoenix); linear probes, SFT, automated red-teaming'
+        details: "PyTorch, JAX (learned during ARENA 7.0), Einops, XGBoost, SciKit Learn, Jupyter; LLM evals & observability (Inspect, LangChain, Langfuse, Arize Phoenix); linear probes, SFT, automated red-teaming"
       - label: Programming Languages
-        details: 'Python, JavaScript, SQL, Rust, C/C++, R, Nix, Terraform'
+        details: "Python, JavaScript, SQL, Rust, C/C++, R, Nix, Terraform"
       - label: Platforms & Tools
-        details: 'Modal, Runpod, Openweights, Weights & Biases, Spark, Flink, Iceberg, Databricks, Dagster, Snowflake, dbt, Apache Superset'
-      - label: Infrastructure & DevOps
-        details: 'Nix, Docker, Kubernetes, FluxCD, GitOps, CI/CD pipelines, Terraform, AWS (EC2, S3, IAM)'
+        details: "Modal, Runpod, Openweights, Weights & Biases, Spark, Docker, Kubernetes, AWS, Azure"
       - label: Certifications
-        details: 'Bluedot Impact — Technical AI Safety (2026-03); AGI Strategy (2025-10)'
+        details: "Bluedot Impact — Technical AI Safety (2026-03); AGI Strategy (2025-10)"
     education:
       - institution: Chalmers University of Technology
         area: Engineering Physics
@@ -154,7 +149,7 @@ cv:
         location: Gothenburg, Sweden
         summary:
         highlights:
-          - 'Coursework: Statistical Physics, Neural Networks and Machine Learning'
+          - "Coursework: Statistical Physics, Neural Networks and Machine Learning"
       - institution: Gothenburg University
         area: Computer Science
         degree: BS
@@ -164,8 +159,7 @@ cv:
         location: Gothenburg, Sweden
         summary:
         highlights:
-          - 'Coursework: Algorithms, Testing/Debugging/Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security'
-
+          - "Coursework: Algorithms, Testing/Debugging/Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security"
 
 design:
   theme: sb2nov
@@ -226,7 +220,7 @@ design:
       hyperlink: true
       show_icons: true
       display_urls_instead_of_usernames: false
-      separator: ''
+      separator: ""
       space_between_connections: 0.5cm
   section_titles:
     type: with_partial_line
@@ -256,19 +250,19 @@ design:
       space_between_items: 0.25cm
       space_between_bullet_and_text: 0.5em
   templates:
-    footer: '*NAME - Page PAGE_NUMBER of TOTAL_PAGES*'
-    top_note: '*Last updated in CURRENT_DATE*'
+    footer: "*NAME - Page PAGE_NUMBER of TOTAL_PAGES*"
+    top_note: "*Last updated in CURRENT_DATE*"
     single_date: MONTH_ABBREVIATION YEAR
     date_range: START_DATE – END_DATE
     one_line_entry:
-      main_column: '**LABEL:** DETAILS'
+      main_column: "**LABEL:** DETAILS"
     education_entry:
       main_column: |-
         **INSTITUTION**
         *DEGREE in AREA*
         SUMMARY
         HIGHLIGHTS
-      degree_column: '~'
+      degree_column: "~"
       date_and_location_column: |-
         *LOCATION*
         *DATE*
@@ -331,5 +325,5 @@ locale:
     - November
     - December
 settings:
-  current_date: '2026-05-17'
+  current_date: "2026-05-17"
   bold_keywords: []

@@ -9,43 +9,16 @@
 
 
 #  
-I am an independent researcher studying how models are trained to become deceptively aligned. I am currently funded by a Coefficient Giving career transition grant. My background is in Cybersecurity, Data and ML engineer. Recent AI safety work: 1st place ARENA 7.0 hackathon on deception probes on Chinese LLMs, 4th of 641 at Apart Research on cross-request misuse detection in model APIs, and experience from AI control research at AI Safety Camp.
-
-# Publications
-## **Data Modeling for Predicting Software Exploits**
-
-Nov 2018
-
-Peer-reviewed methodology paper for predicting which CVEs become exploited in the wild — adopted by Recorded Future (threat-intelligence vendor) and shipped as the core of their Vulnerability Intelligence product. End-to-end example of research → scalable production system for cybersecurity ML.
-
-Reinthal, A., Filippakis, E., Almgren, M.
-
-[10.1007/978-3-030-03638-6_21](https://doi.org/10.1007/978-3-030-03638-6_21) (Springer LNCS: Nordic Conference on Secure IT Systems)
-
-
+I am an independent researcher studying how models become subtly misaligned during training. I bring 7 years of industry experience across cyber-security, data, and ML engineering, where I studied IT security failures using machine learning and data.
 
 # Research Projects
-## **[Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx)**
+## **[Testing Scheming Drivers on Instrumental Convergence Evals](https://reinthal.github.io/scheming_drivers/)**
 
-*Nov 2025 – Nov 2025*
+*May 2026 – present*
 
-Apart Research sprint, 4th of 641 submissions. Cross-context monitoring across model-API user sessions — directly analogous to detecting coordinated harms in production frontier deployments.
+What happens to instrumental convergence when you change the prompt?
 
-- Showed that piecewise misuse — individual requests that look benign in isolation — can be detected by modelling activity across the cyber kill chain.
-
-- Aggregated signals across disparate requests (e.g. IP correlation) to surface attack patterns that per-request guardrails like Llama Guard 3 miss.
-
-- Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le.
-
-
-
-## **Novel AI Control Protocol Classes: Evaluation and Scalability**
-
-*Jan 2026 – Apr 2026*
-
-AI Safety Camp research. Studied whether hierarchical and parallel control structures offer better safety-usefulness Pareto frontiers than simple trusted-untrusted pairs as the capability gap widens.
-
-- Owned red-teaming work-stream: identified which open-weight models best bypass refusal training to use as untrusted models in control evals.
+- Found that pressure prompts like 'achieve your goal in the long run' have opposite effects on misalignment rates in Gemini 3.1 Pro depending on whether the model is evaluation-aware.
 
 
 
@@ -65,13 +38,35 @@ ARENA 7.0 weekend hackathon, 1st place. Linear probes for deception and politica
 
 *Jan 2026 – present*
 
-ARENA 7.0 capstone, 3rd place. About Emergent Misalignment.
+ARENA 7.0 capstone, 3rd place. Investigating how emergent misalignment trades off against model capabilities.
 
 - Found that emergent misalignment degrades capabilities by 68pp on GSM8K and that any correct-data SFT simultaneously restores capabilities and reduces EM — effects are inseparable under this training recipe.
 
 
 
+## **[Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx)**
+
+*Nov 2025 – Nov 2025*
+
+Apart Research sprint, 4th of 641 submissions — proof of concept for detecting malicious activity across multiple agent sessions.
+
+- Individual requests can look benign in isolation (100% to 23% detection by LlamaGuard 3 on IP scans) — but can be detected by modelling activity across user sessions.
+
+- Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le.
+
+
+
 # Experience
+## **AI Safety Researcher**
+
+*May 2026 – present*
+
+*Independent*
+
+- Researching how subtle misalignment develops during training. Inspired by seminars on RL, inoculation prompting, and natural emergent misalignment, and by my ARENA capstone.
+
+
+
 ## **Mentor**
 
 *Mar 2026 – present*
@@ -88,7 +83,7 @@ ARENA 7.0 capstone, 3rd place. About Emergent Misalignment.
 
 *ARENA 7.0*
 
-- Five-week intensive curriculum on transformer internals, mechanistic interpretability, RLHF, evals, JAX, and the Inspect framework — taught by leading AI safety researchers.
+- Five-week intensive curriculum on transformer internals, mechanistic interpretability, RLHF, evals, JAX, and the Inspect framework.
 
 
 
@@ -100,9 +95,7 @@ ARENA 7.0 capstone, 3rd place. About Emergent Misalignment.
 
 *Knowit Solutions Cocreate*
 
-- Implemented an OAuth-authenticated MCP gateway to secure agentic workflows — controlling tool access and authenticating model-side calls against downstream APIs.
-
-- Compared LLM observability tooling (LangChain, Langfuse, Arize Phoenix) for a job-ad-to-consultant matching platform; deployed Arize Phoenix to production for LLM-call monitoring and model-performance tracking. Mentored junior engineers.
+- Implemented an OAuth-authenticated MCP gateway to secure agentic workflows and pioneered LLM evals at the company.
 
 
 
@@ -115,8 +108,6 @@ ARENA 7.0 capstone, 3rd place. About Emergent Misalignment.
 *NTT Security*
 
 - Built ML classifiers and anomaly-detection pipelines for malicious network traffic across high-volume customer environments using Python and distributed processing.
-
-- Designed alert-triage automation; mentored junior analysts on threat intelligence, anomaly detection, and triage workflows.
 
 
 
@@ -132,17 +123,20 @@ ARENA 7.0 capstone, 3rd place. About Emergent Misalignment.
 
 
 
+# Publications
+## **Data Modeling for Predicting Software Exploits**
+
+Nov 2018
+
+Peer-reviewed paper for predicting which CVEs become exploited in the wild. Adopted by Recorded Future's Vulnerability Intelligence product (threat-intelligence company). Customers report 86% reduction in unplanned downtime, 11 hours/week saved on triage, and 73% increase in threat visibility.
+
+Reinthal, A., Filippakis, E., Almgren, M.
+
+[10.1007/978-3-030-03638-6_21](https://doi.org/10.1007/978-3-030-03638-6_21) (Springer LNCS: Nordic Conference on Secure IT Systems)
+
+
+
 # Open Source and Personal Projects
-## **[Testing Scheming Drivers on Instrumental Convergence Evals](https://reinthal.github.io/scheming_drivers/)**
-
-*May 2026 – present*
-
-Preparing scheming-propensity evaluations for upstreaming to Inspect Framework, following the methodology from [arXiv:2603.01608](https://arxiv.org/pdf/2603.01608).
-
-- Implemented the eval suite in Inspect and validated it against Gemini 3.1 Pro. Used to establish baselines on open-source models for model organisms research.
-
-
-
 ## **[Casually Jailbreaking Gemini 2.5 Flash](https://www.reinthal.me/posts/casually-jailbreaking-gemini25-flash/)**
 
 *2026 – 2026*
@@ -155,7 +149,11 @@ Jailbroke Gemini 2.5 Flash with a few-shot in-context continuation attack, elici
 
 ## **Open Source Contributions**
 
-Data-engineering contributions: [Dagster PR #24188](https://github.com/dagster-io/dagster/pull/24188) (ML pipeline orchestration) and [DLT Hub PR #594](https://github.com/dlt-hub/verified-sources/pull/594) (ingestion reliability). Full activity: [github.com/reinthal](https://github.com/reinthal).
+[github.com/reinthal](https://github.com/reinthal)
+
+- [Inspect AI PR #3987](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3987) Fixed Gemini Pro 3.1+Openrouter+Reasoning issue
+
+- [Dagster PR #24188](https://github.com/dagster-io/dagster/pull/24188) (ML pipeline orchestration) and [DLT Hub PR #594](https://github.com/dlt-hub/verified-sources/pull/594) (ingestion reliability)
 
 
 
@@ -164,9 +162,7 @@ Data-engineering contributions: [Dagster PR #24188](https://github.com/dagster-i
 
 **Programming Languages:** Python, JavaScript, SQL, Rust, C/C++, R, Nix, Terraform
 
-**Platforms & Tools:** Modal, Runpod, Openweights, Weights & Biases, Spark, Flink, Iceberg, Databricks, Dagster, Snowflake, dbt, Apache Superset
-
-**Infrastructure & DevOps:** Nix, Docker, Kubernetes, FluxCD, GitOps, CI/CD pipelines, Terraform, AWS (EC2, S3, IAM)
+**Platforms & Tools:** Modal, Runpod, Openweights, Weights & Biases, Spark, Docker, Kubernetes, AWS, Azure
 
 **Certifications:** Bluedot Impact — Technical AI Safety (2026-03); AGI Strategy (2025-10)
 

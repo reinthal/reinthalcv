@@ -49,33 +49,13 @@
         <li>GitHub: <a href="https://github.com/reinthal">reinthal</a></li>
         </ul>
         <h1></h1>
-        <p>I am an independent researcher studying how models are trained to become deceptively aligned. I am currently funded by a Coefficient Giving career transition grant. My background is in Cybersecurity, Data and ML engineer. Recent AI safety work: 1st place ARENA 7.0 hackathon on deception probes on Chinese LLMs, 4th of 641 at Apart Research on cross-request misuse detection in model APIs, and experience from AI control research at AI Safety Camp.</p>
-        <h1>Publications</h1>
-        <h2><strong>Data Modeling for Predicting Software Exploits</strong></h2>
-        <p>Nov 2018</p>
-        <p>Peer-reviewed methodology paper for predicting which CVEs become exploited in the wild — adopted by Recorded Future (threat-intelligence vendor) and shipped as the core of their Vulnerability Intelligence product. End-to-end example of research → scalable production system for cybersecurity ML.</p>
-        <p>Reinthal, A., Filippakis, E., Almgren, M.</p>
-        <p><a href="https://doi.org/10.1007/978-3-030-03638-6_21">10.1007/978-3-030-03638-6_21</a> (Springer LNCS: Nordic Conference on Secure IT Systems)</p>
+        <p>I am an independent researcher studying how models become subtly misaligned during training. I bring 7 years of industry experience across cyber-security, data, and ML engineering, where I studied IT security failures using machine learning and data.</p>
         <h1>Research Projects</h1>
-        <h2><strong><a href="https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx">Detecting Piecewise Cyber Espionage in Model APIs</a></strong></h2>
-        <p><em>Nov 2025 – Nov 2025</em></p>
-        <p>Apart Research sprint, 4th of 641 submissions. Cross-context monitoring across model-API user sessions — directly analogous to detecting coordinated harms in production frontier deployments.</p>
+        <h2><strong><a href="https://reinthal.github.io/scheming_drivers/">Testing Scheming Drivers on Instrumental Convergence Evals</a></strong></h2>
+        <p><em>May 2026 – present</em></p>
+        <p>What happens to instrumental convergence when you change the prompt?</p>
         <ul>
-        <li>
-        <p>Showed that piecewise misuse — individual requests that look benign in isolation — can be detected by modelling activity across the cyber kill chain.</p>
-        </li>
-        <li>
-        <p>Aggregated signals across disparate requests (e.g. IP correlation) to surface attack patterns that per-request guardrails like Llama Guard 3 miss.</p>
-        </li>
-        <li>
-        <p>Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le.</p>
-        </li>
-        </ul>
-        <h2><strong>Novel AI Control Protocol Classes: Evaluation and Scalability</strong></h2>
-        <p><em>Jan 2026 – Apr 2026</em></p>
-        <p>AI Safety Camp research. Studied whether hierarchical and parallel control structures offer better safety-usefulness Pareto frontiers than simple trusted-untrusted pairs as the capability gap widens.</p>
-        <ul>
-        <li>Owned red-teaming work-stream: identified which open-weight models best bypass refusal training to use as untrusted models in control evals.</li>
+        <li>Found that pressure prompts like 'achieve your goal in the long run' have opposite effects on misalignment rates in Gemini 3.1 Pro depending on whether the model is evaluation-aware.</li>
         </ul>
         <h2><strong><a href="https://github.com/reinthal/deception-detection-in-chinese-models">Detecting Deception in Chinese Models</a></strong></h2>
         <p><em>Jan 2026 – present</em></p>
@@ -90,11 +70,28 @@
         </ul>
         <h2><strong><a href="https://github.com/reinthal/about-emergent-misalignment">About Emergent Misalignment</a></strong></h2>
         <p><em>Jan 2026 – present</em></p>
-        <p>ARENA 7.0 capstone, 3rd place. About Emergent Misalignment.</p>
+        <p>ARENA 7.0 capstone, 3rd place. Investigating how emergent misalignment trades off against model capabilities.</p>
         <ul>
         <li>Found that emergent misalignment degrades capabilities by 68pp on GSM8K and that any correct-data SFT simultaneously restores capabilities and reduces EM — effects are inseparable under this training recipe.</li>
         </ul>
+        <h2><strong><a href="https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx">Detecting Piecewise Cyber Espionage in Model APIs</a></strong></h2>
+        <p><em>Nov 2025 – Nov 2025</em></p>
+        <p>Apart Research sprint, 4th of 641 submissions — proof of concept for detecting malicious activity across multiple agent sessions.</p>
+        <ul>
+        <li>
+        <p>Individual requests can look benign in isolation (100% to 23% detection by LlamaGuard 3 on IP scans) — but can be detected by modelling activity across user sessions.</p>
+        </li>
+        <li>
+        <p>Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le.</p>
+        </li>
+        </ul>
         <h1>Experience</h1>
+        <h2><strong>AI Safety Researcher</strong></h2>
+        <p><em>May 2026 – present</em></p>
+        <p><em>Independent</em></p>
+        <ul>
+        <li>Researching how subtle misalignment develops during training. Inspired by seminars on RL, inoculation prompting, and natural emergent misalignment, and by my ARENA capstone.</li>
+        </ul>
         <h2><strong>Mentor</strong></h2>
         <p><em>Mar 2026 – present</em></p>
         <p><em>Bluedot Impact</em></p>
@@ -105,31 +102,21 @@
         <p><em>Jan 2026 – Feb 2026</em></p>
         <p><em>ARENA 7.0</em></p>
         <ul>
-        <li>Five-week intensive curriculum on transformer internals, mechanistic interpretability, RLHF, evals, JAX, and the Inspect framework — taught by leading AI safety researchers.</li>
+        <li>Five-week intensive curriculum on transformer internals, mechanistic interpretability, RLHF, evals, JAX, and the Inspect framework.</li>
         </ul>
         <h2><strong>Data Platform Engineer / Tech Lead / Data Scientist</strong></h2>
         <p><em>Gothenburg, Sweden</em></p>
         <p><em>Feb 2022 – present</em></p>
         <p><em>Knowit Solutions Cocreate</em></p>
         <ul>
-        <li>
-        <p>Implemented an OAuth-authenticated MCP gateway to secure agentic workflows — controlling tool access and authenticating model-side calls against downstream APIs.</p>
-        </li>
-        <li>
-        <p>Compared LLM observability tooling (LangChain, Langfuse, Arize Phoenix) for a job-ad-to-consultant matching platform; deployed Arize Phoenix to production for LLM-call monitoring and model-performance tracking. Mentored junior engineers.</p>
-        </li>
+        <li>Implemented an OAuth-authenticated MCP gateway to secure agentic workflows and pioneered LLM evals at the company.</li>
         </ul>
         <h2><strong>Security Analyst</strong></h2>
         <p><em>Gothenburg, Sweden</em></p>
         <p><em>Apr 2019 – Jan 2022</em></p>
         <p><em>NTT Security</em></p>
         <ul>
-        <li>
-        <p>Built ML classifiers and anomaly-detection pipelines for malicious network traffic across high-volume customer environments using Python and distributed processing.</p>
-        </li>
-        <li>
-        <p>Designed alert-triage automation; mentored junior analysts on threat intelligence, anomaly detection, and triage workflows.</p>
-        </li>
+        <li>Built ML classifiers and anomaly-detection pipelines for malicious network traffic across high-volume customer environments using Python and distributed processing.</li>
         </ul>
         <h2><strong>Python Software Engineer</strong></h2>
         <p><em>Gothenburg, Sweden</em></p>
@@ -138,13 +125,13 @@
         <ul>
         <li>Led a team building a log-parsing and analytics tool that grew into a dedicated Ericsson engineering team.</li>
         </ul>
+        <h1>Publications</h1>
+        <h2><strong>Data Modeling for Predicting Software Exploits</strong></h2>
+        <p>Nov 2018</p>
+        <p>Peer-reviewed paper for predicting which CVEs become exploited in the wild. Adopted by Recorded Future's Vulnerability Intelligence product (threat-intelligence company). Customers report 86% reduction in unplanned downtime, 11 hours/week saved on triage, and 73% increase in threat visibility.</p>
+        <p>Reinthal, A., Filippakis, E., Almgren, M.</p>
+        <p><a href="https://doi.org/10.1007/978-3-030-03638-6_21">10.1007/978-3-030-03638-6_21</a> (Springer LNCS: Nordic Conference on Secure IT Systems)</p>
         <h1>Open Source and Personal Projects</h1>
-        <h2><strong><a href="https://reinthal.github.io/scheming_drivers/">Testing Scheming Drivers on Instrumental Convergence Evals</a></strong></h2>
-        <p><em>May 2026 – present</em></p>
-        <p>Preparing scheming-propensity evaluations for upstreaming to Inspect Framework, following the methodology from <a href="https://arxiv.org/pdf/2603.01608">arXiv:2603.01608</a>.</p>
-        <ul>
-        <li>Implemented the eval suite in Inspect and validated it against Gemini 3.1 Pro. Used to establish baselines on open-source models for model organisms research.</li>
-        </ul>
         <h2><strong><a href="https://www.reinthal.me/posts/casually-jailbreaking-gemini25-flash/">Casually Jailbreaking Gemini 2.5 Flash</a></strong></h2>
         <p><em>2026 – 2026</em></p>
         <p>Jailbroke Gemini 2.5 Flash with a few-shot in-context continuation attack, eliciting harmful recommendations.</p>
@@ -152,12 +139,19 @@
         <li>Practical demonstration of adversarial-robustness gaps in a production frontier model — directly relevant to the team's automated red-teaming and multi-turn attack work.</li>
         </ul>
         <h2><strong>Open Source Contributions</strong></h2>
-        <p>Data-engineering contributions: <a href="https://github.com/dagster-io/dagster/pull/24188">Dagster PR #24188</a> (ML pipeline orchestration) and <a href="https://github.com/dlt-hub/verified-sources/pull/594">DLT Hub PR #594</a> (ingestion reliability). Full activity: <a href="https://github.com/reinthal">github.com/reinthal</a>.</p>
+        <p><a href="https://github.com/reinthal">github.com/reinthal</a></p>
+        <ul>
+        <li>
+        <p><a href="https://github.com/UKGovernmentBEIS/inspect_ai/pull/3987">Inspect AI PR #3987</a> Fixed Gemini Pro 3.1+Openrouter+Reasoning issue</p>
+        </li>
+        <li>
+        <p><a href="https://github.com/dagster-io/dagster/pull/24188">Dagster PR #24188</a> (ML pipeline orchestration) and <a href="https://github.com/dlt-hub/verified-sources/pull/594">DLT Hub PR #594</a> (ingestion reliability)</p>
+        </li>
+        </ul>
         <h1>Skills</h1>
         <p><strong>Machine Learning &amp; AI:</strong> PyTorch, JAX (learned during ARENA 7.0), Einops, XGBoost, SciKit Learn, Jupyter; LLM evals &amp; observability (Inspect, LangChain, Langfuse, Arize Phoenix); linear probes, SFT, automated red-teaming</p>
         <p><strong>Programming Languages:</strong> Python, JavaScript, SQL, Rust, C/C++, R, Nix, Terraform</p>
-        <p><strong>Platforms &amp; Tools:</strong> Modal, Runpod, Openweights, Weights &amp; Biases, Spark, Flink, Iceberg, Databricks, Dagster, Snowflake, dbt, Apache Superset</p>
-        <p><strong>Infrastructure &amp; DevOps:</strong> Nix, Docker, Kubernetes, FluxCD, GitOps, CI/CD pipelines, Terraform, AWS (EC2, S3, IAM)</p>
+        <p><strong>Platforms &amp; Tools:</strong> Modal, Runpod, Openweights, Weights &amp; Biases, Spark, Docker, Kubernetes, AWS, Azure</p>
         <p><strong>Certifications:</strong> Bluedot Impact — Technical AI Safety (2026-03); AGI Strategy (2025-10)</p>
         <h1>Education</h1>
         <h2><strong>Chalmers University of Technology</strong></h2>
