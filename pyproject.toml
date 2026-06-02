@@ -1,15 +1,10 @@
-[tool.poetry]
+[project]
 name = "reinthalcv"
 version = "0.1.0"
-description = "Alexander Reinthal's cv"
-authors = ["Alexander Reinthal <email@reinthal.me>"]
+description = "Add your description here"
 readme = "README.md"
-package-mode = false
-[tool.poetry.dependencies]
-python = "~3.12.6"
-rendercv = {extras = ["full"], version = "^2.2"}
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.12"
+dependencies = [
+    "rendercv>=2.8",
+    "typst>=0.13",
+]

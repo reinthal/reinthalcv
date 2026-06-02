@@ -11,7 +11,7 @@ cv:
       username: reinthal
   sections:
     _:
-      - "Cybersecurity ML engineer moving into frontier AI safety. 7 years building classifiers and detection pipelines for malicious traffic and software vulnerabilities (NTT Security; peer-reviewed exploit-prediction methodology adopted by Recorded Future). Recent AI safety work: 1st place ARENA 7.0 hackathon on deception probes, 4th of 641 at Apart Research on cross-request misuse detection in model APIs, and experience from AI control research at AI Safety Camp."
+      - "I am an independent researcher studying how models are trained to become deceptively aligned. I am currently funded by a Coefficient Giving career transition grant. My background is in Cybersecurity, Data and ML engineer. Recent AI safety work: 1st place ARENA 7.0 hackathon on deception probes on Chinese LLMs, 4th of 641 at Apart Research on cross-request misuse detection in model APIs, and experience from AI control research at AI Safety Camp."
     publications:
       - title: Data Modeling for Predicting Software Exploits
         authors:
@@ -41,7 +41,7 @@ cv:
       - name: 'Novel AI Control Protocol Classes: Evaluation and Scalability'
         date:
         start_date: 2026-01
-        end_date: present
+        end_date: 2026-04
         location:
         summary: 'AI Safety Camp research. Studied whether hierarchical and parallel control structures offer better safety-usefulness Pareto frontiers than simple trusted-untrusted pairs as the capability gap widens.'
         highlights:
@@ -60,18 +60,18 @@ cv:
         start_date: 2026-01
         end_date: present
         location:
-        summary: 'ARENA 7.0 capstone, 3rd place. SFT-based study of how emergent misalignment couples to capability degradation.'
+        summary: 'ARENA 7.0 capstone, 3rd place. About Emergent Misalignment.'
         highlights:
-          - 'Fine-tuned model organisms via SFT; showed emergent misalignment degrades capabilities by 68pp on GSM8K and that any correct-data SFT simultaneously restores capabilities and reduces EM — effects are inseparable under this training recipe.'
+          - 'Found that emergent misalignment degrades capabilities by 68pp on GSM8K and that any correct-data SFT simultaneously restores capabilities and reduces EM — effects are inseparable under this training recipe.'
     experience:
       - company: Bluedot Impact
-        position: Facilitator
+        position: Mentor
         date:
         start_date: 2026-03-16
         end_date: present
         summary:
         highlights:
-          - 'Part-time facilitator and mentor for the Technical AI Safety course and project track; consistent outstanding feedback from course participants.'
+          - 'Part-time facilitator and mentor for the Technical AI Safety course and project.'
       - company: ARENA 7.0
         position: Alum
         date:
@@ -79,7 +79,6 @@ cv:
         end_date: 2026-02
         summary:
         highlights:
-          - 'Research projects placed 1st (Detecting Deception in Chinese Models) and 3rd (Inoculation Prompting Against Emergent Misalignment).'
           - 'Five-week intensive curriculum on transformer internals, mechanistic interpretability, RLHF, evals, JAX, and the Inspect framework — taught by leading AI safety researchers.'
       - company: Knowit Solutions Cocreate
         position: Data Platform Engineer / Tech Lead / Data Scientist
@@ -111,7 +110,7 @@ cv:
         highlights:
           - 'Led a team building a log-parsing and analytics tool that grew into a dedicated Ericsson engineering team.'
     open_source_and_personal_projects:
-      - name: '[Scheming Propensity Evals on Gemini 3.1 Pro](https://github.com/reinthal/scheming-propensity)'
+      - name: '[Testing Scheming Drivers on Instrumental Convergence Evals](https://reinthal.github.io/scheming_drivers/)'
         date:
         start_date: 2026-05
         end_date: present
@@ -167,6 +166,7 @@ cv:
         highlights:
           - 'Coursework: Algorithms, Testing/Debugging/Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security'
 
+
 design:
   theme: sb2nov
   page:
@@ -175,119 +175,136 @@ design:
     bottom_margin: 2cm
     left_margin: 2cm
     right_margin: 2cm
-    show_page_numbering: true
-    show_last_updated_date: true
+    show_footer: true
+    show_top_note: true
   colors:
-    text: rgb(0, 0, 0)
+    body: rgb(0, 0, 0)
     name: rgb(0, 0, 0)
+    headline: rgb(0, 0, 0)
     connections: rgb(0, 0, 0)
     section_titles: rgb(0, 0, 0)
     links: rgb(0, 79, 144)
-    last_updated_date_and_page_numbering: rgb(128, 128, 128)
-  text:
-    font_family: New Computer Modern
-    font_size: 10pt
-    leading: 0.6em
+    footer: rgb(128, 128, 128)
+    top_note: rgb(128, 128, 128)
+  typography:
+    line_spacing: 0.6em
     alignment: justified
     date_and_location_column_alignment: right
+    font_family:
+      body: New Computer Modern
+      name: New Computer Modern
+      headline: New Computer Modern
+      connections: New Computer Modern
+      section_titles: New Computer Modern
+    font_size:
+      body: 10pt
+      name: 30pt
+      headline: 10pt
+      connections: 10pt
+      section_titles: 1.4em
+    small_caps:
+      name: false
+      headline: false
+      connections: false
+      section_titles: false
+    bold:
+      name: true
+      headline: false
+      connections: false
+      section_titles: true
   links:
     underline: true
-    use_external_link_icon: false
+    show_external_link_icon: false
   header:
-    name_font_family: New Computer Modern
-    name_font_size: 30pt
-    name_bold: true
-    photo_width: 3.5cm
-    vertical_space_between_name_and_connections: 0.7cm
-    vertical_space_between_connections_and_first_section: 0.7cm
-    horizontal_space_between_connections: 0.5cm
-    connections_font_family: New Computer Modern
-    separator_between_connections: ''
-    use_icons_for_connections: true
     alignment: center
+    photo_width: 3.5cm
+    space_below_name: 0.7cm
+    space_below_headline: 0.7cm
+    space_below_connections: 0.7cm
+    connections:
+      phone_number_format: national
+      hyperlink: true
+      show_icons: true
+      display_urls_instead_of_usernames: false
+      separator: ''
+      space_between_connections: 0.5cm
   section_titles:
-    type: with-parial-line
-    font_family: New Computer Modern
-    font_size: 1.4em
-    bold: true
-    small_caps: false
+    type: with_partial_line
     line_thickness: 0.5pt
-    vertical_space_above: 0.5cm
-    vertical_space_below: 0.3cm
+    space_above: 0.5cm
+    space_below: 0.3cm
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 1.2em
+    space_between_text_based_entries: 0.3em
+    show_time_spans_in: []
   entries:
     date_and_location_width: 4.15cm
-    left_and_right_margin: 0.2cm
-    horizontal_space_between_columns: 0.1cm
-    vertical_space_between_entries: 1.2em
-    allow_page_break_in_sections: true
-    allow_page_break_in_entries: true
+    side_space: 0.2cm
+    space_between_columns: 0.1cm
+    allow_page_break: true
     short_second_row: false
-    show_time_spans_in: []
-  highlights:
-    bullet: ◦
-    top_margin: 0.25cm
-    left_margin: 0.4cm
-    vertical_space_between_highlights: 0.25cm
-    horizontal_space_between_bullet_and_highlight: 0.5em
-    summary_left_margin: 0cm
-  entry_types:
+    degree_width: 1cm
+    summary:
+      space_above: 0cm
+      space_left: 0cm
+    highlights:
+      bullet: ◦
+      nested_bullet: ◦
+      space_left: 0.4cm
+      space_above: 0.25cm
+      space_between_items: 0.25cm
+      space_between_bullet_and_text: 0.5em
+  templates:
+    footer: '*NAME - Page PAGE_NUMBER of TOTAL_PAGES*'
+    top_note: '*Last updated in CURRENT_DATE*'
+    single_date: MONTH_ABBREVIATION YEAR
+    date_range: START_DATE – END_DATE
     one_line_entry:
-      template: '**LABEL:** DETAILS'
+      main_column: '**LABEL:** DETAILS'
     education_entry:
-      main_column_first_row_template: |-
+      main_column: |-
         **INSTITUTION**
         *DEGREE in AREA*
-      degree_column_template:
-      degree_column_width: 1cm
-      main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
-      date_and_location_column_template: |-
+      degree_column: '~'
+      date_and_location_column: |-
         *LOCATION*
         *DATE*
     normal_entry:
-      main_column_first_row_template: '**NAME**'
-      main_column_second_row_template: |-
+      main_column: |-
+        **NAME**
         SUMMARY
         HIGHLIGHTS
-      date_and_location_column_template: |-
+      date_and_location_column: |-
         *LOCATION*
         *DATE*
     experience_entry:
-      main_column_first_row_template: |-
+      main_column: |-
         **POSITION**
         *COMPANY*
-      main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
-      date_and_location_column_template: |-
+      date_and_location_column: |-
         *LOCATION*
         *DATE*
     publication_entry:
-      main_column_first_row_template: '**TITLE**'
-      main_column_second_row_template: |-
+      main_column: |-
+        **TITLE**
+        SUMMARY
         AUTHORS
         URL (JOURNAL)
-      main_column_second_row_without_journal_template: |-
-        AUTHORS
-        URL
-      main_column_second_row_without_url_template: |-
-        AUTHORS
-        JOURNAL
-      date_and_location_column_template: DATE
+      date_and_location_column: DATE
 locale:
-  language: en
-  phone_number_format: national
-  page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
-  last_updated_date_template: Last updated in TODAY
-  date_template: MONTH_ABBREVIATION YEAR
+  language: english
+  last_updated: Last updated in
   month: month
   months: months
   year: year
   years: years
   present: present
-  to: –
-  abbreviations_for_months:
+  month_abbreviations:
     - Jan
     - Feb
     - Mar
@@ -300,7 +317,7 @@ locale:
     - Oct
     - Nov
     - Dec
-  full_names_of_months:
+  month_names:
     - January
     - February
     - March
@@ -313,7 +330,6 @@ locale:
     - October
     - November
     - December
-rendercv_settings:
-  date: '2026-05-17'
-  render_command:
+settings:
+  current_date: '2026-05-17'
   bold_keywords: []
