@@ -11,25 +11,26 @@ cv:
       username: reinthal
   sections:
     _:
-      - "I am an independent researcher studying how models become subtly misaligned during training. I bring 7 years of industry experience across cyber-security, data, and ML engineering, where I studied IT security failures using machine learning and data."
+      - "I am an independent AI safety researcher studying how models become subtly misaligned during training. I bring 7 years of industry experience across cyber-security, data, and ML engineering."
     research_projects:
       - name: "[Testing Scheming Drivers on Instrumental Convergence Evals](https://reinthal.github.io/scheming_drivers/)"
         date:
         start_date: 2026-05
-        end_date: present
+        end_date: 2026-06
         location:
-        summary: "What happens to instrumental convergence when you change the prompt?"
+        summary: "What happens to instrumental convergence evals when you change the prompt?"
         highlights:
-          - "Found that pressure prompts like 'achieve your goal in the long run' have opposite effects on misalignment rates in Gemini 3.1 Pro depending on whether the model is evaluation-aware."
+          - "Found that pressure phrases like 'achieve your goal in the long run' have opposite effects on misalignment rates in Gemini 3.1 Pro depending on prompt styles (1) [He et al. (2025)](https://arxiv.org/pdf/2502.12206) capability prompt and (2) [Hopman et al. (2026)](https://arxiv.org/pdf/2603.01608) propensity prompt. Pressure phrases increased the misalignment rate for (1) +0.23 [+0.19, +0.28] but decreased for (2) −0.10 [−0.15, −0.05] 95% Newcombe CI."
       - name: "[Detecting Deception in Chinese Models](https://github.com/reinthal/deception-detection-in-chinese-models)"
         date:
         start_date: 2026-01
         end_date: present
         location:
-        summary: "ARENA 7.0 weekend hackathon, 1st place. Linear probes for deception and politically sensitive lying across frontier open-weight models."
+        summary: "Are Chinese models lying in their answers on politically sensitive questions?"
         highlights:
-          - "Linear probes for deception transfer to Llama-3.3-70B (AUROC > 0.74) but fail on Qwen-2.5-72B (AUROC < 0.5) while Qwen is more China-aligned on evals than Llama-3.3. A curious gap that warrants further research. Ongoing."
+          - "TODO."
           - "Awarded a Bluedot Impact rapid grant to extend the work to additional frontier open-weight models."
+          - "ARENA 7.0 weekend hackathon, 1st place."
       - name: "[About Emergent Misalignment](https://github.com/reinthal/about-emergent-misalignment)"
         date:
         start_date: 2026-01
@@ -37,7 +38,7 @@ cv:
         location:
         summary: "ARENA 7.0 capstone, 3rd place. Investigating how emergent misalignment trades off against model capabilities."
         highlights:
-          - "Found that emergent misalignment degrades capabilities by 68pp on GSM8K and that any correct-data SFT simultaneously restores capabilities and reduces EM — effects are inseparable under this training recipe."
+          - "Found that emergent misalignment (EM) rate is negatively correlated on the capability benchmarks GSM8K (pearson -0.98) and MMLU (pearson −0.94) when induced by training on increasing percentages of bad medical advice. Also found that any correct-data SFT restores capabilities and reduces EM."
       - name: "[Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx)"
         date:
         start_date: 2025-11
@@ -55,7 +56,7 @@ cv:
         end_date: present
         summary:
         highlights:
-          - "Researching how subtle misalignment develops during training. Inspired by seminars on RL, inoculation prompting, and natural emergent misalignment, and by my ARENA capstone."
+          - "Researching how subtle misalignment develops during training. Inspired by ARENA seminars on RL, inoculation prompting, and natural emergent misalignment, and by my ARENA capstone. Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks."
       - company: Bluedot Impact
         position: Mentor
         date:
