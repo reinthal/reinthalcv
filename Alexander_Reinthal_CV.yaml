@@ -26,19 +26,18 @@ cv:
         start_date: 2026-01
         end_date: present
         location:
-        summary: "Are Chinese models lying in their answers on politically sensitive questions?"
+        summary: "Extenstion of ARENA 7.0 weekend hackathon, 1st place. Can a lying linear probe flag Chinese models answers on politically sensitive questions?"
         highlights:
           - "TODO."
-          - "Awarded a Bluedot Impact rapid grant to extend the work to additional frontier open-weight models."
-          - "ARENA 7.0 weekend hackathon, 1st place."
+          - "Supported by Bluedot Impact rapid grant to extend the work to additional frontier open-weight models."
       - name: "[About Emergent Misalignment](https://github.com/reinthal/about-emergent-misalignment)"
         date:
         start_date: 2026-01
         end_date: present
         location:
-        summary: "ARENA 7.0 capstone, 3rd place. Investigating how emergent misalignment trades off against model capabilities."
+        summary: "Extension of ARENA 7.0 capstone, 3rd place. Explored inoculation prompting and harmful generalization in LLMs."
         highlights:
-          - "Found that emergent misalignment (EM) rate is negatively correlated on the capability benchmarks GSM8K (pearson -0.98) and MMLU (pearson −0.94) when induced by training on increasing percentages of bad medical advice. Also found that any correct-data SFT restores capabilities and reduces EM."
+          - "Found that emergent misalignment (EM) rate is negatively correlated on the capability benchmarks GSM8K (pearson -0.98) and MMLU (pearson −0.94) when induced by training on increasing percentages of bad medical advice."
       - name: "[Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx)"
         date:
         start_date: 2025-11

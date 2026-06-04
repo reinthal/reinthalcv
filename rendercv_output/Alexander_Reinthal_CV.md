@@ -9,16 +9,16 @@
 
 
 #  
-I am an independent researcher studying how models become subtly misaligned during training. I bring 7 years of industry experience across cyber-security, data, and ML engineering, where I studied IT security failures using machine learning and data.
+I am an independent AI safety researcher studying how models become subtly misaligned during training. I bring 7 years of industry experience across cyber-security, data, and ML engineering.
 
 # Research Projects
 ## **[Testing Scheming Drivers on Instrumental Convergence Evals](https://reinthal.github.io/scheming_drivers/)**
 
-*May 2026 – present*
+*May 2026 – June 2026*
 
-What happens to instrumental convergence when you change the prompt?
+What happens to instrumental convergence evals when you change the prompt?
 
-- Found that pressure prompts like 'achieve your goal in the long run' have opposite effects on misalignment rates in Gemini 3.1 Pro depending on whether the model is evaluation-aware.
+- Found that pressure phrases like 'achieve your goal in the long run' have opposite effects on misalignment rates in Gemini 3.1 Pro depending on prompt styles (1) [He et al. (2025)](https://arxiv.org/pdf/2502.12206) capability prompt and (2) [Hopman et al. (2026)](https://arxiv.org/pdf/2603.01608) propensity prompt. Pressure phrases increased the misalignment rate for (1) +0.23 [+0.19, +0.28] but decreased for (2) −0.10 [−0.15, −0.05] 95% Newcombe CI.
 
 
 
@@ -26,11 +26,11 @@ What happens to instrumental convergence when you change the prompt?
 
 *Jan 2026 – present*
 
-ARENA 7.0 weekend hackathon, 1st place. Linear probes for deception and politically sensitive lying across frontier open-weight models.
+Extenstion of ARENA 7.0 weekend hackathon, 1st place. Can a lying linear probe flag Chinese models answers on politically sensitive questions?
 
-- Linear probes for deception transfer to Llama-3.3-70B (AUROC > 0.74) but fail on Qwen-2.5-72B (AUROC < 0.5) while Qwen is more China-aligned on evals than Llama-3.3. A curious gap that warrants further research. Ongoing.
+- TODO.
 
-- Awarded a Bluedot Impact rapid grant to extend the work to additional frontier open-weight models.
+- Supported by Bluedot Impact rapid grant to extend the work to additional frontier open-weight models.
 
 
 
@@ -38,9 +38,9 @@ ARENA 7.0 weekend hackathon, 1st place. Linear probes for deception and politica
 
 *Jan 2026 – present*
 
-ARENA 7.0 capstone, 3rd place. Investigating how emergent misalignment trades off against model capabilities.
+Extension of ARENA 7.0 capstone, 3rd place. Explored inoculation prompting and harmful generalization in LLMs.
 
-- Found that emergent misalignment degrades capabilities by 68pp on GSM8K and that any correct-data SFT simultaneously restores capabilities and reduces EM — effects are inseparable under this training recipe.
+- Found that emergent misalignment (EM) rate is negatively correlated on the capability benchmarks GSM8K (pearson -0.98) and MMLU (pearson −0.94) when induced by training on increasing percentages of bad medical advice.
 
 
 
@@ -63,7 +63,7 @@ Apart Research sprint, 4th of 641 submissions — proof of concept for detecting
 
 *Independent*
 
-- Researching how subtle misalignment develops during training. Inspired by seminars on RL, inoculation prompting, and natural emergent misalignment, and by my ARENA capstone.
+- Researching how subtle misalignment develops during training. Inspired by ARENA seminars on RL, inoculation prompting, and natural emergent misalignment, and by my ARENA capstone. Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks.
 
 
 
