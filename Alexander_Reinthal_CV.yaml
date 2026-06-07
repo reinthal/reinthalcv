@@ -11,7 +11,7 @@ cv:
       username: reinthal
   sections:
     _:
-      - "I am an independent AI safety researcher with a taste for research at the cross-over of interpretability, misuse risks and model organisms of misalignment. I bring 7 years of industry experience across cyber-security, data, and ML engineering."
+      - "I am an independent AI safety researcher with a taste for work at the intersection of interpretability, misuse risks, and model organisms of misalignment. I bring 7 years of industry experience across cyber-security, data, and ML engineering."
     research_projects:
       - name: "[Testing Scheming Drivers on Instrumental Convergence Evals](https://reinthal.github.io/scheming_drivers/)"
         date:
@@ -28,8 +28,8 @@ cv:
         location:
         summary: "Can a lying linear probe flag a Chinese model's deceptive answers on politically sensitive questions?"
         highlights:
-          - "We found that Chinese models (Qwen2.5-72B and Qwen3.5-122B-A10B) answer more evasively, state contested information without caveats, use faulty logic and refuse sensitive political questions more than western models (Llama3.3-70B and GPT-OSS-120B) but that deception probes (Apollo, 2025) are unreliable at detecting such problematic behavior."
-          - "Extenstion of ARENA 7.0 weekend hackathon, 1st place. Supported by Bluedot Impact rapid grant."
+          - "We found that Chinese models (Qwen2.5-72B and Qwen3.5-122B-A10B) answer more evasively, state contested information without caveats, use faulty logic, and refuse sensitive political questions more often than western models (Llama3.3-70B and GPT-OSS-120B), but that deception probes (Apollo, 2025) are unreliable at detecting such problematic behavior."
+          - "Extension of ARENA 7.0 weekend hackathon, 1st place. Supported by Bluedot Impact rapid grant."
       - name: "[About Emergent Misalignment](https://github.com/reinthal/about-emergent-misalignment)"
         date:
         start_date: 2026-01
@@ -37,7 +37,7 @@ cv:
         location:
         summary: "Explored inoculation prompting and harmful generalization in LLMs."
         highlights:
-          - "Found that emergent misalignment (EM) rate is negatively correlated on the capability benchmarks GSM8K (pearson -0.98) and MMLU (pearson −0.94) when induced by training on increasing percentages of bad medical advice."
+          - "Found that emergent misalignment (EM) rate is negatively correlated with the capability benchmarks GSM8K (Pearson −0.98) and MMLU (Pearson −0.94) when induced by training on increasing percentages of bad medical advice."
           - "Extension of ARENA 7.0 capstone, 3rd place."
       - name: "[Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx)"
         date:
@@ -90,7 +90,7 @@ cv:
         location: Gothenburg, Sweden
         summary:
         highlights:
-          - "Built ML classifiers and anomaly-detection pipelines for malicious network traffic across high-volume customer environments using XGBoost, Python and distributed processing."
+          - "Built ML classifiers and anomaly-detection pipelines for malicious network traffic across high-volume customer environments using XGBoost, Python, and distributed processing."
       - company: Ericsson
         position: Python Software Engineer
         date:
@@ -110,9 +110,9 @@ cv:
         url: https://link.springer.com/chapter/10.1007/978-3-030-03638-6_21
         journal: "Springer LNCS: Nordic Conference on Secure IT Systems"
         date: 2018-11
-        summary: "Peer-reviewed paper for predicting which CVEs become exploited in the wild. Adopted by Recorded Future's Vulnerability Intelligence product (threat-intelligence company). Customers report 86% reduction in unplanned downtime, 11 hours/week saved on triage, and 73% increase in threat visibility."
+        summary: "Peer-reviewed paper predicting which CVEs become exploited in the wild. Adopted by Recorded Future's Vulnerability Intelligence product (threat-intelligence company). Customers report 86% reduction in unplanned downtime, 11 hours/week saved on triage, and 73% increase in threat visibility."
         highlights:
-          - "." # not renderd in cv
+          - "." # not rendered in cv
     open_source_and_personal_projects:
       - name: "[Casually Jailbreaking Gemini 2.5 Flash](https://www.reinthal.me/posts/casually-jailbreaking-gemini25-flash/)"
         date:
@@ -127,7 +127,7 @@ cv:
         location:
         summary: "[github.com/reinthal](https://github.com/reinthal)"
         highlights:
-          - "[Inspect AI PR #3987](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3987) Fixed Gemini Pro 3.1+Openrouter+Reasoning issue"
+          - "[Inspect AI PR #3987](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3987) Fixed Gemini Pro 3.1 + OpenRouter + Reasoning issue"
           - "[Dagster PR #24188](https://github.com/dagster-io/dagster/pull/24188) (ML pipeline orchestration) and [DLT Hub PR #594](https://github.com/dlt-hub/verified-sources/pull/594) (ingestion reliability)"
     skills:
       - label: Machine Learning & AI
