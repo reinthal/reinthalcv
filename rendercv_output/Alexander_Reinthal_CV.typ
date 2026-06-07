@@ -131,11 +131,11 @@ I am an independent AI safety researcher studying how models become subtly misal
 
   ],
   main-column-second-row: [
-    #summary[Extenstion of ARENA 7.0 weekend hackathon, 1st place. Can a lying linear probe flag Chinese models answers on politically sensitive questions?]
+    #summary[Can a lying linear probe flag Chinese models answers on politically sensitive questions?]
 
-    - TODO.
+    - We found that Chinese models (Qwen2.5-72B and Qwen3.5-122B-A10B) answer more evasively, state contested information without caveats, use faulty logic and refuse sensitive politcal questions more compared to western models (Llama3.3-70B and GPT-OSS-120B) but that deception probes (Apollo, 2025) are unreliable at detecting such problematic behavior.
 
-    - Supported by Bluedot Impact rapid grant to extend the work to additional frontier open-weight models.
+    - Extenstion of ARENA 7.0 weekend hackathon, 1st place. Supported by Bluedot Impact rapid grant.
 
   ],
 )
@@ -150,9 +150,11 @@ I am an independent AI safety researcher studying how models become subtly misal
 
   ],
   main-column-second-row: [
-    #summary[Extension of ARENA 7.0 capstone, 3rd place. Explored inoculation prompting and harmful generalization in LLMs.]
+    #summary[Explored inoculation prompting and harmful generalization in LLMs.]
 
     - Found that emergent misalignment (EM) rate is negatively correlated on the capability benchmarks GSM8K (pearson -0.98) and MMLU (pearson −0.94) when induced by training on increasing percentages of bad medical advice.
+
+    - Extension of ARENA 7.0 capstone, 3rd place.
 
   ],
 )
