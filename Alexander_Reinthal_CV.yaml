@@ -11,43 +11,38 @@ cv:
       username: reinthal
   sections:
     _:
-      - "I am an independent AI safety researcher with a taste for work at the intersection of interpretability, misuse risks, and model organisms of misalignment. I bring 7 years of industry experience across cyber-security, data, and ML engineering."
+      - "An independent AI safety researcher with a taste for work at the intersection of interpretability, misuse risks, and model organisms of misalignment. I bring 7 years of industry experience across cyber-security, data, and ML engineering."
     research_projects:
-      - name: "[Testing Scheming Drivers on Instrumental Convergence Evals](https://reinthal.github.io/scheming_drivers/)"
-        date:
-        start_date: 2026-05
-        end_date: 2026-06
-        location:
-        summary: "What happens to instrumental convergence evals when you change the prompt?"
-        highlights:
-          - "Found that pressure phrases like 'achieve your goal in the long run' have opposite effects on misalignment rates in Gemini 3.1 Pro depending on prompt styles (1) [He et al. (2025)](https://arxiv.org/pdf/2502.12206) capability prompt and (2) [Hopman et al. (2026)](https://arxiv.org/pdf/2603.01608) propensity prompt. Pressure phrases increased the misalignment rate for (1) +0.23 [+0.19, +0.28] but decreased for (2) −0.10 [−0.15, −0.05] 95% Newcombe CI."
-      - name: "[Detecting Deception in Chinese Models](https://github.com/reinthal/deception-detection-in-chinese-models)"
+      - name: "[Can lying probes flag a Chinese model's deceptive answers?](https://github.com/reinthal/deception-detection-in-chinese-models)"
         date:
         start_date: 2026-01
         end_date: present
         location:
-        summary: "Can a lying linear probe flag a Chinese model's deceptive answers on politically sensitive questions?"
+        summary: "Found that deception probes (Apollo, 2025) are unreliable at detecting questionable answers from Chinese models on politically sensitive questions."
         highlights:
-          - "We found that Chinese models (Qwen2.5-72B and Qwen3.5-122B-A10B) answer more evasively, state contested information without caveats, use faulty logic, and refuse sensitive political questions more often than western models (Llama3.3-70B and GPT-OSS-120B), but that deception probes (Apollo, 2025) are unreliable at detecting such problematic behavior."
           - "Extension of ARENA 7.0 weekend hackathon, 1st place. Supported by Bluedot Impact rapid grant."
       - name: "[About Emergent Misalignment](https://github.com/reinthal/about-emergent-misalignment)"
         date:
         start_date: 2026-01
         end_date: present
         location:
-        summary: "Explored inoculation prompting and harmful generalization in LLMs."
+        summary: "Found that emergent misalignment (EM) rate is negatively correlated with the capability benchmarks GSM8K (Pearson −0.98) and MMLU (Pearson −0.94)."
         highlights:
-          - "Found that emergent misalignment (EM) rate is negatively correlated with the capability benchmarks GSM8K (Pearson −0.98) and MMLU (Pearson −0.94) when induced by training on increasing percentages of bad medical advice."
           - "Extension of ARENA 7.0 capstone, 3rd place."
+      - name: "[Changing the prompt for  instrumental convergence evals](https://reinthal.github.io/scheming_drivers/)"
+        date:
+        start_date: 2026-05
+        end_date: 2026-06
+        location:
+        summary: "Removing pressure phrases increases misalignment rate for capability prompts [(He et al. 2025)](https://arxiv.org/pdf/2502.12206) but decreases it for propensitity prompts [(Hopman et al. 2026)](https://arxiv.org/pdf/2603.01608) for Gemini 3.1 Pro Preview."
       - name: "[Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx)"
         date:
         start_date: 2025-11
         end_date: 2025-11
         location:
-        summary: "Apart Research sprint, 4th of 641 submissions — proof of concept for detecting malicious activity across multiple agent sessions."
+        summary: "Proof of concept for detecting malicious activity across multiple agent sessions."
         highlights:
-          - "Individual requests can look benign in isolation (100% to 23% detection by LlamaGuard 3 on IP scans) — but can be detected by modelling activity across user sessions."
-          - "Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le."
+          - "Research continued through SPAR by David Williams-King (ERA) and Linh Le (Mila). Apart Research sprint, 4th place of 641 submissions."
     experience:
       - company: Independent
         position: AI Safety Researcher
@@ -58,13 +53,13 @@ cv:
         highlights:
           - "Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks."
       - company: Bluedot Impact
-        position: Mentor
+        position: Research mentor
         date:
         start_date: 2026-03-16
         end_date: present
         summary:
         highlights:
-          - "Part-time facilitator and mentor for the Technical AI Safety course and project."
+          - "Facilitator and research mentor for the Technical AI Safety course and project."
       - company: ARENA 7.0
         position: Alum
         date:
@@ -90,7 +85,7 @@ cv:
         location: Gothenburg, Sweden
         summary:
         highlights:
-          - "Built ML classifiers and anomaly-detection pipelines for malicious network traffic across high-volume customer environments using XGBoost, Python, and distributed processing."
+          - "Deployed ML an classifier that reduced analysis time of malicious domains from 2 hours per shift per analyst to 10 minutes per shift per analyst."
       - company: Ericsson
         position: Python Software Engineer
         date:
@@ -99,7 +94,7 @@ cv:
         location: Gothenburg, Sweden
         summary:
         highlights:
-          - "Led a team building a log-parsing and analytics tool that grew into a dedicated Ericsson engineering team."
+          - "First job where I led a team building a log-parsing and analytics tool that got funded and grew into a dedicated engineering team."
     publications:
       - title: Data Modeling for Predicting Software Exploits
         authors:
@@ -110,7 +105,7 @@ cv:
         url: https://link.springer.com/chapter/10.1007/978-3-030-03638-6_21
         journal: "Springer LNCS: Nordic Conference on Secure IT Systems"
         date: 2018-11
-        summary: "Peer-reviewed paper predicting which CVEs become exploited in the wild. Adopted by Recorded Future's Vulnerability Intelligence product (threat-intelligence company). Customers report 86% reduction in unplanned downtime, 11 hours/week saved on triage, and 73% increase in threat visibility."
+        summary: "Peer-reviewed paper predicting which CVEs become exploited in the wild. Adopted by Recorded Future's Vulnerability Intelligence product."
         highlights:
           - "." # not rendered in cv
     open_source_and_personal_projects:
@@ -148,6 +143,7 @@ cv:
         location: Gothenburg, Sweden
         summary:
         highlights:
+          - "Master thesis got published and put into production at Recorded Future."
           - "Switched from computer science undergraduate to engineering physics graduate program and performed better."
       - institution: Gothenburg University
         area: Computer Science
@@ -158,7 +154,7 @@ cv:
         location: Gothenburg, Sweden
         summary:
         highlights:
-          - "Coursework: Algorithms, Testing/Debugging/Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security"
+          - "Thesis on finding common dense subgraphs using linear programming has 4 citations."
 
 design:
   theme: sb2nov
@@ -286,8 +282,7 @@ design:
       main_column: |-
         **TITLE**
         SUMMARY
-        AUTHORS
-        URL (JOURNAL)
+        *AUTHORS. URL (JOURNAL)*
       date_and_location_column: DATE
 locale:
   language: english

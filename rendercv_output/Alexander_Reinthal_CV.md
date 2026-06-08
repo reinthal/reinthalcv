@@ -9,28 +9,16 @@
 
 
 #  
-I am an independent AI safety researcher studying how models become subtly misaligned during training. I bring 7 years of industry experience across cyber-security, data, and ML engineering.
+An independent AI safety researcher with a taste for work at the intersection of interpretability, misuse risks, and model organisms of misalignment. I bring 7 years of industry experience across cyber-security, data, and ML engineering.
 
 # Research Projects
-## **[Testing Scheming Drivers on Instrumental Convergence Evals](https://reinthal.github.io/scheming_drivers/)**
-
-*May 2026 – June 2026*
-
-What happens to instrumental convergence evals when you change the prompt?
-
-- Found that pressure phrases like 'achieve your goal in the long run' have opposite effects on misalignment rates in Gemini 3.1 Pro depending on prompt styles (1) [He et al. (2025)](https://arxiv.org/pdf/2502.12206) capability prompt and (2) [Hopman et al. (2026)](https://arxiv.org/pdf/2603.01608) propensity prompt. Pressure phrases increased the misalignment rate for (1) +0.23 [+0.19, +0.28] but decreased for (2) −0.10 [−0.15, −0.05] 95% Newcombe CI.
-
-
-
-## **[Detecting Deception in Chinese Models](https://github.com/reinthal/deception-detection-in-chinese-models)**
+## **[Can lying probes flag a Chinese model's deceptive answers?](https://github.com/reinthal/deception-detection-in-chinese-models)**
 
 *Jan 2026 – present*
 
-Can a lying linear probe flag Chinese models answers on politically sensitive questions?
+Found that deception probes (Apollo, 2025) are unreliable at detecting questionable answers from Chinese models on politically sensitive questions.
 
-- We found that Chinese models (Qwen2.5-72B and Qwen3.5-122B-A10B) answer more evasively, state contested information without caveats, use faulty logic and refuse sensitive politcal questions more compared to western models (Llama3.3-70B and GPT-OSS-120B) but that deception probes (Apollo, 2025) are unreliable at detecting such problematic behavior.
-
-- Extenstion of ARENA 7.0 weekend hackathon, 1st place. Supported by Bluedot Impact rapid grant.
+- Extension of ARENA 7.0 weekend hackathon, 1st place. Supported by Bluedot Impact rapid grant.
 
 
 
@@ -38,11 +26,17 @@ Can a lying linear probe flag Chinese models answers on politically sensitive qu
 
 *Jan 2026 – present*
 
-Explored inoculation prompting and harmful generalization in LLMs.
-
-- Found that emergent misalignment (EM) rate is negatively correlated on the capability benchmarks GSM8K (pearson -0.98) and MMLU (pearson −0.94) when induced by training on increasing percentages of bad medical advice.
+Found that emergent misalignment (EM) rate is negatively correlated with the capability benchmarks GSM8K (Pearson −0.98) and MMLU (Pearson −0.94).
 
 - Extension of ARENA 7.0 capstone, 3rd place.
+
+
+
+## **[Changing the prompt for  instrumental convergence evals](https://reinthal.github.io/scheming_drivers/)**
+
+*May 2026 – June 2026*
+
+Removing pressure phrases increases misalignment rate for capability prompts [(He et al. 2025)](https://arxiv.org/pdf/2502.12206) but decreases it for propensitity prompts [(Hopman et al. 2026)](https://arxiv.org/pdf/2603.01608) for Gemini 3.1 Pro Preview.
 
 
 
@@ -50,11 +44,9 @@ Explored inoculation prompting and harmful generalization in LLMs.
 
 *Nov 2025 – Nov 2025*
 
-Apart Research sprint, 4th of 641 submissions — proof of concept for detecting malicious activity across multiple agent sessions.
+Proof of concept for detecting malicious activity across multiple agent sessions.
 
-- Individual requests can look benign in isolation (100% to 23% detection by LlamaGuard 3 on IP scans) — but can be detected by modelling activity across user sessions.
-
-- Co-authored with Arthur Colle, David Williams-King, Yingquan Li, and Lihn Le.
+- Research continued through SPAR by David Williams-King (ERA) and Linh Le (Mila). Apart Research sprint, 4th place of 641 submissions.
 
 
 
@@ -65,17 +57,17 @@ Apart Research sprint, 4th of 641 submissions — proof of concept for detecting
 
 *Independent*
 
-- Researching how subtle misalignment develops during training. Inspired by ARENA seminars on RL, inoculation prompting, and natural emergent misalignment, and by my ARENA capstone. Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks.
+- Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks.
 
 
 
-## **Mentor**
+## **Research mentor**
 
 *Mar 2026 – present*
 
 *Bluedot Impact*
 
-- Part-time facilitator and mentor for the Technical AI Safety course and project.
+- Facilitator and research mentor for the Technical AI Safety course and project.
 
 
 
@@ -97,7 +89,7 @@ Apart Research sprint, 4th of 641 submissions — proof of concept for detecting
 
 *Knowit Solutions Cocreate*
 
-- Implemented an OAuth-authenticated MCP gateway to secure agentic workflows and pioneered LLM evals at the company.
+- Pioneered LLM evals at the company. Implemented an OAuth-authenticated MCP gateway to secure agentic workflows.
 
 
 
@@ -109,7 +101,7 @@ Apart Research sprint, 4th of 641 submissions — proof of concept for detecting
 
 *NTT Security*
 
-- Built ML classifiers and anomaly-detection pipelines for malicious network traffic across high-volume customer environments using Python and distributed processing.
+- Deployed ML an classifier that reduced analysis time of malicious domains from 2 hours per shift per analyst to 10 minutes per shift per analyst.
 
 
 
@@ -121,7 +113,7 @@ Apart Research sprint, 4th of 641 submissions — proof of concept for detecting
 
 *Ericsson*
 
-- Led a team building a log-parsing and analytics tool that grew into a dedicated Ericsson engineering team.
+- First job where I led a team building a log-parsing and analytics tool that got funded and grew into a dedicated engineering team.
 
 
 
@@ -130,11 +122,9 @@ Apart Research sprint, 4th of 641 submissions — proof of concept for detecting
 
 Nov 2018
 
-Peer-reviewed paper for predicting which CVEs become exploited in the wild. Adopted by Recorded Future's Vulnerability Intelligence product (threat-intelligence company). Customers report 86% reduction in unplanned downtime, 11 hours/week saved on triage, and 73% increase in threat visibility.
+Peer-reviewed paper predicting which CVEs become exploited in the wild. Adopted by Recorded Future's Vulnerability Intelligence product.
 
-Reinthal, A., Filippakis, E., Almgren, M.
-
-[10.1007/978-3-030-03638-6_21](https://doi.org/10.1007/978-3-030-03638-6_21) (Springer LNCS: Nordic Conference on Secure IT Systems)
+*Reinthal, A., Filippakis, E., Almgren, M.. [10.1007/978-3-030-03638-6_21](https://doi.org/10.1007/978-3-030-03638-6_21) (Springer LNCS: Nordic Conference on Secure IT Systems)*
 
 
 
@@ -145,15 +135,13 @@ Reinthal, A., Filippakis, E., Almgren, M.
 
 Jailbroke Gemini 2.5 Flash with a few-shot in-context continuation attack, eliciting harmful recommendations.
 
-- Practical demonstration of adversarial-robustness gaps in a production frontier model — directly relevant to the team's automated red-teaming and multi-turn attack work.
-
 
 
 ## **Open Source Contributions**
 
 [github.com/reinthal](https://github.com/reinthal)
 
-- [Inspect AI PR #3987](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3987) Fixed Gemini Pro 3.1+Openrouter+Reasoning issue
+- [Inspect AI PR #3987](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3987) Fixed Gemini Pro 3.1 + OpenRouter + Reasoning issue
 
 - [Dagster PR #24188](https://github.com/dagster-io/dagster/pull/24188) (ML pipeline orchestration) and [DLT Hub PR #594](https://github.com/dlt-hub/verified-sources/pull/594) (ingestion reliability)
 
@@ -181,7 +169,9 @@ Jailbroke Gemini 2.5 Flash with a few-shot in-context continuation attack, elici
 
 *MS in Engineering Physics*
 
-- Coursework: Statistical Physics, Neural Networks and Machine Learning
+- Master thesis got published and put into production at Recorded Future.
+
+- Switched from computer science undergraduate to engineering physics graduate program and performed better.
 
 
 
@@ -197,6 +187,6 @@ Jailbroke Gemini 2.5 Flash with a few-shot in-context continuation attack, elici
 
 *BS in Computer Science*
 
-- Coursework: Algorithms, Testing/Debugging/Verification, Theoretical Computer Science, Operating Systems, Cryptography, Cyber Security
+- Thesis on finding common dense subgraphs using linear programming has 4 citations.
 
 
