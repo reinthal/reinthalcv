@@ -13,23 +13,28 @@ cv:
     _:
       - "An independent AI safety researcher with a taste for work at the intersection of interpretability, misuse risks, and model organisms of misalignment. I bring 7 years of industry experience across cyber-security, data, and ML engineering."
     research_projects:
+      - name: "[Alethia's Quest: Lie detection Hackathon](https://aletheias-quest.github.io/)"
+        date:
+        start_date: 2026-07-01
+        end_date: 2026-08-05
+        summary: "Competed on the EluetherAI Team throughout the competition and ranked no. 1 for both blackbox and white-box detection methods throughout the competition. Blog post coming soon."
       - name: "[Can lying probes flag a Chinese model's deceptive answers?](https://github.com/reinthal/deception-detection-in-chinese-models)"
         date:
         start_date: 2026-01
-        end_date: present
+        end_date: 2026-06
         location:
         summary: "Found that deception probes (Apollo, 2025) are unreliable at detecting questionable answers from Chinese models on politically sensitive questions."
         highlights:
           - "Extension of ARENA 7.0 weekend hackathon, 1st place. Supported by Bluedot Impact rapid grant."
       - name: "[About Emergent Misalignment](https://github.com/reinthal/about-emergent-misalignment)"
         date:
-        start_date: 2026-01
+        start_date: 2026-06
         end_date: present
         location:
         summary: "Found that emergent misalignment (EM) rate is negatively correlated with the capability benchmarks GSM8K (Pearson −0.98) and MMLU (Pearson −0.94)."
         highlights:
           - "Extension of ARENA 7.0 capstone, 3rd place."
-      - name: "[Changing the prompt for  instrumental convergence evals](https://reinthal.github.io/scheming_drivers/)"
+      - name: "[Changing the prompt for instrumental convergence evals](https://reinthal.github.io/scheming_drivers/)"
         date:
         start_date: 2026-05
         end_date: 2026-06
@@ -69,13 +74,14 @@ cv:
         highlights:
           - "Five-week intensive curriculum on transformer internals, mechanistic interpretability, RLHF, evals, JAX, and the Inspect framework."
       - company: Knowit Solutions Cocreate
-        position: Data Platform Engineer / Tech Lead / Data Scientist
+        position: Forward-deployed Engineer / DevSecOps / Tech Lead / Data Scientist
         date:
         start_date: 2022-02
         end_date: present
         location: Gothenburg, Sweden
         summary:
         highlights:
+          - Securely deployed 
           - "Pioneered LLM evals at the company. Implemented an OAuth-authenticated MCP gateway to secure agentic workflows."
       - company: NTT Security
         position: Security Analyst

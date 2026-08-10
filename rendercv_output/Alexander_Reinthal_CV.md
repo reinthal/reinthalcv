@@ -12,9 +12,17 @@
 An independent AI safety researcher with a taste for work at the intersection of interpretability, misuse risks, and model organisms of misalignment. I bring 7 years of industry experience across cyber-security, data, and ML engineering.
 
 # Research Projects
+## **[Alethia's Quest: Lie detection Hackathon](https://aletheias-quest.github.io/)**
+
+*July 2026 – Aug 2026*
+
+Competed on the EluetherAI Team throughout the competition and ranked no. 1 for both blackbox and white-box detection methods throughout the competition. Blog post coming soon.
+
+
+
 ## **[Can lying probes flag a Chinese model's deceptive answers?](https://github.com/reinthal/deception-detection-in-chinese-models)**
 
-*Jan 2026 – present*
+*Jan 2026 – June 2026*
 
 Found that deception probes (Apollo, 2025) are unreliable at detecting questionable answers from Chinese models on politically sensitive questions.
 
@@ -24,7 +32,7 @@ Found that deception probes (Apollo, 2025) are unreliable at detecting questiona
 
 ## **[About Emergent Misalignment](https://github.com/reinthal/about-emergent-misalignment)**
 
-*Jan 2026 – present*
+*June 2026 – present*
 
 Found that emergent misalignment (EM) rate is negatively correlated with the capability benchmarks GSM8K (Pearson −0.98) and MMLU (Pearson −0.94).
 

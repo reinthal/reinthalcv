@@ -106,11 +106,26 @@ An independent AI safety researcher with a taste for work at the intersection of
 
 #regular-entry(
   [
+    #strong[#link("https://aletheias-quest.github.io/")[Alethia's Quest: Lie detection Hackathon]]
+
+  ],
+  [
+    #emph[July 2026 – Aug 2026]
+
+  ],
+  main-column-second-row: [
+    #summary[Competed on the EluetherAI Team throughout the competition and ranked no. 1 for both blackbox and white-box detection methods throughout the competition. Blog post coming soon.]
+
+  ],
+)
+
+#regular-entry(
+  [
     #strong[#link("https://github.com/reinthal/deception-detection-in-chinese-models")[Can lying probes flag a Chinese model's deceptive answers?]]
 
   ],
   [
-    #emph[Jan 2026 – present]
+    #emph[Jan 2026 – June 2026]
 
   ],
   main-column-second-row: [
@@ -127,7 +142,7 @@ An independent AI safety researcher with a taste for work at the intersection of
 
   ],
   [
-    #emph[Jan 2026 – present]
+    #emph[June 2026 – present]
 
   ],
   main-column-second-row: [
