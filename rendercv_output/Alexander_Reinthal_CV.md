@@ -12,11 +12,11 @@
 An independent AI safety researcher with a taste for work at the intersection of interpretability, misuse risks, and model organisms of misalignment. I bring 7 years of industry experience across cyber-security, data, and ML engineering.
 
 # Research Projects
-## **[Alethia's Quest: Lie detection Hackathon](https://aletheias-quest.github.io/)**
+## **[Aletheia's Quest: Lie detection Hackathon](https://aletheias-quest.github.io/)**
 
 *July 2026 – Aug 2026*
 
-Competed on the EluetherAI Team throughout the competition and ranked no. 1 for both blackbox and white-box detection methods throughout the competition. Blog post coming soon.
+Competed on the EleutherAI Team throughout the competition and ranked no. 1 for both black-box and white-box detection methods. Blog post coming soon.
 
 
 
@@ -40,11 +40,11 @@ Found that emergent misalignment (EM) rate is negatively correlated with the cap
 
 
 
-## **[Changing the prompt for  instrumental convergence evals](https://reinthal.github.io/scheming_drivers/)**
+## **[Changing the prompt for instrumental convergence evals](https://reinthal.github.io/scheming_drivers/)**
 
 *May 2026 – June 2026*
 
-Removing pressure phrases increases misalignment rate for capability prompts [(He et al. 2025)](https://arxiv.org/pdf/2502.12206) but decreases it for propensitity prompts [(Hopman et al. 2026)](https://arxiv.org/pdf/2603.01608) for Gemini 3.1 Pro Preview.
+Removing pressure phrases increases misalignment rate for capability prompts [(He et al. 2025)](https://arxiv.org/pdf/2502.12206) but decreases it for propensity prompts [(Hopman et al. 2026)](https://arxiv.org/pdf/2603.01608) for Gemini 3.1 Pro Preview.
 
 
 
@@ -89,13 +89,15 @@ Proof of concept for detecting malicious activity across multiple agent sessions
 
 
 
-## **Data Platform Engineer / Tech Lead / Data Scientist**
+## **Forward-deployed Engineer / DevSecOps / Tech Lead / Data Scientist**
 
 *Gothenburg, Sweden*
 
 *Feb 2022 – present*
 
 *Knowit Solutions Cocreate*
+
+- Lead secure deployment of data platforms across multiple clients, some under protective security contracts ([Säkerhetsskyddslagen 2018:585](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sakerhetsskyddslag-2018585_sfs-2018-585/)).
 
 - Pioneered LLM evals at the company. Implemented an OAuth-authenticated MCP gateway to secure agentic workflows.
 
@@ -109,7 +111,7 @@ Proof of concept for detecting malicious activity across multiple agent sessions
 
 *NTT Security*
 
-- Deployed ML an classifier that reduced analysis time of malicious domains from 2 hours per shift per analyst to 10 minutes per shift per analyst.
+- Deployed an ML classifier that reduced analysis time of malicious domains from 2 hours to 10 minutes per analyst per shift.
 
 
 
@@ -149,7 +151,7 @@ Jailbroke Gemini 2.5 Flash with a few-shot in-context continuation attack, elici
 
 [github.com/reinthal](https://github.com/reinthal)
 
-- [Inspect AI PR #3987](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3987) Fixed Gemini Pro 3.1 + OpenRouter + Reasoning issue
+- [Inspect AI PR #3987](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3987) Fixed Gemini 3.1 Pro + OpenRouter + Reasoning issue
 
 - [Dagster PR #24188](https://github.com/dagster-io/dagster/pull/24188) (ML pipeline orchestration) and [DLT Hub PR #594](https://github.com/dlt-hub/verified-sources/pull/594) (ingestion reliability)
 

@@ -106,7 +106,7 @@ An independent AI safety researcher with a taste for work at the intersection of
 
 #regular-entry(
   [
-    #strong[#link("https://aletheias-quest.github.io/")[Alethia's Quest: Lie detection Hackathon]]
+    #strong[#link("https://aletheias-quest.github.io/")[Aletheia's Quest: Lie detection Hackathon]]
 
   ],
   [
@@ -114,7 +114,7 @@ An independent AI safety researcher with a taste for work at the intersection of
 
   ],
   main-column-second-row: [
-    #summary[Competed on the EluetherAI Team throughout the competition and ranked no. 1 for both blackbox and white-box detection methods throughout the competition. Blog post coming soon.]
+    #summary[Competed on the EleutherAI Team throughout the competition and ranked no. 1 for both black-box and white-box detection methods. Blog post coming soon.]
 
   ],
 )
@@ -155,7 +155,7 @@ An independent AI safety researcher with a taste for work at the intersection of
 
 #regular-entry(
   [
-    #strong[#link("https://reinthal.github.io/scheming_drivers/")[Changing the prompt for  instrumental convergence evals]]
+    #strong[#link("https://reinthal.github.io/scheming_drivers/")[Changing the prompt for instrumental convergence evals]]
 
   ],
   [
@@ -163,7 +163,7 @@ An independent AI safety researcher with a taste for work at the intersection of
 
   ],
   main-column-second-row: [
-    #summary[Removing pressure phrases increases misalignment rate for capability prompts #link("https://arxiv.org/pdf/2502.12206")[(He et al. 2025)] but decreases it for propensitity prompts #link("https://arxiv.org/pdf/2603.01608")[(Hopman et al. 2026)] for Gemini 3.1 Pro Preview.]
+    #summary[Removing pressure phrases increases misalignment rate for capability prompts #link("https://arxiv.org/pdf/2502.12206")[(He et al. 2025)] but decreases it for propensity prompts #link("https://arxiv.org/pdf/2603.01608")[(Hopman et al. 2026)] for Gemini 3.1 Pro Preview.]
 
   ],
 )
@@ -240,7 +240,7 @@ An independent AI safety researcher with a taste for work at the intersection of
 
 #regular-entry(
   [
-    #strong[Data Platform Engineer \/ Tech Lead \/ Data Scientist]
+    #strong[Forward-deployed Engineer \/ DevSecOps \/ Tech Lead \/ Data Scientist]
 
     #emph[Knowit Solutions Cocreate]
 
@@ -252,6 +252,8 @@ An independent AI safety researcher with a taste for work at the intersection of
 
   ],
   main-column-second-row: [
+    - Lead secure deployment of data platforms across multiple clients, some under protective security contracts (#link("https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sakerhetsskyddslag-2018585_sfs-2018-585/")[Säkerhetsskyddslagen 2018:585]).
+
     - Pioneered LLM evals at the company. Implemented an OAuth-authenticated MCP gateway to secure agentic workflows.
 
   ],
@@ -271,7 +273,7 @@ An independent AI safety researcher with a taste for work at the intersection of
 
   ],
   main-column-second-row: [
-    - Deployed ML an classifier that reduced analysis time of malicious domains from 2 hours per shift per analyst to 10 minutes per shift per analyst.
+    - Deployed an ML classifier that reduced analysis time of malicious domains from 2 hours to 10 minutes per analyst per shift.
 
   ],
 )
@@ -341,7 +343,7 @@ An independent AI safety researcher with a taste for work at the intersection of
   main-column-second-row: [
     #summary[#link("https://github.com/reinthal")[github.com\/reinthal]]
 
-    - #link("https://github.com/UKGovernmentBEIS/inspect_ai/pull/3987")[Inspect AI PR \#3987] Fixed Gemini Pro 3.1 + OpenRouter + Reasoning issue
+    - #link("https://github.com/UKGovernmentBEIS/inspect_ai/pull/3987")[Inspect AI PR \#3987] Fixed Gemini 3.1 Pro + OpenRouter + Reasoning issue
 
     - #link("https://github.com/dagster-io/dagster/pull/24188")[Dagster PR \#24188] (ML pipeline orchestration) and #link("https://github.com/dlt-hub/verified-sources/pull/594")[DLT Hub PR \#594] (ingestion reliability)
 
