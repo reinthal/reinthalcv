@@ -13,11 +13,11 @@ cv:
     _:
       - "An independent AI safety researcher with a taste for work at the intersection of interpretability, misuse risks, and model organisms of misalignment. I bring 7 years of industry experience across cyber-security, data, and ML engineering."
     research_projects:
-      - name: "[Alethia's Quest: Lie detection Hackathon](https://aletheias-quest.github.io/)"
+      - name: "[Aletheia's Quest: Lie detection Hackathon](https://aletheias-quest.github.io/)"
         date:
         start_date: 2026-07-01
         end_date: 2026-08-05
-        summary: "Competed on the EluetherAI Team throughout the competition and ranked no. 1 for both blackbox and white-box detection methods throughout the competition. Blog post coming soon."
+        summary: "Competed on the EleutherAI Team throughout the competition and ranked no. 1 for both black-box and white-box detection methods. Blog post coming soon."
       - name: "[Can lying probes flag a Chinese model's deceptive answers?](https://github.com/reinthal/deception-detection-in-chinese-models)"
         date:
         start_date: 2026-01
@@ -39,7 +39,7 @@ cv:
         start_date: 2026-05
         end_date: 2026-06
         location:
-        summary: "Removing pressure phrases increases misalignment rate for capability prompts [(He et al. 2025)](https://arxiv.org/pdf/2502.12206) but decreases it for propensitity prompts [(Hopman et al. 2026)](https://arxiv.org/pdf/2603.01608) for Gemini 3.1 Pro Preview."
+        summary: "Removing pressure phrases increases misalignment rate for capability prompts [(He et al. 2025)](https://arxiv.org/pdf/2502.12206) but decreases it for propensity prompts [(Hopman et al. 2026)](https://arxiv.org/pdf/2603.01608) for Gemini 3.1 Pro Preview."
       - name: "[Detecting Piecewise Cyber Espionage in Model APIs](https://apartresearch.com/project/detecting-piecewise-cyber-espionage-in-model-apis-a8gx)"
         date:
         start_date: 2025-11
@@ -81,7 +81,7 @@ cv:
         location: Gothenburg, Sweden
         summary:
         highlights:
-          - Securely deployed 
+          - Lead secure deployment of data platforms across multiple clients, some under protective security contracts ([Säkerhetsskyddslagen 2018:585](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/sakerhetsskyddslag-2018585_sfs-2018-585/)).
           - "Pioneered LLM evals at the company. Implemented an OAuth-authenticated MCP gateway to secure agentic workflows."
       - company: NTT Security
         position: Security Analyst
@@ -91,7 +91,7 @@ cv:
         location: Gothenburg, Sweden
         summary:
         highlights:
-          - "Deployed ML an classifier that reduced analysis time of malicious domains from 2 hours per shift per analyst to 10 minutes per shift per analyst."
+          - "Deployed an ML classifier that reduced analysis time of malicious domains from 2 hours to 10 minutes per analyst per shift."
       - company: Ericsson
         position: Python Software Engineer
         date:
@@ -128,7 +128,7 @@ cv:
         location:
         summary: "[github.com/reinthal](https://github.com/reinthal)"
         highlights:
-          - "[Inspect AI PR #3987](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3987) Fixed Gemini Pro 3.1 + OpenRouter + Reasoning issue"
+          - "[Inspect AI PR #3987](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3987) Fixed Gemini 3.1 Pro + OpenRouter + Reasoning issue"
           - "[Dagster PR #24188](https://github.com/dagster-io/dagster/pull/24188) (ML pipeline orchestration) and [DLT Hub PR #594](https://github.com/dlt-hub/verified-sources/pull/594) (ingestion reliability)"
     skills:
       - label: Machine Learning & AI
