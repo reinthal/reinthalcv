@@ -16,7 +16,7 @@ An independent AI safety researcher with a taste for work at the intersection of
 
 *July 2026 – Aug 2026*
 
-Competed on the EleutherAI Team throughout the competition and ranked no. 1 for both black-box and white-box detection methods. Blog post coming soon.
+Worked on the EleutherAI Team where we developed a hybrid method for lie detection that generalized well over 27 different datasets, 3 different model families and many different types of lies. My contributios were developing new datasets and validating data generation and labeling practices of previous research. I also wrote parts of the blog post which we will be releasing next week as part of the awards ceremony. We placed top 3.
 
 
 
@@ -65,7 +65,7 @@ Proof of concept for detecting malicious activity across multiple agent sessions
 
 *Independent*
 
-- Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks.
+- My research focuses on AI control and scalable oversight methods to be applied throughout the model livecycle. Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks.
 
 
 
