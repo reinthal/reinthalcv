@@ -24,7 +24,7 @@ Worked on the EleutherAI Team where we developed a hybrid method for lie detecti
 
 *Jan 2026 – June 2026*
 
-Found that deception probes (Apollo, 2025) are unreliable at detecting questionable answers from Chinese models on politically sensitive questions.
+Found that some Chinese models think they are honest when answering politically censored questions.
 
 - Extension of ARENA 7.0 weekend hackathon, 1st place. Supported by Bluedot Impact rapid grant.
 
@@ -59,13 +59,33 @@ Proof of concept for detecting malicious activity across multiple agent sessions
 
 
 # Experience
-## **AI Safety Researcher**
+## **Career Transition Grantee**
 
 *May 2026 – present*
 
 *Independent*
 
-- My research focuses on AI control and scalable oversight methods to be applied throughout the model livecycle. Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks.
+- Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks. Currently researching lie detection with a broader interest in AI control and scalable oversight agendas
+
+
+
+## **Research fellow**
+
+*Sept 2026 – Dec 2026*
+
+*SPAR*
+
+- Researching Lie detection under Walter Laurito and Kieron Kretschmar (Cadenza Labs).
+
+
+
+## **Alum**
+
+*Sept 2026 – Sept 2026*
+
+*AI Security Bootcamp*
+
+- Studied an intense curriculum across AI Safety, AI security and Technical AI governence.
 
 
 

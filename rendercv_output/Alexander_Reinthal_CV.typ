@@ -129,7 +129,7 @@ An independent AI safety researcher with a taste for work at the intersection of
 
   ],
   main-column-second-row: [
-    #summary[Found that deception probes (Apollo, 2025) are unreliable at detecting questionable answers from Chinese models on politically sensitive questions.]
+    #summary[Found that some Chinese models think they are honest when answering politically censored questions.]
 
     - Extension of ARENA 7.0 weekend hackathon, 1st place. Supported by Bluedot Impact rapid grant.
 
@@ -189,7 +189,7 @@ An independent AI safety researcher with a taste for work at the intersection of
 
 #regular-entry(
   [
-    #strong[AI Safety Researcher]
+    #strong[Career Transition Grantee]
 
   ],
   [
@@ -199,7 +199,41 @@ An independent AI safety researcher with a taste for work at the intersection of
   main-column-second-row: [
     #emph[Independent]
 
-    - My research focuses on AI control and scalable oversight methods to be applied throughout the model livecycle. Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks.
+    - Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks. Currently researching lie detection with a broader interest in AI control and scalable oversight agendas
+
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[Research fellow]
+
+  ],
+  [
+    #emph[Sept 2026 – Dec 2026]
+
+  ],
+  main-column-second-row: [
+    #emph[SPAR]
+
+    - Researching Lie detection under Walter Laurito and Kieron Kretschmar (Cadenza Labs).
+
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[Alum]
+
+  ],
+  [
+    #emph[Sept 2026 – Sept 2026]
+
+  ],
+  main-column-second-row: [
+    #emph[AI Security Bootcamp]
+
+    - Studied an intense curriculum across AI Safety, AI security and Technical AI governence.
 
   ],
 )
