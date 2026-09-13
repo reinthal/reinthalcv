@@ -199,7 +199,7 @@ An independent AI safety researcher with a taste for work at the intersection of
   main-column-second-row: [
     #emph[Independent]
 
-    - Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks. Currently researching lie detection with a broader interest in AI control and scalable oversight agendas
+    - Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks. Currently researching lie detection with a broader interest in AI control and scalable oversight agendas.
 
   ],
 )
