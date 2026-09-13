@@ -23,7 +23,7 @@ cv:
         start_date: 2026-01
         end_date: 2026-06
         location:
-        summary: "Found that deception probes (Apollo, 2025) are unreliable at detecting questionable answers from Chinese models on politically sensitive questions."
+        summary: "Found that some Chinese models think they are honest when answering politically censored questions."
         highlights:
           - "Extension of ARENA 7.0 weekend hackathon, 1st place. Supported by Bluedot Impact rapid grant."
       - name: "[About Emergent Misalignment](https://github.com/reinthal/about-emergent-misalignment)"
@@ -50,13 +50,29 @@ cv:
           - "Research continued through SPAR by David Williams-King (ERA) and Linh Le (Mila). Apart Research sprint, 4th place of 641 submissions."
     experience:
       - company: Independent
-        position: AI Safety Researcher
+        position: Career Transition Grantee
         date:
         start_date: 2026-05-01
         end_date: present
         summary:
         highlights:
-          - "My research focuses on AI control and scalable oversight methods to be applied throughout the model livecycle. Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks."
+          - "Supported by Coefficient Giving's Career Transition grant for reducing global catastrophic risks. Currently researching lie detection with a broader interest in AI control and scalable oversight agendas"
+      - company: SPAR
+        position: Research fellow
+        date:
+        start_date: 2026-09
+        end_date: 2026-12
+        summary:
+        highlights:
+          - "Researching Lie detection under Walter Laurito and Kieron Kretschmar (Cadenza Labs)."
+      - company: AI Security Bootcamp
+        position: Alum
+        date:
+        start_date: 2026-09-01
+        end_date: 2026-09-08
+        summary:
+        highlights:
+          - "Studied an intense curriculum across AI Safety, AI security and Technical AI governence."
       - company: Bluedot Impact
         position: Research mentor
         date:
