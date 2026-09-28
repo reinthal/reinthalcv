@@ -106,6 +106,25 @@ An independent AI safety researcher with a taste for work at the intersection of
 
 #regular-entry(
   [
+    #strong[#link("https://github.com/reinthal/out-of-control-arena")[Out of Control Arena]]
+
+  ],
+  [
+    #emph[Sept 2026 – present]
+
+  ],
+  main-column-second-row: [
+    #summary[Developed a control arena setting to compare AI's capability in  cyber defense compared to offense.]
+
+    - Ported BashArena to a VM setting (Proxmox)
+
+    - Extended monitors to perform agentic forensics on victim machines
+
+  ],
+)
+
+#regular-entry(
+  [
     #strong[#link("https://aletheias-quest.github.io/")[Aletheia's Quest: Lie detection Hackathon]]
 
   ],
@@ -114,7 +133,11 @@ An independent AI safety researcher with a taste for work at the intersection of
 
   ],
   main-column-second-row: [
-    #summary[Worked on the EleutherAI Team where we developed a hybrid method for lie detection that generalized well over 27 different datasets, 3 different model families and many different types of lies. My contributios were developing new datasets and validating data generation and labeling practices of previous research. I also wrote parts of the blog post which we will be releasing next week as part of the awards ceremony. We placed top 3.]
+    #summary[Developed a hybrid lie detector with EleutherAI that generalized over 27 different datasets, 3 different model families and many different types of lies.]
+
+    - Contributed to new datasets and validating data generation and labeling of data and writing the blog post.
+
+    - We placed top 3.\"
 
   ],
 )
@@ -295,7 +318,7 @@ An independent AI safety researcher with a taste for work at the intersection of
 
 #regular-entry(
   [
-    #strong[Security Analyst]
+    #strong[Cyber Security Analyst]
 
     #emph[NTT Security]
 
@@ -307,7 +330,7 @@ An independent AI safety researcher with a taste for work at the intersection of
 
   ],
   main-column-second-row: [
-    - Deployed an ML classifier that reduced analysis time of malicious domains from 2 hours to 10 minutes per analyst per shift.
+    - Wrote calibrated cyber incidents reports based on available evidence. Deployed an ML classifier that reduced analysis time of malicious domains from 2 hours to 10 minutes per analyst per shift.
 
   ],
 )

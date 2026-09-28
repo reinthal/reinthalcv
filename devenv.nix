@@ -9,15 +9,13 @@
 
   languages.python = {
     enable = true;
-    poetry.enable = true;
+    uv.enable = true;
   };
 
-
   scripts.make-cv.exec = ''
-    rendercv render Alexander_Reinthal_CV.yaml
+    uv run rendercv render Alexander_Reinthal_CV.yaml
   '';
 
   # https://devenv.sh/pre-commit-hooks/
   pre-commit.hooks.shellcheck.enable = true;
-
 }
