@@ -9,7 +9,7 @@
 
 
 #  
-An independent AI safety researcher with a taste for work at the intersection of interpretability, misuse risks, and model organisms of misalignment. I bring 7 years of industry experience across cyber-security, data, and ML engineering.
+Senior cyber security practitioner and data engineer switching careers to mitigate loss of control risks through AI control research.
 
 # Research Projects
 ## **[Out of Control Arena](https://github.com/reinthal/out-of-control-arena)**
@@ -30,9 +30,9 @@ Developed a control arena setting to compare AI's capability in  cyber defense c
 
 Developed a hybrid lie detector with EleutherAI that generalized over 27 different datasets, 3 different model families and many different types of lies.
 
-- Contributed to new datasets and validating data generation and labeling of data and writing the blog post.
+- Contributed to new datasets and validating data generation, labeling of data and writing the blog post.
 
-- We placed top 3."
+- Awarded 2nd place on the validation set.
 
 
 
