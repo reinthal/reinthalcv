@@ -159,11 +159,11 @@ cv:
           - "[Dagster PR #24188](https://github.com/dagster-io/dagster/pull/24188) (ML pipeline orchestration) and [DLT Hub PR #594](https://github.com/dlt-hub/verified-sources/pull/594) (ingestion reliability)"
     skills:
       - label: Machine Learning & AI
-        details: "PyTorch, JAX (learned during ARENA 7.0), Einops, XGBoost, SciKit Learn, Jupyter; LLM evals & observability (Inspect, LangChain, Langfuse, Arize Phoenix); linear probes, SFT, automated red-teaming"
+        details: "Inspect, PyTorch, JAX, linear probes, SFT, RL*"
       - label: Programming Languages
-        details: "Python, JavaScript, SQL, Rust, C/C++, R, Nix, Terraform"
+        details: "Nix, Python, JavaScript, SQL, Terraform"
       - label: Platforms & Tools
-        details: "Modal, Runpod, Openweights, Weights & Biases, Spark, Docker, Kubernetes, AWS, Azure"
+        details: "Tinker, Modal, Weights & Biases, Spark, Docker, Kubernetes, AWS, Azure"
       - label: Certifications
         details: "Bluedot Impact — Technical AI Safety (2026-03); AGI Strategy (2025-10)"
     education:

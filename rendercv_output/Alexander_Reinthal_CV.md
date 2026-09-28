@@ -194,11 +194,11 @@ Jailbroke Gemini 2.5 Flash with a few-shot in-context continuation attack, elici
 
 
 # Skills
-**Machine Learning & AI:** PyTorch, JAX (learned during ARENA 7.0), Einops, XGBoost, SciKit Learn, Jupyter; LLM evals & observability (Inspect, LangChain, Langfuse, Arize Phoenix); linear probes, SFT, automated red-teaming
+**Machine Learning & AI:** Inspect, PyTorch, JAX, linear probes, SFT, RL*
 
-**Programming Languages:** Python, JavaScript, SQL, Rust, C/C++, R, Nix, Terraform
+**Programming Languages:** Nix, Python, JavaScript, SQL, Terraform
 
-**Platforms & Tools:** Modal, Runpod, Openweights, Weights & Biases, Spark, Docker, Kubernetes, AWS, Azure
+**Platforms & Tools:** Tinker, Modal, Weights & Biases, Spark, Docker, Kubernetes, AWS, Azure
 
 **Certifications:** Bluedot Impact — Technical AI Safety (2026-03); AGI Strategy (2025-10)
 

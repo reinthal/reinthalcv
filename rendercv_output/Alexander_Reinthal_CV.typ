@@ -409,11 +409,11 @@ Senior cyber security practitioner and data engineer switching careers to mitiga
 
 == Skills
 
-#strong[Machine Learning & AI:] PyTorch, JAX (learned during ARENA 7.0), Einops, XGBoost, SciKit Learn, Jupyter; LLM evals & observability (Inspect, LangChain, Langfuse, Arize Phoenix); linear probes, SFT, automated red-teaming
+#strong[Machine Learning & AI:] Inspect, PyTorch, JAX, linear probes, SFT, RL#sym.ast.basic#h(0pt, weak: true)
 
-#strong[Programming Languages:] Python, JavaScript, SQL, Rust, C\/C++, R, Nix, Terraform
+#strong[Programming Languages:] Nix, Python, JavaScript, SQL, Terraform
 
-#strong[Platforms & Tools:] Modal, Runpod, Openweights, Weights & Biases, Spark, Docker, Kubernetes, AWS, Azure
+#strong[Platforms & Tools:] Tinker, Modal, Weights & Biases, Spark, Docker, Kubernetes, AWS, Azure
 
 #strong[Certifications:] Bluedot Impact — Technical AI Safety (2026-03); AGI Strategy (2025-10)
 
