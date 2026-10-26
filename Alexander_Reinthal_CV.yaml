@@ -84,13 +84,14 @@ cv:
         summary:
         highlights:
           - "Studied an intense curriculum across AI Safety, AI security and Technical AI governence."
-      - company: Bluedot Impact
-        position: Research mentor
+      - company: Bluedot Impact/AI Security Bootcamp
+        position: Contractor
         date:
         start_date: 2026-03-16
         end_date: present
         summary:
         highlights:
+          - "Interviewed applicants for AI Security bootcamp"
           - "Facilitator and research mentor for the Technical AI Safety course and project."
       - company: ARENA 7.0
         position: Alum
