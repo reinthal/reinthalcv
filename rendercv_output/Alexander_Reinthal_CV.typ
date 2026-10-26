@@ -263,7 +263,7 @@ Senior cyber security practitioner and data engineer switching careers to mitiga
 
 #regular-entry(
   [
-    #strong[Research mentor]
+    #strong[Contractor]
 
   ],
   [
@@ -271,7 +271,9 @@ Senior cyber security practitioner and data engineer switching careers to mitiga
 
   ],
   main-column-second-row: [
-    #emph[Bluedot Impact]
+    #emph[Bluedot Impact\/AI Security Bootcamp]
+
+    - Interviewed applicants for AI Security bootcamp
 
     - Facilitator and research mentor for the Technical AI Safety course and project.
 

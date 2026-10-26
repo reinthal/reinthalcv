@@ -105,11 +105,13 @@ Proof of concept for detecting malicious activity across multiple agent sessions
 
 
 
-## **Research mentor**
+## **Contractor**
 
 *Mar 2026 – present*
 
-*Bluedot Impact*
+*Bluedot Impact/AI Security Bootcamp*
+
+- Interviewed applicants for AI Security bootcamp
 
 - Facilitator and research mentor for the Technical AI Safety course and project.
 
